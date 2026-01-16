@@ -385,9 +385,9 @@ const Contact = () => {
                 <AccordionItem
                   key={index}
                   value={`faq-${index}`}
-                  className="group bg-card border border-border/60 rounded-xl px-6 data-[state=open]:border-primary data-[state=open]:shadow-lg data-[state=open]:shadow-primary/5 transition-all duration-300 hover:border-primary/50 hover:shadow-md"
+                  className="group bg-card border border-border/60 rounded-xl px-6 transition-all duration-300 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-1 data-[state=open]:border-primary data-[state=open]:shadow-xl data-[state=open]:shadow-primary/10 data-[state=open]:-translate-y-1"
                 >
-                  <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary hover:no-underline py-5 transition-colors duration-300">
+                  <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary hover:no-underline py-5 transition-colors duration-300 group-hover:text-primary">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground pb-5 leading-relaxed">
