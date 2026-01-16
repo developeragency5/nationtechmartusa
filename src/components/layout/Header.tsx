@@ -56,13 +56,24 @@ const Header = () => {
   }, []);
 
   const openCart = () => {
-    // Navigate to shop page with cart hash - Ecwid will handle the cart display
-    window.location.href = '/shop#!/~/cart';
+    const w = window as any;
+    if (w.Ecwid && typeof w.Ecwid.openPage === 'function') {
+      w.Ecwid.openPage('cart');
+    } else {
+      // Fallback: navigate to shop page with cart hash
+      window.location.href = '/shop#!/~/cart';
+    }
   };
 
   const openAccount = () => {
-    // Navigate to shop page with account hash - Ecwid will handle the account display
-    window.location.href = '/shop#!/~/account';
+    const w = window as any;
+    if (w.Ecwid && typeof w.Ecwid.openPage === 'function') {
+      // Opens sign-in dialog or account page if already logged in
+      w.Ecwid.openPage('signin');
+    } else {
+      // Fallback: navigate to shop page with signin hash
+      window.location.href = '/shop#!/~/signin';
+    }
   };
 
   return (
