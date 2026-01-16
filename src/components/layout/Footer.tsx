@@ -1,9 +1,22 @@
-import { Link } from "react-router-dom";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Link, useNavigate } from "react-router-dom";
+import { Mail, Phone, MapPin, Search } from "lucide-react";
+import { useState } from "react";
 import SiteNotice from "@/components/shared/SiteNotice";
 import logoImage from "@/assets/logo.png";
 
 const Footer = () => {
+  const navigate = useNavigate();
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearch = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (searchQuery.trim()) {
+      navigate(`/shop#!/~/search=${encodeURIComponent(searchQuery.trim())}`);
+    } else {
+      navigate("/shop#!/~/search");
+    }
+  };
+
   return (
     <footer className="bg-card border-t border-border/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-16 md:py-20">
@@ -16,6 +29,24 @@ const Footer = () => {
             <p className="text-muted-foreground leading-relaxed">
               Your trusted source for quality technology products at competitive prices.
             </p>
+            {/* Search Bar */}
+            <form onSubmit={handleSearch} className="relative group">
+              <input
+                type="text"
+                placeholder="Search products..."
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                className="w-full pl-4 pr-10 py-2.5 rounded-lg border border-border bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all duration-300"
+                data-testid="input-footer-search"
+              />
+              <button
+                type="submit"
+                className="absolute right-2 top-1/2 -translate-y-1/2 p-1.5 rounded-md text-muted-foreground hover:text-primary hover:bg-primary/10 transition-all duration-300"
+                data-testid="button-footer-search"
+              >
+                <Search className="h-4 w-4" />
+              </button>
+            </form>
           </div>
 
           {/* Quick Links */}
