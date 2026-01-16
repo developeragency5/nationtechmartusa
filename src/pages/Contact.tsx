@@ -16,7 +16,6 @@ import {
   RotateCcw,
   FileText,
   ShoppingCart,
-  AlertTriangle,
   Building2
 } from "lucide-react";
 import { useState } from "react";
@@ -116,22 +115,6 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Important Notice Banner */}
-      <section className="py-6 bg-amber-50 dark:bg-amber-950/30 border-y border-amber-200 dark:border-amber-800">
-        <div className="container mx-auto px-4">
-          <div className="flex items-start gap-4 max-w-4xl mx-auto">
-            <AlertTriangle className="h-6 w-6 text-amber-600 dark:text-amber-500 shrink-0 mt-0.5" />
-            <div>
-              <p className="text-amber-800 dark:text-amber-200 font-medium">
-                Important: We do not provide technical troubleshooting, setup assistance, or manufacturer warranty handling.
-              </p>
-              <p className="text-amber-700 dark:text-amber-300 text-sm mt-1">
-                For product-specific technical assistance or warranty claims, customers should contact the original equipment manufacturer (OEM) directly.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* What You Can Contact Us About */}
       <section className="py-16 bg-background">
