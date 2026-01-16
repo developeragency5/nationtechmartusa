@@ -41,7 +41,7 @@ const Contact = () => {
           alt="Customer support team ready to help"
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/50 flex items-center">
+        <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-transparent flex items-center">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl">
               <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
