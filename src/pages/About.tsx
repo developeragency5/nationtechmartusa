@@ -4,7 +4,7 @@ import ImageCard from "@/components/shared/ImageCard";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
-import aboutBanner from "@assets/we-are-stronger-when-we-stand-together-2026-01-09-11-06-42-utc_1768522820920.jpg";
+import aboutBanner from "@assets/women-envelope-and-smile-with-handshake-in-deal-a-2026-01-09-1_1768522859237.jpg";
 
 const values = [
   {
