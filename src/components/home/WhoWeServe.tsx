@@ -47,17 +47,17 @@ const WhoWeServe = () => {
             {audiences.map((audience) => (
               <div
                 key={audience.title}
-                className={`group p-5 rounded-lg ${audience.bgColor} transition-all duration-300 hover:scale-[1.02]`}
+                className={`group p-5 rounded-xl ${audience.bgColor} transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-default border border-transparent hover:border-primary/20`}
               >
                 <div className="flex items-start gap-4">
-                  <div className={`w-10 h-10 rounded-lg bg-white dark:bg-background flex items-center justify-center shrink-0 shadow-sm`}>
-                    <audience.icon className={`h-5 w-5 ${audience.color}`} />
+                  <div className="w-12 h-12 rounded-xl bg-white dark:bg-background flex items-center justify-center shrink-0 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:shadow-md">
+                    <audience.icon className={`h-6 w-6 ${audience.color} transition-transform duration-300 group-hover:scale-110`} />
                   </div>
                   <div>
-                    <h3 className={`font-semibold ${audience.color} mb-1`}>
+                    <h3 className={`font-semibold ${audience.color} mb-1 transition-all duration-300`}>
                       {audience.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed">
+                    <p className="text-muted-foreground text-sm leading-relaxed transition-colors duration-300 group-hover:text-foreground/80">
                       {audience.description}
                     </p>
                   </div>

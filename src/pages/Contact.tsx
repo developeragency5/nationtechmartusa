@@ -135,37 +135,37 @@ const Contact = () => {
                     We're here to help with your printer and technology needs. Reach out through any of these channels.
                   </p>
                   
-                  <div className="space-y-4">
-                    <div className="flex items-start space-x-4">
-                      <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center shrink-0">
-                        <Mail className="h-5 w-5 text-primary" />
+                  <div className="space-y-3">
+                    <a href="mailto:contact@nationtechmart.com" className="group flex items-start space-x-4 p-3 -ml-3 rounded-lg transition-all duration-300 hover:bg-primary/5">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                        <Mail className="h-5 w-5 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground text-sm">Email</h4>
-                        <a href="mailto:contact@nationtechmart.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                        <h4 className="font-semibold text-foreground text-sm group-hover:text-primary transition-colors duration-300">Email</h4>
+                        <span className="text-muted-foreground text-sm">
                           contact@nationtechmart.com
-                        </a>
+                        </span>
                       </div>
-                    </div>
+                    </a>
 
-                    <div className="flex items-start space-x-4">
-                      <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center shrink-0">
-                        <Phone className="h-5 w-5 text-primary" />
+                    <a href="tel:+18005551234" className="group flex items-start space-x-4 p-3 -ml-3 rounded-lg transition-all duration-300 hover:bg-primary/5">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                        <Phone className="h-5 w-5 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground text-sm">Phone</h4>
-                        <a href="tel:+18005551234" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                        <h4 className="font-semibold text-foreground text-sm group-hover:text-primary transition-colors duration-300">Phone</h4>
+                        <span className="text-muted-foreground text-sm">
                           1-800-555-1234
-                        </a>
+                        </span>
                       </div>
-                    </div>
+                    </a>
 
-                    <div className="flex items-start space-x-4">
-                      <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center shrink-0">
-                        <MapPin className="h-5 w-5 text-primary" />
+                    <div className="group flex items-start space-x-4 p-3 -ml-3 rounded-lg transition-all duration-300 hover:bg-primary/5 cursor-default">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                        <MapPin className="h-5 w-5 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground text-sm">Address</h4>
+                        <h4 className="font-semibold text-foreground text-sm group-hover:text-primary transition-colors duration-300">Address</h4>
                         <p className="text-muted-foreground text-sm">
                           123 Technology Drive, Suite 100<br />
                           San Francisco, CA 94105
@@ -173,12 +173,12 @@ const Contact = () => {
                       </div>
                     </div>
 
-                    <div className="flex items-start space-x-4">
-                      <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center shrink-0">
-                        <Clock className="h-5 w-5 text-primary" />
+                    <div className="group flex items-start space-x-4 p-3 -ml-3 rounded-lg transition-all duration-300 hover:bg-primary/5 cursor-default">
+                      <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                        <Clock className="h-5 w-5 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
                       </div>
                       <div>
-                        <h4 className="font-semibold text-foreground text-sm">Business Hours</h4>
+                        <h4 className="font-semibold text-foreground text-sm group-hover:text-primary transition-colors duration-300">Business Hours</h4>
                         <p className="text-muted-foreground text-sm">
                           Monday - Friday: 9:00 AM - 6:00 PM EST<br />
                           Saturday - Sunday: Closed
@@ -212,29 +212,37 @@ const Contact = () => {
                 We strive to respond to all inquiries as quickly as possible during business hours. 
                 Here's what you can expect:
               </p>
-              <ul className="space-y-3">
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
-                  <span className="text-muted-foreground">
-                    <strong className="text-foreground">Email inquiries:</strong> Response within 1-2 business days
+              <ul className="space-y-2">
+                <li className="group flex items-start gap-3 p-3 -ml-3 rounded-lg transition-all duration-300 hover:bg-primary/5 cursor-default">
+                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                    <div className="w-2 h-2 rounded-full bg-primary transition-colors duration-300 group-hover:bg-primary-foreground" />
+                  </div>
+                  <span className="text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
+                    <strong className="text-foreground group-hover:text-primary transition-colors duration-300">Email inquiries:</strong> Response within 1-2 business days
                   </span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
-                  <span className="text-muted-foreground">
-                    <strong className="text-foreground">Phone:</strong> Available during business hours (Mon-Fri, 9 AM - 6 PM EST)
+                <li className="group flex items-start gap-3 p-3 -ml-3 rounded-lg transition-all duration-300 hover:bg-primary/5 cursor-default">
+                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                    <div className="w-2 h-2 rounded-full bg-primary transition-colors duration-300 group-hover:bg-primary-foreground" />
+                  </div>
+                  <span className="text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
+                    <strong className="text-foreground group-hover:text-primary transition-colors duration-300">Phone:</strong> Available during business hours (Mon-Fri, 9 AM - 6 PM EST)
                   </span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
-                  <span className="text-muted-foreground">
-                    <strong className="text-foreground">Order issues:</strong> Priority handling, typically same-day response
+                <li className="group flex items-start gap-3 p-3 -ml-3 rounded-lg transition-all duration-300 hover:bg-primary/5 cursor-default">
+                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                    <div className="w-2 h-2 rounded-full bg-primary transition-colors duration-300 group-hover:bg-primary-foreground" />
+                  </div>
+                  <span className="text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
+                    <strong className="text-foreground group-hover:text-primary transition-colors duration-300">Order issues:</strong> Priority handling, typically same-day response
                   </span>
                 </li>
-                <li className="flex items-start gap-3">
-                  <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
-                  <span className="text-muted-foreground">
-                    <strong className="text-foreground">Weekend messages:</strong> Reviewed first thing Monday morning
+                <li className="group flex items-start gap-3 p-3 -ml-3 rounded-lg transition-all duration-300 hover:bg-primary/5 cursor-default">
+                  <div className="w-6 h-6 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                    <div className="w-2 h-2 rounded-full bg-primary transition-colors duration-300 group-hover:bg-primary-foreground" />
+                  </div>
+                  <span className="text-muted-foreground transition-colors duration-300 group-hover:text-foreground">
+                    <strong className="text-foreground group-hover:text-primary transition-colors duration-300">Weekend messages:</strong> Reviewed first thing Monday morning
                   </span>
                 </li>
               </ul>

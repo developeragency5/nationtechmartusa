@@ -41,21 +41,20 @@ const WhyNationTechMart = () => {
               to={benefit.link}
               className="group block"
             >
-              <div className="bg-card rounded-2xl border border-border/60 overflow-hidden hover:border-primary/30 hover:shadow-lg transition-all duration-300 h-full">
-                <div className="relative">
-                  <ImageCard
+              <div className="bg-card rounded-2xl border border-border/60 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 h-full">
+                <div className="relative overflow-hidden">
+                  <img
                     src={benefit.image}
                     alt={benefit.alt}
-                    size="card"
-                    rounded="sm"
-                    shadow="none"
+                    className="w-full aspect-[4/3] object-cover transition-all duration-500 group-hover:scale-110"
                   />
-                  <div className="absolute top-4 left-4 w-12 h-12 rounded-xl bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-md">
-                    <benefit.icon className="h-6 w-6 text-primary" />
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500" />
+                  <div className="absolute top-4 left-4 w-12 h-12 rounded-xl bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-md transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                    <benefit.icon className="h-6 w-6 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-foreground text-xl mb-2 group-hover:text-primary transition-colors">
+                  <h3 className="font-bold text-foreground text-xl mb-2 group-hover:text-primary transition-colors duration-300">
                     {benefit.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">

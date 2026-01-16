@@ -98,21 +98,25 @@ const About = () => {
               </p>
               
               <ul className="space-y-4">
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-6 w-6 text-primary shrink-0 mt-0.5" />
+                <li className="group flex items-start gap-3 p-3 -ml-3 rounded-lg transition-all duration-300 hover:bg-primary/5">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                    <CheckCircle className="h-4 w-4 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
+                  </div>
                   <div>
-                    <p className="font-medium text-foreground">Clear Pricing</p>
+                    <p className="font-medium text-foreground group-hover:text-primary transition-colors duration-300">Clear Pricing</p>
                     <p className="text-sm text-muted-foreground">What you see is what you pay. No hidden fees or surprise charges.</p>
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-6 w-6 text-primary shrink-0 mt-0.5" />
+                <li className="group flex items-start gap-3 p-3 -ml-3 rounded-lg transition-all duration-300 hover:bg-primary/5">
+                  <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                    <CheckCircle className="h-4 w-4 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
+                  </div>
                   <div>
-                    <p className="font-medium text-foreground">Honest Policies</p>
+                    <p className="font-medium text-foreground group-hover:text-primary transition-colors duration-300">Honest Policies</p>
                     <p className="text-sm text-muted-foreground">30-day returns, manufacturer warranties, and fair terms clearly stated.</p>
                   </div>
                 </li>
-                              </ul>
+              </ul>
 
               <div className="pt-4">
                 <Button asChild variant="outline">
@@ -143,17 +147,18 @@ const About = () => {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="bg-card rounded-2xl border border-border/60 overflow-hidden hover:shadow-lg transition-shadow duration-300"
+                className="group bg-card rounded-2xl border border-border/60 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2"
               >
-                <ImageCard
-                  src={value.image}
-                  alt={value.alt}
-                  size="w-full h-[200px]"
-                  rounded="sm"
-                  shadow="none"
-                />
+                <div className="relative overflow-hidden">
+                  <img
+                    src={value.image}
+                    alt={value.alt}
+                    className="w-full h-[200px] object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-foreground text-xl mb-3">
+                  <h3 className="font-bold text-foreground text-xl mb-3 group-hover:text-primary transition-colors duration-300">
                     {value.title}
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">

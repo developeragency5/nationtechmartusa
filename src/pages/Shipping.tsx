@@ -84,12 +84,12 @@ const Shipping = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Handling Time Card */}
-              <div className="bg-card rounded-xl border border-border overflow-hidden">
-                <div className="h-40 bg-accent/30 flex items-center justify-center">
-                  <Package className="h-16 w-16 text-primary/60" />
+              <div className="group bg-card rounded-xl border border-border overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
+                <div className="h-40 bg-accent/30 flex items-center justify-center overflow-hidden">
+                  <Package className="h-16 w-16 text-primary/60 transition-all duration-500 group-hover:scale-125 group-hover:text-primary" />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-foreground mb-2">Handling Time</h3>
+                  <h3 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">Handling Time</h3>
                   <p className="text-sm text-muted-foreground">
                     Orders typically ship within <strong>1-2 business days</strong>. During peak periods, 
                     processing may take up to 3 business days.
@@ -98,12 +98,12 @@ const Shipping = () => {
               </div>
 
               {/* Carriers Card */}
-              <div className="bg-card rounded-xl border border-border overflow-hidden">
-                <div className="h-40 bg-accent/30 flex items-center justify-center">
-                  <Truck className="h-16 w-16 text-primary/60" />
+              <div className="group bg-card rounded-xl border border-border overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
+                <div className="h-40 bg-accent/30 flex items-center justify-center overflow-hidden">
+                  <Truck className="h-16 w-16 text-primary/60 transition-all duration-500 group-hover:scale-125 group-hover:text-primary" />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-foreground mb-2">Carriers & Delivery</h3>
+                  <h3 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">Carriers & Delivery</h3>
                   <p className="text-sm text-muted-foreground">
                     We ship via <strong>UPS, FedEx, and USPS</strong>. Standard delivery takes 3-7 
                     business days.
@@ -112,12 +112,12 @@ const Shipping = () => {
               </div>
 
               {/* Tracking Card */}
-              <div className="bg-card rounded-xl border border-border overflow-hidden">
-                <div className="h-40 bg-accent/30 flex items-center justify-center">
-                  <Search className="h-16 w-16 text-primary/60" />
+              <div className="group bg-card rounded-xl border border-border overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
+                <div className="h-40 bg-accent/30 flex items-center justify-center overflow-hidden">
+                  <Search className="h-16 w-16 text-primary/60 transition-all duration-500 group-hover:scale-125 group-hover:text-primary" />
                 </div>
                 <div className="p-6">
-                  <h3 className="font-bold text-foreground mb-2">Order Tracking</h3>
+                  <h3 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">Order Tracking</h3>
                   <p className="text-sm text-muted-foreground">
                     Receive a <strong>tracking number via email</strong> once your order ships. 
                     Track your package through the carrier's website.
