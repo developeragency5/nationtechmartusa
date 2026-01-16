@@ -10,7 +10,6 @@ import {
   Clock, 
   MessageSquare, 
   CheckCircle, 
-  XCircle,
   HelpCircle,
   Package,
   Truck,
@@ -56,21 +55,22 @@ const Contact = () => {
     { icon: HelpCircle, text: "General inquiries about NationTechMart and our policies" },
   ];
 
-  const doNotProvide = [
-    "Technical troubleshooting or setup assistance",
-    "Repair or diagnostic evaluations",
-    "Manufacturer warranty claims or replacements",
-    "OEM-authorized technical assistance",
-  ];
-
   const faqs = [
     {
-      question: "Does NationTechMart provide technical assistance?",
-      answer: "No. Technical assistance, troubleshooting, and setup guidance are provided by the product manufacturer. Please refer to your product documentation or the manufacturer's official website."
+      question: "Does NationTechMart provide technical troubleshooting or setup assistance?",
+      answer: "No. Technical troubleshooting and setup assistance are provided by the product manufacturer. Please refer to your product documentation or the manufacturer's official website for technical guidance."
     },
     {
-      question: "Can NationTechMart help with warranty claims?",
-      answer: "No. All warranty coverage and claims are handled directly by the manufacturer. NationTechMart is an independent retailer and does not process manufacturer warranty requests."
+      question: "Can NationTechMart help with repair or diagnostic evaluations?",
+      answer: "No. Repair and diagnostic evaluations are handled directly by the manufacturer or authorized repair centers. NationTechMart is an independent retailer and does not provide repair or diagnostic assistance."
+    },
+    {
+      question: "Does NationTechMart handle manufacturer warranty claims or replacements?",
+      answer: "No. All warranty coverage, claims, and replacements are handled directly by the manufacturer. Please contact the manufacturer using the information provided in your product documentation."
+    },
+    {
+      question: "Can I get OEM-authorized technical assistance from NationTechMart?",
+      answer: "No. OEM-authorized technical assistance is provided exclusively by the product manufacturer. NationTechMart is not affiliated with or authorized by any manufacturer to provide technical assistance."
     },
     {
       question: "What kind of questions can I contact NationTechMart about?",
@@ -143,62 +143,31 @@ const Contact = () => {
       {/* What You Can Contact Us About */}
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-              {/* Can Contact About */}
-              <div className="bg-card rounded-xl p-8 border border-border">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
-                    <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-500" />
-                  </div>
-                  <h2 className="text-xl font-bold text-foreground">
-                    What You Can Contact Us About
-                  </h2>
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-card rounded-xl p-8 border border-border">
+              <div className="flex items-center gap-3 mb-6">
+                <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+                  <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-500" />
                 </div>
-                <p className="text-muted-foreground mb-6">
-                  Customers may contact NationTechMart regarding:
-                </p>
-                <ul className="space-y-2">
-                  {canContactAbout.map((item, index) => (
-                    <li key={index} className="group flex items-start gap-3 p-3 -ml-3 rounded-lg transition-all duration-300 hover:bg-primary/5 cursor-default">
-                      <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
-                        <item.icon className="h-4 w-4 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
-                      </div>
-                      <span className="text-muted-foreground transition-colors duration-300 group-hover:text-foreground text-sm pt-1">
-                        {item.text}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                <h2 className="text-xl font-bold text-foreground">
+                  What You Can Contact Us About
+                </h2>
               </div>
-
-              {/* Do Not Provide */}
-              <div className="bg-card rounded-xl p-8 border border-border">
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="w-12 h-12 rounded-full bg-red-100 dark:bg-red-900/30 flex items-center justify-center">
-                    <XCircle className="h-6 w-6 text-red-600 dark:text-red-500" />
-                  </div>
-                  <h2 className="text-xl font-bold text-foreground">
-                    What We Do Not Provide
-                  </h2>
-                </div>
-                <p className="text-muted-foreground mb-6">
-                  To maintain transparency, please note that NationTechMart does not provide:
-                </p>
-                <ul className="space-y-3">
-                  {doNotProvide.map((item, index) => (
-                    <li key={index} className="flex items-start gap-3 p-3 -ml-3 rounded-lg bg-red-50 dark:bg-red-950/20">
-                      <XCircle className="h-5 w-5 text-red-500 shrink-0 mt-0.5" />
-                      <span className="text-foreground text-sm">{item}</span>
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-6 p-4 bg-muted/50 rounded-lg">
-                  <p className="text-sm text-muted-foreground">
-                    All technical assistance and warranty inquiries are handled directly by the product manufacturer.
-                  </p>
-                </div>
-              </div>
+              <p className="text-muted-foreground mb-6">
+                Customers may contact NationTechMart regarding:
+              </p>
+              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                {canContactAbout.map((item, index) => (
+                  <li key={index} className="group flex items-start gap-3 p-3 -ml-3 rounded-lg transition-all duration-300 hover:bg-primary/5 cursor-default">
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                      <item.icon className="h-4 w-4 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
+                    </div>
+                    <span className="text-muted-foreground transition-colors duration-300 group-hover:text-foreground text-sm pt-1">
+                      {item.text}
+                    </span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
