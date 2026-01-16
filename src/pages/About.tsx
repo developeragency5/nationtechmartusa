@@ -36,12 +36,12 @@ const About = () => {
         canonicalUrl="/about"
       />
 
-      {/* Hero Banner with Image - responsive, no cropping */}
-      <section className="relative w-full bg-muted max-h-[400px] md:max-h-[500px] overflow-hidden">
+      {/* Hero Banner with Image - responsive, full image visible */}
+      <section className="relative w-full bg-muted">
         <img
           src="/assets/images/about-banner.jpg"
           alt="Happy diverse executive business people working together in meeting"
-          className="w-full h-full object-contain"
+          className="w-full h-auto"
           loading="eager"
         />
         <div className="absolute inset-0 flex items-center">
