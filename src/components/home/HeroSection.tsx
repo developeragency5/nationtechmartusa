@@ -9,9 +9,8 @@ const HeroSection = () => {
       <div className="relative w-full bg-muted max-h-[500px] md:max-h-[600px] overflow-hidden">
         <img
           src="/assets/images/hero-banner.jpg"
-          alt="Young woman making a copy of a document in modern office"
+          alt="Woman using office printer copier in modern workplace"
           className="w-full h-auto object-cover"
-          style={{ objectPosition: 'center 3%' }}
           loading="eager"
         />
         <div className="absolute inset-0 flex items-center">
