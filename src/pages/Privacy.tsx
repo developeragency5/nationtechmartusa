@@ -135,7 +135,7 @@ const Privacy = () => {
                   <section id="who-we-are">
                     <h2 className="text-xl font-bold text-foreground mb-4">1. Who We Are</h2>
                     <p className="text-muted-foreground leading-relaxed">
-                      NationTechMart is an independent online retailer based in San Francisco, California. This privacy policy explains how we handle personal information when you visit our website or make a purchase. For privacy questions, contact us at <a href="mailto:privacy@nationtechmart.com" className="text-primary hover:underline">privacy@nationtechmart.com</a>.
+                      NationTechMart is an independent online retailer serving customers across the United States. This privacy policy explains how we handle personal information when you visit our website or make a purchase. For privacy questions, contact us at <a href="mailto:privacy@nationtechmart.com" className="text-primary hover:underline">privacy@nationtechmart.com</a>.
                     </p>
                   </section>
 
