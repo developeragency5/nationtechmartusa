@@ -40,8 +40,8 @@ const About = () => {
       <section className="relative">
         <div className="relative h-80 md:h-[28rem]">
           <img
-            src="/assets/images/about.jpg"
-            alt="About NationTechMart - Professional team collaboration"
+            src="/assets/images/about-banner.jpg"
+            alt="Happy diverse executive business people working together in meeting"
             className="w-full h-full object-cover"
             loading="eager"
           />
