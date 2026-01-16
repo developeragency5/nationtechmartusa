@@ -21,8 +21,8 @@ const values = [
   {
     title: "Honest Business",
     description: "Transparency in pricing, policies, and communication. No hidden fees, no misleading claims—just straightforward business.",
-    image: "/assets/images/values-integrity.jpg",
-    alt: "Transparency and honesty concept with open book",
+    image: "/assets/images/about-team.jpg",
+    alt: "Business professionals in boardroom meeting",
   },
 ];
 
