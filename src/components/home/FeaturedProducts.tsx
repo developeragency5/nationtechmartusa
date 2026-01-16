@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import featuredProduct1 from "@/assets/products/hp-deskjet-2827e.png";
+import featuredProduct2 from "@/assets/products/hp-officejet-8135e.png";
 
 interface FeaturedProduct {
   name: string;
@@ -18,6 +19,13 @@ const featuredProducts: FeaturedProduct[] = [
     image: featuredProduct1,
     url: "/shop#!/HP-DeskJet-2827e-Wireless-All-in-One-Color-Inkjet-Printer-with-Print-Scan-&-Copy-for-Everyday-Home-Printing/p/806466784",
     category: "Home Printers",
+  },
+  {
+    name: "HP OfficeJet 8135e Wireless All-in-One Color Inkjet Printer with 3 Months of Ink Trial for Office Use",
+    shortName: "HP OfficeJet 8135e All-in-One Printer",
+    image: featuredProduct2,
+    url: "/shop#!/HP-OfficeJet-8135e-Wireless-All-in-One-Color-Inkjet-Printer-with-3-Months-of-Ink-Trial-for-Office-Use/p/806466580",
+    category: "Office Printers",
   },
 ];
 
