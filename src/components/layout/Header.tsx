@@ -24,11 +24,23 @@ const Header = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/shop", label: "All Products" },
+    { href: "/shop#!/c/193853315", label: "Home Printers" },
+    { href: "/shop#!/c/193855066", label: "Office Printers" },
+    { href: "/shop#!/c/193859557", label: "Inkjet Printers" },
+    { href: "/shop#!/c/193855067", label: "Laser Printers" },
+    { href: "/shop#!/c/193855068", label: "Scanners" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => {
+    if (path.includes('#')) {
+      return window.location.href.includes(path);
+    }
+    return location.pathname === path;
+  };
+
+  const isHashLink = (href: string) => href.includes('#');
 
   useEffect(() => {
     const existingScript = document.querySelector('script[src*="app.ecwid.com/script.js"]');
@@ -124,30 +136,24 @@ const Header = () => {
       <div className="border-b border-border bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center justify-center gap-2 py-2">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                to={link.href}
-                className={`px-5 py-2 text-sm font-medium rounded-md transition-colors ${
-                  isActive(link.href) 
-                    ? "bg-primary text-primary-foreground" 
-                    : "text-muted-foreground hover:text-foreground hover:bg-muted"
-                }`}
-              >
-                {link.label}
-              </Link>
-            ))}
-          </nav>
-
-          {/* Mobile Navigation */}
-          {isMenuOpen && (
-            <nav className="md:hidden py-3 flex flex-col gap-1">
-              {navLinks.map((link) => (
+          <nav className="hidden md:flex items-center justify-center gap-1 py-2">
+            {navLinks.map((link) => 
+              isHashLink(link.href) ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                    isActive(link.href) 
+                      ? "bg-primary text-primary-foreground" 
+                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  }`}
+                >
+                  {link.label}
+                </a>
+              ) : (
                 <Link
                   key={link.href}
                   to={link.href}
-                  onClick={() => setIsMenuOpen(false)}
                   className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                     isActive(link.href) 
                       ? "bg-primary text-primary-foreground" 
@@ -156,7 +162,42 @@ const Header = () => {
                 >
                   {link.label}
                 </Link>
-              ))}
+              )
+            )}
+          </nav>
+
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+            <nav className="md:hidden py-3 flex flex-col gap-1">
+              {navLinks.map((link) => 
+                isHashLink(link.href) ? (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                      isActive(link.href) 
+                        ? "bg-primary text-primary-foreground" 
+                        : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                    }`}
+                  >
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.href}
+                    to={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
+                      isActive(link.href) 
+                        ? "bg-primary text-primary-foreground" 
+                        : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                    }`}
+                  >
+                    {link.label}
+                  </Link>
+                )
+              )}
             </nav>
           )}
         </div>
