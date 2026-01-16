@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
           {/* Company Info */}
           <div className="space-y-5">
-            <Link to="/" className="inline-block">
+            <Link to="/" className="inline-block transition-transform duration-300 hover:scale-105">
               <img src={logoImage} alt="NationTechMart" className="h-10 w-auto" />
             </Link>
             <p className="text-muted-foreground leading-relaxed">
@@ -22,17 +22,21 @@ const Footer = () => {
           <div className="space-y-5">
             <h4 className="font-semibold text-foreground text-lg">Quick Links</h4>
             <nav className="flex flex-col space-y-3">
-              <Link to="/" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/" className="group relative text-muted-foreground hover:text-primary transition-colors w-fit">
                 Home
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
-              <Link to="/shop" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/shop" className="group relative text-muted-foreground hover:text-primary transition-colors w-fit">
                 Shop
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
-              <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/about" className="group relative text-muted-foreground hover:text-primary transition-colors w-fit">
                 About Us
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
-              <Link to="/contact" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/contact" className="group relative text-muted-foreground hover:text-primary transition-colors w-fit">
                 Contact
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
             </nav>
           </div>
@@ -41,20 +45,25 @@ const Footer = () => {
           <div className="space-y-5">
             <h4 className="font-semibold text-foreground text-lg">Policies</h4>
             <nav className="flex flex-col space-y-3">
-              <Link to="/shipping" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/shipping" className="group relative text-muted-foreground hover:text-primary transition-colors w-fit">
                 Shipping & Returns
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
-              <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/terms" className="group relative text-muted-foreground hover:text-primary transition-colors w-fit">
                 Terms & Conditions
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
-              <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/privacy" className="group relative text-muted-foreground hover:text-primary transition-colors w-fit">
                 Privacy Policy
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
-              <Link to="/trust-center" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/trust-center" className="group relative text-muted-foreground hover:text-primary transition-colors w-fit">
                 Trust Center
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
-              <Link to="/faq" className="text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/faq" className="group relative text-muted-foreground hover:text-primary transition-colors w-fit">
                 FAQ
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
             </nav>
           </div>
@@ -63,32 +72,32 @@ const Footer = () => {
           <div className="space-y-5">
             <h4 className="font-semibold text-foreground text-lg">Contact Us</h4>
             <div className="space-y-4">
-              <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                  <MapPin className="h-5 w-5 text-primary" />
+              <div className="group flex items-start space-x-4 p-2 -ml-2 rounded-lg transition-all duration-300 hover:bg-primary/5 cursor-default">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                  <MapPin className="h-5 w-5 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
                 </div>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed transition-colors duration-300 group-hover:text-foreground">
                   123 Technology Drive<br />
                   Suite 100<br />
                   San Francisco, CA 94105
                 </p>
               </div>
-              <div className="flex items-center space-x-4">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                  <Mail className="h-5 w-5 text-primary" />
+              <a href="mailto:contact@nationtechmart.com" className="group flex items-center space-x-4 p-2 -ml-2 rounded-lg transition-all duration-300 hover:bg-primary/5">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                  <Mail className="h-5 w-5 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
                 </div>
-                <a href="mailto:contact@nationtechmart.com" className="text-muted-foreground hover:text-primary transition-colors">
+                <span className="text-muted-foreground transition-colors duration-300 group-hover:text-primary">
                   contact@nationtechmart.com
-                </a>
-              </div>
-              <div className="flex items-center space-x-4">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                  <Phone className="h-5 w-5 text-primary" />
+                </span>
+              </a>
+              <a href="tel:+18005551234" className="group flex items-center space-x-4 p-2 -ml-2 rounded-lg transition-all duration-300 hover:bg-primary/5">
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                  <Phone className="h-5 w-5 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
                 </div>
-                <a href="tel:+18005551234" className="text-muted-foreground hover:text-primary transition-colors">
+                <span className="text-muted-foreground transition-colors duration-300 group-hover:text-primary">
                   1-800-555-1234
-                </a>
-              </div>
+                </span>
+              </a>
             </div>
           </div>
         </div>
@@ -100,14 +109,17 @@ const Footer = () => {
               © {new Date().getFullYear()} NationTechMart. All rights reserved.
             </p>
             <div className="flex items-center space-x-6">
-              <Link to="/privacy" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/privacy" className="group relative text-sm text-muted-foreground hover:text-primary transition-colors">
                 Privacy
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
-              <Link to="/terms" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/terms" className="group relative text-sm text-muted-foreground hover:text-primary transition-colors">
                 Terms
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
-              <Link to="/shipping" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+              <Link to="/shipping" className="group relative text-sm text-muted-foreground hover:text-primary transition-colors">
                 Shipping
+                <span className="absolute left-0 -bottom-0.5 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
               </Link>
             </div>
           </div>
