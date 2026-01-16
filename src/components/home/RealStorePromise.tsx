@@ -21,7 +21,7 @@ const RealStorePromise = () => {
           <div className="flex flex-wrap items-center justify-center gap-4 text-sm text-muted-foreground">
             <span className="flex items-center gap-1.5">
               <CheckCircle className="h-4 w-4 text-primary" />
-              USA-based business
+              Serving customers in the United States
             </span>
             <span className="flex items-center gap-1.5">
               <CheckCircle className="h-4 w-4 text-primary" />

@@ -115,8 +115,11 @@ const Terms = () => {
                     <p className="text-muted-foreground leading-relaxed mb-3">
                       NationTechMart is an independent online retailer selling technology products, primarily printers and related equipment. We are <strong>not affiliated with, endorsed by, or sponsored by any manufacturer</strong> whose products we sell.
                     </p>
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-muted-foreground leading-relaxed mb-3">
                       When you place an order with us, you're purchasing from NationTechMart, not from the product manufacturer.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed">
+                      Educational guides and informational content provided on the Site are for general informational purposes only and are separate from product sales.
                     </p>
                   </section>
 
