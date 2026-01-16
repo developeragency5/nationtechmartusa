@@ -40,7 +40,7 @@ const HeroSection = () => {
       </div>
 
       {/* Trust bar */}
-      <div className="border-b border-border">
+      <div className="">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="py-4">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
