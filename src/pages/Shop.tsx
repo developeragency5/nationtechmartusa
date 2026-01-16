@@ -4,7 +4,7 @@ import TransparencySection from "@/components/shared/TransparencySection";
 import SiteNotice from "@/components/shared/SiteNotice";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Truck, MessageSquare, ShoppingBag, Loader2, Clock, RotateCcw, Shield, Mail, Home, Building2, Zap, Layers } from "lucide-react";
+import { Truck, MessageSquare, ShoppingBag, Loader2, Home, Building2, Zap, Layers } from "lucide-react";
 
 declare global {
   interface Window {
@@ -146,34 +146,6 @@ const Shop = () => {
             </div>
           </section>
 
-          {/* Before You Buy Box */}
-          <section className="py-6 bg-card border-y border-border/60">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-              <div className="max-w-4xl mx-auto">
-                <div className="bg-card border border-border/60 rounded-xl p-5">
-                  <h3 className="text-sm font-semibold text-foreground mb-3">Before You Buy</h3>
-                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                    <Link to="/shipping" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                      <Clock className="h-4 w-4 shrink-0" />
-                      <span>Free shipping on orders over $100</span>
-                    </Link>
-                    <Link to="/shipping" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                      <RotateCcw className="h-4 w-4 shrink-0" />
-                      <span>30-day return window</span>
-                    </Link>
-                    <Link to="/terms" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                      <Shield className="h-4 w-4 shrink-0" />
-                      <span>Manufacturer warranty</span>
-                    </Link>
-                    <Link to="/contact" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                      <Mail className="h-4 w-4 shrink-0" />
-                      <span>Questions? Contact us</span>
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
         </>
       )}
 
