@@ -17,7 +17,7 @@ const HeroSection = () => {
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-          <div className="py-16 lg:py-24 flex justify-end">
+          <div className="py-24 lg:py-36 flex justify-end">
             <div className="max-w-xl bg-black/40 backdrop-blur-sm p-6 rounded-lg text-right">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
                 Quality Technology Products For Your Business
