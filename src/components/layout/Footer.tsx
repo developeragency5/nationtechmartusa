@@ -28,9 +28,6 @@ const Footer = () => {
               <Link to="/shop" className="text-muted-foreground hover:text-primary transition-colors">
                 Shop
               </Link>
-              <Link to="/order-support" className="text-muted-foreground hover:text-primary transition-colors font-medium text-primary">
-                Order Support
-              </Link>
               <Link to="/about" className="text-muted-foreground hover:text-primary transition-colors">
                 About Us
               </Link>
@@ -80,8 +77,8 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
                   <Mail className="h-5 w-5 text-primary" />
                 </div>
-                <a href="mailto:support@nationtechmart.com" className="text-muted-foreground hover:text-primary transition-colors">
-                  support@nationtechmart.com
+                <a href="mailto:contact@nationtechmart.com" className="text-muted-foreground hover:text-primary transition-colors">
+                  contact@nationtechmart.com
                 </a>
               </div>
               <div className="flex items-center space-x-4">

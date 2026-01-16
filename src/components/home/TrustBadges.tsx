@@ -18,7 +18,7 @@ const badges = [
   },
   {
     icon: Headphones,
-    title: "Customer Support",
+    title: "Customer Service",
     description: "Mon-Fri, 9AM-6PM EST",
   },
   {

@@ -11,7 +11,6 @@ import Shipping from "./pages/Shipping";
 import Terms from "./pages/Terms";
 import Privacy from "./pages/Privacy";
 import TrustCenter from "./pages/TrustCenter";
-import OrderSupport from "./pages/OrderSupport";
 import FAQ from "./pages/FAQ";
 import NotFound from "./pages/NotFound";
 
@@ -32,7 +31,6 @@ const App = () => (
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/trust-center" element={<TrustCenter />} />
-          <Route path="/order-support" element={<OrderSupport />} />
           <Route path="/faq" element={<FAQ />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -12,7 +12,7 @@ const OurApproach = () => {
             </div>
             <div>
               <p className="font-semibold text-foreground">Our Approach</p>
-              <p className="text-sm text-muted-foreground">We operate as an independent online retailer focused on transparent pricing, clear policies, and reliable customer support.</p>
+              <p className="text-sm text-muted-foreground">We operate as an independent online retailer focused on transparent pricing, clear policies, and reliable customer service.</p>
             </div>
           </div>
           

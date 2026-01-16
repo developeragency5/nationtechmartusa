@@ -65,8 +65,8 @@ const Terms = () => {
               </div>
               <div className="flex items-center justify-center md:justify-start space-x-3">
                 <Mail className="h-4 w-4 text-primary shrink-0" />
-                <a href="mailto:support@nationtechmart.com" className="text-sm text-primary hover:underline">
-                  support@nationtechmart.com
+                <a href="mailto:contact@nationtechmart.com" className="text-sm text-primary hover:underline">
+                  contact@nationtechmart.com
                 </a>
               </div>
               <div className="flex items-center justify-center md:justify-start space-x-3">
@@ -251,7 +251,7 @@ const Terms = () => {
                       <p className="text-sm text-muted-foreground">123 Technology Drive, Suite 100</p>
                       <p className="text-sm text-muted-foreground">San Francisco, CA 94105</p>
                       <p className="text-sm text-muted-foreground mt-2">
-                        Email: <a href="mailto:support@nationtechmart.com" className="text-primary hover:underline">support@nationtechmart.com</a>
+                        Email: <a href="mailto:contact@nationtechmart.com" className="text-primary hover:underline">contact@nationtechmart.com</a>
                       </p>
                       <p className="text-sm text-muted-foreground">
                         Phone: <a href="tel:+18005551234" className="text-primary hover:underline">1-800-555-1234</a>

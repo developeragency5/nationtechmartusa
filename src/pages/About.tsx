@@ -54,7 +54,7 @@ const About = () => {
                 <p className="mt-4 text-base md:text-lg text-white/90 leading-relaxed">
                   We're an independent retailer dedicated to providing quality technology 
                   products with exceptional customer service. No manufacturer affiliations—just 
-                  honest business and dedicated support.
+                  honest business and exceptional service.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3 justify-start">
                   <Button asChild size="lg">
@@ -117,7 +117,7 @@ const About = () => {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-primary shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium text-foreground">Dedicated Support</p>
+                    <p className="font-medium text-foreground">Customer Service</p>
                     <p className="text-sm text-muted-foreground">Actual humans ready to help with questions before and after purchase.</p>
                   </div>
                 </li>
@@ -197,7 +197,7 @@ const About = () => {
               <p>
                 We understand that purchasing technology can be overwhelming. That's why 
                 we've built our business around transparency, clear communication, and 
-                genuine customer support. When you shop with us, you're not just a 
+                genuine customer service. When you shop with us, you're not just a 
                 transaction—you're part of our community.
               </p>
             </div>

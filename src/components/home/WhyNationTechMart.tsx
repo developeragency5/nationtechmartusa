@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import ImageCard from "@/components/shared/ImageCard";
-import { Truck, RotateCcw, Headphones } from "lucide-react";
+import { Truck, RotateCcw } from "lucide-react";
 
 const benefits = [
   {
@@ -13,19 +13,11 @@ const benefits = [
   },
   {
     title: "Easy Returns",
-    description: "30-day return window on eligible items. Hassle-free process with clear instructions and support.",
+    description: "30-day return window on eligible items. Hassle-free process with clear instructions.",
     image: "/assets/images/returns.jpg",
     alt: "Returns process illustration with circular arrows",
     icon: RotateCcw,
     link: "/shipping",
-  },
-  {
-    title: "Dedicated Support",
-    description: "Questions before or after your purchase? Our team is here to help via email and our support center.",
-    image: "/assets/images/support.jpg",
-    alt: "Customer support illustration with headset and chat bubbles",
-    icon: Headphones,
-    link: "/contact",
   },
 ];
 
@@ -42,7 +34,7 @@ const WhyNationTechMart = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {benefits.map((benefit, index) => (
             <Link
               key={index}

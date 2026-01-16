@@ -272,8 +272,8 @@ const TrustCenter = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                       <div>
                         <h3 className="font-semibold text-foreground mb-2">Email</h3>
-                        <a href="mailto:support@nationtechmart.com" className="text-primary hover:underline">
-                          support@nationtechmart.com
+                        <a href="mailto:contact@nationtechmart.com" className="text-primary hover:underline">
+                          contact@nationtechmart.com
                         </a>
                       </div>
                       <div>

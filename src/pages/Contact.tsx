@@ -28,9 +28,9 @@ const Contact = () => {
   return (
     <Layout>
       <SEO
-        title="Contact Us - Customer Support"
-        description="Contact NationTechMart customer support. Get help with orders, shipping, returns, or product questions. Email, phone, or send us a message online."
-        keywords="contact NationTechMart, customer support, printer help, order support"
+        title="Contact Us - Customer Service"
+        description="Contact NationTechMart customer service. Get help with orders, shipping, returns, or product questions. Email, phone, or send us a message online."
+        keywords="contact NationTechMart, customer service, printer help, order help"
         canonicalUrl="/contact"
       />
 
@@ -38,7 +38,7 @@ const Contact = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <img
           src="/assets/images/support.jpg"
-          alt="Customer support team ready to help"
+          alt="Customer service team ready to help"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-transparent flex items-center">
@@ -48,7 +48,7 @@ const Contact = () => {
                 Contact Us
               </h1>
               <p className="text-lg text-muted-foreground">
-                Have a question or need assistance? Our friendly support team is here to help 
+                Have a question or need assistance? Our friendly team is here to help 
                 you with orders, products, and more.
               </p>
             </div>
@@ -117,22 +117,22 @@ const Contact = () => {
               </form>
             </div>
 
-            {/* Support Info Card */}
+            {/* Contact Info Card */}
             <div className="space-y-6">
               <div className="bg-card rounded-xl border border-border overflow-hidden">
                 <div className="h-48 overflow-hidden">
                   <img
                     src="/assets/images/trust.jpg"
-                    alt="Trusted customer support"
+                    alt="Trusted customer service"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-foreground mb-4">
-                    Support Information
+                    Contact Information
                   </h3>
                   <p className="text-muted-foreground mb-6">
-                    We're committed to providing helpful, honest support for all your 
+                    We're committed to providing helpful, honest service for all your 
                     printer and technology needs. Reach out through any of these channels.
                   </p>
                   
@@ -143,8 +143,8 @@ const Contact = () => {
                       </div>
                       <div>
                         <h4 className="font-semibold text-foreground text-sm">Email</h4>
-                        <a href="mailto:support@nationtechmart.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
-                          support@nationtechmart.com
+                        <a href="mailto:contact@nationtechmart.com" className="text-muted-foreground text-sm hover:text-primary transition-colors">
+                          contact@nationtechmart.com
                         </a>
                       </div>
                     </div>
@@ -223,7 +223,7 @@ const Contact = () => {
                 <li className="flex items-start gap-3">
                   <div className="w-2 h-2 rounded-full bg-primary mt-2 shrink-0" />
                   <span className="text-muted-foreground">
-                    <strong className="text-foreground">Phone support:</strong> Available during business hours (Mon-Fri, 9 AM - 6 PM EST)
+                    <strong className="text-foreground">Phone:</strong> Available during business hours (Mon-Fri, 9 AM - 6 PM EST)
                   </span>
                 </li>
                 <li className="flex items-start gap-3">

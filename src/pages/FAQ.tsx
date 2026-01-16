@@ -49,12 +49,12 @@ const faqs: FAQ[] = [
   {
     category: "shipping",
     question: "Can I change my shipping address after placing an order?",
-    answer: "If your order hasn't shipped yet, we may be able to update the address. Please contact us immediately at support@nationtechmart.com with your order number and the new address. Once an order has shipped, we cannot change the destination address."
+    answer: "If your order hasn't shipped yet, we may be able to update the address. Please contact us immediately at contact@nationtechmart.com with your order number and the new address. Once an order has shipped, we cannot change the destination address."
   },
   {
     category: "shipping",
     question: "How do I track my order?",
-    answer: "Once your order ships, you'll receive a confirmation email with tracking information. Click the tracking link in the email or copy the tracking number to the carrier's website. If you haven't received a shipping confirmation within 3 business days, please contact our support team."
+    answer: "Once your order ships, you'll receive a confirmation email with tracking information. Click the tracking link in the email or copy the tracking number to the carrier's website. If you haven't received a shipping confirmation within 3 business days, please contact our customer service team."
   },
 
   // Returns (5)
@@ -66,7 +66,7 @@ const faqs: FAQ[] = [
   {
     category: "returns",
     question: "How do I start a return?",
-    answer: "To initiate a return, contact us at support@nationtechmart.com or call 1-800-555-1234 with your order number and reason for return. We'll review your request and provide a Return Merchandise Authorization (RMA) number along with shipping instructions. Do not ship items back without an RMA number."
+    answer: "To initiate a return, contact us at contact@nationtechmart.com or call 1-800-555-1234 with your order number and reason for return. We'll review your request and provide a Return Merchandise Authorization (RMA) number along with shipping instructions. Do not ship items back without an RMA number."
   },
   {
     category: "returns",
@@ -142,7 +142,7 @@ const faqs: FAQ[] = [
   {
     category: "product",
     question: "Can I get product recommendations?",
-    answer: "While we're not able to provide personalized technical consultations, our product descriptions include specifications and use cases to help you make informed decisions. For specific technical questions, we recommend consulting the manufacturer's website or contacting their support team."
+    answer: "While we're not able to provide personalized technical consultations, our product descriptions include specifications and use cases to help you make informed decisions. For specific technical questions, we recommend consulting the manufacturer's website or contacting their customer service team."
   },
   {
     category: "product",
@@ -159,12 +159,12 @@ const faqs: FAQ[] = [
   {
     category: "account",
     question: "How do I update my account information?",
-    answer: "If you have an account, you can update your information by logging in and accessing your account settings. To update information on a pending order, please contact our support team directly. For privacy-related requests, email us at support@nationtechmart.com."
+    answer: "If you have an account, you can update your information by logging in and accessing your account settings. To update information on a pending order, please contact our customer service team directly. For privacy-related requests, email us at contact@nationtechmart.com."
   },
   {
     category: "account",
     question: "How can I delete my account?",
-    answer: "To request account deletion, please email support@nationtechmart.com with the subject line 'Account Deletion Request' from the email address associated with your account. We'll process your request and confirm deletion within 5-7 business days."
+    answer: "To request account deletion, please email contact@nationtechmart.com with the subject line 'Account Deletion Request' from the email address associated with your account. We'll process your request and confirm deletion within 5-7 business days."
   },
 ];
 
@@ -338,14 +338,14 @@ const FAQ = () => {
               Still Have Questions?
             </h2>
             <p className="text-muted-foreground mb-8">
-              Can't find what you're looking for? Our support team is here to help.
+              Can't find what you're looking for? Our customer service team is here to help.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild size="lg">
-                <Link to="/order-support">Order Support</Link>
+                <Link to="/contact">Contact Us</Link>
               </Button>
               <Button asChild variant="outline" size="lg">
-                <Link to="/contact">Contact Us</Link>
+                <Link to="/shipping">Shipping Info</Link>
               </Button>
             </div>
           </div>

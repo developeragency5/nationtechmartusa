@@ -52,8 +52,8 @@ const Shipping = () => {
               <div className="flex items-center justify-center md:justify-start space-x-3">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
                 <div className="text-sm">
-                  <a href="mailto:support@nationtechmart.com" className="text-primary hover:underline">
-                    support@nationtechmart.com
+                  <a href="mailto:contact@nationtechmart.com" className="text-primary hover:underline">
+                    contact@nationtechmart.com
                   </a>
                 </div>
               </div>
@@ -211,7 +211,7 @@ const Shipping = () => {
                     <div>
                       <h4 className="font-bold text-foreground mb-1">Contact Us</h4>
                       <p className="text-sm text-muted-foreground">
-                        Email <a href="mailto:support@nationtechmart.com" className="text-primary hover:underline">support@nationtechmart.com</a> with 
+                        Email <a href="mailto:contact@nationtechmart.com" className="text-primary hover:underline">contact@nationtechmart.com</a> with 
                         your order number and reason for return. We'll respond within 1-2 business days.
                       </p>
                     </div>
@@ -294,11 +294,11 @@ const Shipping = () => {
           <div className="max-w-3xl mx-auto bg-muted/30 rounded-xl p-6 md:p-8 text-center">
             <h3 className="text-xl font-bold text-foreground mb-2">Questions?</h3>
             <p className="text-muted-foreground mb-4">
-              Our customer support team is available Monday through Friday, 9 AM - 6 PM EST.
+              Our customer customer service team is available Monday through Friday, 9 AM - 6 PM EST.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <a href="mailto:support@nationtechmart.com" className="text-primary hover:underline font-medium">
-                support@nationtechmart.com
+              <a href="mailto:contact@nationtechmart.com" className="text-primary hover:underline font-medium">
+                contact@nationtechmart.com
               </a>
               <span className="hidden sm:inline text-muted-foreground">|</span>
               <a href="tel:+18005551234" className="text-primary hover:underline font-medium">

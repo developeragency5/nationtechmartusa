@@ -35,7 +35,7 @@ const organizationSchema = {
     "@type": "ContactPoint",
     "telephone": "+1-800-555-1234",
     "contactType": "customer service",
-    "email": "support@nationtechmart.com",
+    "email": "contact@nationtechmart.com",
     "availableLanguage": "English",
     "hoursAvailable": {
       "@type": "OpeningHoursSpecification",

@@ -24,7 +24,7 @@ const faqs = [
   {
     question: "How can I track my order?",
     answer:
-      "Once your order ships, you'll receive a confirmation email with tracking information. You can use this tracking number on the carrier's website to monitor your package's progress. If you have any issues tracking your order, our customer support team is here to help.",
+      "Once your order ships, you'll receive a confirmation email with tracking information. You can use this tracking number on the carrier's website to monitor your package's progress. If you have any issues tracking your order, our team is here to help.",
   },
   {
     question: "Is my payment information secure?",
