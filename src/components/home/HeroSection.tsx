@@ -6,7 +6,7 @@ const HeroSection = () => {
   return (
     <section className="bg-background">
       {/* Hero with background image - responsive, reduced height */}
-      <div className="relative w-full bg-muted max-h-[400px] md:max-h-[500px] overflow-hidden">
+      <div className="relative w-full bg-muted max-h-[420px] md:max-h-[525px] overflow-hidden">
         <img
           src="/assets/images/hero-banner.jpg"
           alt="Young woman making a copy of a document in modern office"
