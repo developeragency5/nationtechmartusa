@@ -1,0 +1,85 @@
+Clarify informational guides vs sales
+────────────────────────
+
+ISSUE:
+Clarifying that buying guides are informational (not sales claims) strengthens your non-affiliate, educational positioning.
+
+ADD THIS SINGLE SENTENCE
+(MUST MATCH EXACTLY):
+
+“Educational guides and informational content provided on the Site are for general informational purposes only and are separate from product sales.”
+
+PLACEMENT:
+- Add as a standalone sentence in:
+  - Section 1 (Introduction), OR
+  - Section 4 (Use of the Site / Content), whichever fits best
+- Do NOT repeat the sentence in multiple sections.
+
+RULES:
+- Use plain body text.
+- Do NOT bold or highlight.
+- Do NOT reference affiliates, commissions, or endorsements.
+
+────────────────────────
+ACCEPTANCE CHECK:
+- Eligibility section now uses age + capacity wording only.
+- Informational-content sentence appears once.
+- No other Terms content is modified.
+
+GOAL:
+- Cleaner legal eligibility standard
+- Stronger separation between education and commerce
+- Reduced misinterpretation risk
+TASK: Remove all “USA-based” / physical-presence wording and replace with safe service-based language.
+
+CRITICAL ISSUE:
+Phrases like “USA-based business” imply headquarters, physical operations, or manufacturer presence. This creates misrepresentation risk and can trigger Google Ads or manual reviews.
+
+TEXT TO REMOVE COMPLETELY (EVERYWHERE):
+- “USA-based”
+- “U.S.-based”
+- “U.S. company”
+- “American business”
+- “Headquartered in the USA”
+- Any wording implying physical headquarters or domestic operations
+
+APPROVED SAFE REPLACEMENT
+(USE ONE OF THE FOLLOWING EXACTLY, DEPENDING ON CONTEXT):
+
+Option A (short, neutral):
+“Serving customers in the United States.”
+
+Option B (identity / about / footer use):
+“An independent online retailer serving customers across the United States.”
+
+SCOPE (GLOBAL):
+- Homepage
+- About page
+- Footer
+- Policies (Privacy, Terms, Returns, Shipping)
+- FAQs
+- Marketing copy or trust badges
+- Metadata or page descriptions (if visible)
+
+REPLACEMENT RULES:
+- Replace wording, NOT layout.
+- Do NOT add new sentences or qualifiers.
+- Choose ONE approved option per section and keep it consistent within that section.
+
+STRICTLY DO NOT USE:
+- USA-based
+- U.S.-based
+- American-owned
+- Headquartered
+- Offices / warehouses / locations
+- Any language implying domestic manufacturing or operations
+
+ACCEPTANCE CHECK:
+- No “USA-based” or similar phrasing exists anywhere on the site.
+- Approved replacement language appears cleanly where needed.
+- No physical presence or origin claims remain.
+
+GOAL:
+- Eliminate location-based misrepresentation risk
+- Align with Google Ads & payment processor expectations
+- Maintain consistent, defensible identity language

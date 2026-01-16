@@ -5,6 +5,7 @@ import { MapPin, Mail, Phone } from "lucide-react";
 const Terms = () => {
   const sections = [
     { id: "who-we-are", title: "Who We Are" },
+    { id: "eligibility", title: "Eligibility" },
     { id: "using-website", title: "Using Our Website" },
     { id: "orders-pricing", title: "Orders & Pricing" },
     { id: "payment", title: "Payment" },
@@ -119,10 +120,17 @@ const Terms = () => {
                     </p>
                   </section>
 
+                  <section id="eligibility">
+                    <h2 className="text-xl font-bold text-foreground mb-4">2. Eligibility</h2>
+                    <p className="text-muted-foreground leading-relaxed">
+                      To use this website and make purchases, you must be at least eighteen (18) years of age and capable of entering into a binding contract.
+                    </p>
+                  </section>
+
                   <section id="using-website">
-                    <h2 className="text-xl font-bold text-foreground mb-4">2. Using Our Website</h2>
+                    <h2 className="text-xl font-bold text-foreground mb-4">3. Using Our Website</h2>
                     <p className="text-muted-foreground leading-relaxed mb-3">
-                      By using this website, you agree to follow these terms. If you don't agree, please don't use our site or place orders.
+                      By using this website, you agree to follow these terms. You must be at least eighteen (18) years of age and capable of entering into a binding contract. If you don't agree, please don't use our site or place orders.
                     </p>
                     <p className="text-muted-foreground leading-relaxed mb-3">
                       You agree to:
@@ -136,7 +144,7 @@ const Terms = () => {
                   </section>
 
                   <section id="orders-pricing">
-                    <h2 className="text-xl font-bold text-foreground mb-4">3. Orders & Pricing</h2>
+                    <h2 className="text-xl font-bold text-foreground mb-4">4. Orders & Pricing</h2>
                     <p className="text-muted-foreground leading-relaxed mb-3">
                       <strong>Prices:</strong> All prices are in U.S. dollars. Prices may change without notice. The price at the time you place your order is the price you pay.
                     </p>
@@ -152,7 +160,7 @@ const Terms = () => {
                   </section>
 
                   <section id="payment">
-                    <h2 className="text-xl font-bold text-foreground mb-4">4. Payment</h2>
+                    <h2 className="text-xl font-bold text-foreground mb-4">5. Payment</h2>
                     <p className="text-muted-foreground leading-relaxed mb-3">
                       Payment is required at the time of purchase. We accept major credit cards and other payment methods shown at checkout.
                     </p>
@@ -162,7 +170,7 @@ const Terms = () => {
                   </section>
 
                   <section id="shipping">
-                    <h2 className="text-xl font-bold text-foreground mb-4">5. Shipping</h2>
+                    <h2 className="text-xl font-bold text-foreground mb-4">6. Shipping</h2>
                     <p className="text-muted-foreground leading-relaxed mb-3">
                       We ship to U.S. addresses only. Shipping times are estimates, not guarantees. We're not responsible for carrier delays, weather, or other factors outside our control.
                     </p>
@@ -172,7 +180,7 @@ const Terms = () => {
                   </section>
 
                   <section id="returns">
-                    <h2 className="text-xl font-bold text-foreground mb-4">6. Returns & Refunds</h2>
+                    <h2 className="text-xl font-bold text-foreground mb-4">7. Returns & Refunds</h2>
                     <p className="text-muted-foreground leading-relaxed mb-3">
                       We accept returns within 30 days of delivery for unopened items in original condition. Some restrictions apply.
                     </p>
@@ -182,7 +190,7 @@ const Terms = () => {
                   </section>
 
                   <section id="warranties">
-                    <h2 className="text-xl font-bold text-foreground mb-4">7. Product Warranties</h2>
+                    <h2 className="text-xl font-bold text-foreground mb-4">8. Product Warranties</h2>
                     <p className="text-muted-foreground leading-relaxed mb-3">
                       <strong>NationTechMart is not the manufacturer.</strong> We do not provide product warranties.
                     </p>
@@ -195,7 +203,7 @@ const Terms = () => {
                   </section>
 
                   <section id="liability">
-                    <h2 className="text-xl font-bold text-foreground mb-4">8. Limitation of Liability</h2>
+                    <h2 className="text-xl font-bold text-foreground mb-4">9. Limitation of Liability</h2>
                     <p className="text-muted-foreground leading-relaxed mb-3">
                       To the extent permitted by law:
                     </p>
@@ -210,28 +218,28 @@ const Terms = () => {
                   </section>
 
                   <section id="ip">
-                    <h2 className="text-xl font-bold text-foreground mb-4">9. Intellectual Property</h2>
+                    <h2 className="text-xl font-bold text-foreground mb-4">10. Intellectual Property</h2>
                     <p className="text-muted-foreground leading-relaxed">
                       Product names, logos, and trademarks belong to their respective owners. NationTechMart content (our website text, design, and original images) is our property. Don't copy or reuse our content without permission.
                     </p>
                   </section>
 
                   <section id="changes">
-                    <h2 className="text-xl font-bold text-foreground mb-4">10. Changes to These Terms</h2>
+                    <h2 className="text-xl font-bold text-foreground mb-4">11. Changes to These Terms</h2>
                     <p className="text-muted-foreground leading-relaxed">
                       We may update these terms from time to time. The version posted on this page is the current version. We'll update the "Last updated" date when changes are made. Continued use of our site after changes means you accept the new terms.
                     </p>
                   </section>
 
                   <section id="governing-law">
-                    <h2 className="text-xl font-bold text-foreground mb-4">11. Governing Law</h2>
+                    <h2 className="text-xl font-bold text-foreground mb-4">12. Governing Law</h2>
                     <p className="text-muted-foreground leading-relaxed">
                       These terms are governed by the laws of the State of California, without regard to conflict of law principles. Any disputes will be resolved in the courts of San Francisco County, California.
                     </p>
                   </section>
 
                   <section id="contact">
-                    <h2 className="text-xl font-bold text-foreground mb-4">12. Contact Us</h2>
+                    <h2 className="text-xl font-bold text-foreground mb-4">13. Contact Us</h2>
                     <p className="text-muted-foreground leading-relaxed mb-4">
                       Questions about these terms? Contact us:
                     </p>
