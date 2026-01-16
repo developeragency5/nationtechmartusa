@@ -1,30 +1,31 @@
 import { Link } from "react-router-dom";
 import ImageCard from "@/components/shared/ImageCard";
 
-const useCases = [
+const categories = [
   {
-    title: "Home Office",
-    description: "Compact printers for personal use",
-    image: "/assets/images/home-office.jpg",
-    alt: "Cozy home office setup with printer on desk",
+    title: "Home Printers",
+    image: "/assets/images/category-home-printers.png",
+    alt: "Compact home printer",
   },
   {
-    title: "Business Office",
-    description: "High-volume solutions for teams",
-    image: "/assets/images/business-office.jpg",
-    alt: "Professional business office workspace",
+    title: "Office Printers",
+    image: "/assets/images/category-office-printers.png",
+    alt: "Professional office printer",
   },
   {
-    title: "Laser Printing",
-    description: "Fast, efficient document output",
-    image: "/assets/images/laser-printing.jpg",
-    alt: "High-speed laser printing concept with motion blur",
+    title: "Inkjet Printers",
+    image: "/assets/images/category-inkjet-printers.png",
+    alt: "Inkjet printer with smartphone",
   },
   {
-    title: "All-in-One",
-    description: "Print, scan, copy in one device",
-    image: "/assets/images/all-in-one.jpg",
-    alt: "Multifunction all-in-one printer device",
+    title: "Laser Printers",
+    image: "/assets/images/category-laser-printers.png",
+    alt: "Laser printer",
+  },
+  {
+    title: "Document Scanners",
+    image: "/assets/images/category-document-scanners.png",
+    alt: "Document scanner",
   },
 ];
 
@@ -34,36 +35,34 @@ const ShopByUseCase = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight">
-            Shop by Use Case
+            Shop by Category
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Find the right solution for your specific needs.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
-          {useCases.map((useCase, index) => (
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
+          {categories.map((category, index) => (
             <Link
               key={index}
               to="/shop"
               className="group block"
+              data-testid={`link-category-${category.title.toLowerCase().replace(/\s+/g, '-')}`}
             >
               <div className="bg-card rounded-2xl border border-border/60 overflow-hidden hover:border-primary/30 hover:shadow-lg transition-all duration-300">
                 <ImageCard
-                  src={useCase.image}
-                  alt={useCase.alt}
+                  src={category.image}
+                  alt={category.alt}
                   size="card"
                   rounded="sm"
                   shadow="none"
                   className="group-hover:scale-105 transition-transform duration-300"
                 />
-                <div className="p-5">
-                  <h3 className="font-bold text-foreground text-lg mb-1 group-hover:text-primary transition-colors">
-                    {useCase.title}
+                <div className="p-4 text-center">
+                  <h3 className="font-bold text-foreground text-sm md:text-base group-hover:text-primary transition-colors">
+                    {category.title}
                   </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {useCase.description}
-                  </p>
                 </div>
               </div>
             </Link>
