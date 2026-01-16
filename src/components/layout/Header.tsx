@@ -1,5 +1,5 @@
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ShoppingCart, User } from "lucide-react";
+import { Menu, X, ShoppingCart, User, Search } from "lucide-react";
 import { useState, useEffect } from "react";
 import logoImage from "@/assets/logo.png";
 
@@ -83,6 +83,10 @@ const Header = () => {
     window.location.href = '/shop#!/~/signin';
   };
 
+  const openSearch = () => {
+    window.location.href = '/shop#!/~/search';
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-background">
       {/* Top Row - Logo and Account/Cart */}
@@ -96,6 +100,14 @@ const Header = () => {
 
             {/* Desktop Account/Cart */}
             <div className="hidden md:flex items-center gap-6">
+              <button 
+                onClick={openSearch}
+                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="button-search"
+              >
+                <Search className="h-5 w-5" />
+                <span className="text-xs">Search</span>
+              </button>
               <button 
                 onClick={openAccount}
                 className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
@@ -115,7 +127,15 @@ const Header = () => {
             </div>
 
             {/* Mobile Menu Button + Cart */}
-            <div className="md:hidden flex items-center gap-2">
+            <div className="md:hidden flex items-center gap-3">
+              <button 
+                onClick={openSearch}
+                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="button-search-mobile"
+              >
+                <Search className="h-5 w-5" />
+                <span className="text-xs">Search</span>
+              </button>
               <button 
                 onClick={openCart}
                 className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
