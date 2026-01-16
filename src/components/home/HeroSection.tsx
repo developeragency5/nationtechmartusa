@@ -47,7 +47,7 @@ const HeroSection = () => {
                 <Truck className="h-5 w-5 text-primary shrink-0" />
                 <div>
                   <p className="text-sm font-medium text-foreground">Free Shipping</p>
-                  <p className="text-xs text-muted-foreground">On orders over $100 *</p>
+                  <p className="text-xs text-muted-foreground">On orders over $100</p>
                 </div>
               </div>
               <div className="flex items-center justify-center gap-3">
