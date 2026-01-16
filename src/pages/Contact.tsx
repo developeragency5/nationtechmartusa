@@ -34,12 +34,12 @@ const Contact = () => {
         canonicalUrl="/contact"
       />
 
-      {/* Hero Banner - responsive, no cropping */}
-      <section className="relative w-full bg-muted max-h-[300px] md:max-h-[400px] overflow-hidden">
+      {/* Hero Banner - responsive, full image visible */}
+      <section className="relative w-full bg-muted">
         <img
           src="/assets/images/support.jpg"
-          alt="Our team ready to help"
-          className="w-full h-full object-contain"
+          alt="Friendly customer interaction with package delivery"
+          className="w-full h-auto"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-transparent flex items-center">
           <div className="container mx-auto px-4">
