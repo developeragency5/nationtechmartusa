@@ -19,18 +19,19 @@ declare global {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [ecwidLoaded, setEcwidLoaded] = useState(false);
+  const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
   const location = useLocation();
 
   const navLinks = [
-    { href: "/", label: "Home" },
-    { href: "/shop", label: "All Products" },
-    { href: "/shop#!/c/193853315", label: "Home Printers" },
-    { href: "/shop#!/c/193855066", label: "Office Printers" },
-    { href: "/shop#!/c/193859557", label: "Inkjet Printers" },
-    { href: "/shop#!/c/193855067", label: "Laser Printers" },
-    { href: "/shop#!/c/193855068", label: "Scanners" },
-    { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: "Home", image: null },
+    { href: "/shop", label: "All Products", image: "/assets/images/category-office-printers.png" },
+    { href: "/shop#!/c/193853315", label: "Home Printers", image: "/assets/images/category-home-printers.png" },
+    { href: "/shop#!/c/193855066", label: "Office Printers", image: "/assets/images/category-office-printers.png" },
+    { href: "/shop#!/c/193859557", label: "Inkjet Printers", image: "/assets/images/category-inkjet-printers.png" },
+    { href: "/shop#!/c/193855067", label: "Laser Printers", image: "/assets/images/category-laser-printers.png" },
+    { href: "/shop#!/c/193855068", label: "Scanners", image: "/assets/images/scanner-category.png" },
+    { href: "/about", label: "About", image: null },
+    { href: "/contact", label: "Contact", image: null },
   ];
 
   const isActive = (path: string) => {
@@ -165,34 +166,61 @@ const Header = () => {
       <div className="border-b border-border bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center justify-center gap-1 py-2">
-            {navLinks.map((link) => 
-              isHashLink(link.href) ? (
+          <nav className="hidden md:flex items-center justify-center gap-1 py-2 relative">
+            {navLinks.map((link) => {
+              const baseClasses = `relative px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
+                isActive(link.href) 
+                  ? "bg-primary text-primary-foreground" 
+                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+              }`;
+              
+              const content = (
+                <>
+                  <span className="relative z-10">{link.label}</span>
+                  {link.image && hoveredCategory === link.href && (
+                    <div className="absolute left-1/2 -translate-x-1/2 top-full mt-2 z-50 animate-in fade-in slide-in-from-top-2 duration-300">
+                      <div className="bg-card rounded-xl border border-border shadow-2xl p-2 min-w-[180px]">
+                        <div className="relative overflow-hidden rounded-lg">
+                          <img 
+                            src={link.image} 
+                            alt={link.label}
+                            className="w-44 h-32 object-cover rounded-lg"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                          <div className="absolute bottom-2 left-2 right-2">
+                            <p className="text-white text-xs font-medium">{link.label}</p>
+                            <p className="text-white/70 text-[10px]">Click to explore</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-2 h-2 bg-card border-l border-t border-border rotate-45" />
+                    </div>
+                  )}
+                </>
+              );
+              
+              return isHashLink(link.href) ? (
                 <a
                   key={link.href}
                   href={link.href}
-                  className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                    isActive(link.href) 
-                      ? "bg-primary text-primary-foreground" 
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
-                  }`}
+                  className={baseClasses}
+                  onMouseEnter={() => link.image && setHoveredCategory(link.href)}
+                  onMouseLeave={() => setHoveredCategory(null)}
                 >
-                  {link.label}
+                  {content}
                 </a>
               ) : (
                 <Link
                   key={link.href}
                   to={link.href}
-                  className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
-                    isActive(link.href) 
-                      ? "bg-primary text-primary-foreground" 
-                      : "text-muted-foreground hover:text-foreground hover:bg-muted"
-                  }`}
+                  className={baseClasses}
+                  onMouseEnter={() => link.image && setHoveredCategory(link.href)}
+                  onMouseLeave={() => setHoveredCategory(null)}
                 >
-                  {link.label}
+                  {content}
                 </Link>
-              )
-            )}
+              );
+            })}
           </nav>
 
           {/* Mobile Navigation */}
