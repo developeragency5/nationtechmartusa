@@ -3,7 +3,7 @@ import SEO from "@/components/shared/SEO";
 import TransparencySection from "@/components/shared/TransparencySection";
 import SiteNotice from "@/components/shared/SiteNotice";
 import { useEffect, useState } from "react";
-import { ShoppingBag, Loader2, Wifi, Smartphone, Cloud, Monitor, Check, Building2, Users, Zap, FileText, Droplets, Image, Clock, ScanLine, FolderOpen, Shield, Printer, Palette, ChevronDown, Home } from "lucide-react";
+import { ShoppingBag, Loader2, Wifi, Smartphone, Cloud, Monitor, Check, Building2, Users, Zap, FileText, Droplets, Image, Clock, ScanLine, FolderOpen, Shield } from "lucide-react";
 
 declare global {
   interface Window {
@@ -181,79 +181,30 @@ const Shop = () => {
 
       {/* ==================== HOME PRINTERS - TOP CONTENT ==================== */}
       {!isEcwidOverlay && currentCategory === "home-printers" && (
-        <section className="relative bg-gradient-to-br from-zinc-50 via-white to-zinc-100 dark:from-zinc-900 dark:via-zinc-950 dark:to-zinc-900 border-b border-zinc-200 dark:border-zinc-800">
-          <div className="max-w-7xl mx-auto px-6 py-16">
-            <div className="max-w-3xl">
-              <span className="inline-flex items-center gap-2 rounded-full bg-primary/10 px-4 py-1 text-sm font-medium text-primary border border-primary/20">
-                <Home className="h-4 w-4" />
-                Home & Personal Use
-              </span>
-
-              <h1 className="mt-5 text-4xl font-bold tracking-tight text-zinc-900 dark:text-zinc-100 sm:text-5xl">
-                Home Printers for Everyday Printing
+        <section className="py-12 md:py-16 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div className="max-w-4xl mx-auto">
+              <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Home Printers for Everyday Printing, Scanning & Copying
               </h1>
-
-              <p className="mt-6 text-lg leading-relaxed text-zinc-600 dark:text-zinc-400">
-                Reliable, compact, and easy-to-use printers designed for daily home needs.
-                From school assignments and personal documents to creative color printing,
-                home printers deliver consistent quality without complexity.
-              </p>
-            </div>
-
-            <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-              <div className="rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 p-6 shadow-sm hover-elevate">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Wifi className="h-6 w-6" />
-                </div>
-                <h3 className="mt-4 text-lg font-semibold text-zinc-900 dark:text-zinc-100">Wireless Convenience</h3>
-                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                  Print effortlessly from smartphones, tablets, and laptops using Wi-Fi and mobile apps.
+              <div className="prose prose-lg max-w-none text-muted-foreground mb-8">
+                <p className="text-base md:text-lg leading-relaxed mb-4">
+                  Home printers are designed to deliver consistent, high-quality output for everyday personal and family use. Whether you're printing school assignments, household documents, creative projects, or occasional photos, modern home printers combine compact design, wireless convenience, and dependable performance.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed">
+                  These printers are optimized for easy setup, low noise operation, and seamless mobile printing, making them ideal for homes and home offices that need reliable results without professional-level complexity.
                 </p>
               </div>
-
-              <div className="rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 p-6 shadow-sm hover-elevate">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Printer className="h-6 w-6" />
-                </div>
-                <h3 className="mt-4 text-lg font-semibold text-zinc-900 dark:text-zinc-100">All-in-One Functionality</h3>
-                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                  Print, scan, and copy in a single compact device—perfect for modern home setups.
-                </p>
+              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8">
+                <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">Why Home Printers Make Sense</h2>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Designed for low to moderate print volumes</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Compact footprint suitable for desks and shelves</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Wireless, Wi-Fi, and mobile printing options</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Affordable upfront cost with efficient ink usage</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Simple controls and app-based management</span></li>
+                </ul>
               </div>
-
-              <div className="rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 p-6 shadow-sm hover-elevate">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Palette className="h-6 w-6" />
-                </div>
-                <h3 className="mt-4 text-lg font-semibold text-zinc-900 dark:text-zinc-100">Sharp Text & Rich Color</h3>
-                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                  Crisp documents and vibrant color output for homework, graphics, and photos.
-                </p>
-              </div>
-
-              <div className="rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 p-6 shadow-sm hover-elevate">
-                <div className="flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Zap className="h-6 w-6" />
-                </div>
-                <h3 className="mt-4 text-lg font-semibold text-zinc-900 dark:text-zinc-100">Easy Setup & Low Maintenance</h3>
-                <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                  Designed for quick installation, quiet operation, and hassle-free everyday use.
-                </p>
-              </div>
-            </div>
-
-            <div className="mt-14 flex flex-col gap-6 rounded-xl border border-zinc-200 dark:border-zinc-700 bg-white dark:bg-zinc-800 px-8 py-6 sm:flex-row sm:items-center sm:justify-between">
-              <p className="text-sm text-zinc-600 dark:text-zinc-400">
-                Ideal for <span className="font-medium text-zinc-900 dark:text-zinc-100">students</span>, 
-                <span className="font-medium text-zinc-900 dark:text-zinc-100"> families</span>, 
-                <span className="font-medium text-zinc-900 dark:text-zinc-100"> remote workers</span>, 
-                and <span className="font-medium text-zinc-900 dark:text-zinc-100">home offices</span>.
-              </p>
-
-              <span className="inline-flex items-center gap-2 rounded-full bg-primary px-6 py-2 text-sm font-semibold text-white">
-                Browse Home Printers Below
-                <ChevronDown className="h-4 w-4" />
-              </span>
             </div>
           </div>
         </section>
