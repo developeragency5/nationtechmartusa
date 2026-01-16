@@ -17,11 +17,6 @@ const badges = [
     description: "SSL encrypted payments",
   },
   {
-    icon: Headphones,
-    title: "Customer Service",
-    description: "Mon-Fri, 9AM-6PM EST",
-  },
-  {
     icon: Shield,
     title: "Quality Products",
     description: "Carefully selected items",

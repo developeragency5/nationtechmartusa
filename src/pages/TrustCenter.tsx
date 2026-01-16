@@ -17,7 +17,7 @@ const TrustCenter = () => {
     <Layout>
       <SEO
         title="Trust Center - Transparency & Business Practices"
-        description="Learn about NationTechMart's business practices. We're an independent retailer committed to transparency in pricing, sourcing, shipping, and customer service."
+        description="Learn about NationTechMart's business practices. We're an independent retailer committed to transparency in pricing, sourcing, and shipping."
         keywords="trust center, independent retailer, transparent pricing, honest business"
         canonicalUrl="/trust-center"
       />
@@ -49,13 +49,13 @@ const TrustCenter = () => {
                 </h2>
                 <div className="prose prose-muted max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    NationTechMart is an <strong className="text-foreground">independent online retailer</strong> specializing in printers, scanners, and related technology products. We are a small business dedicated to providing quality products and excellent customer service.
+                    NationTechMart is an <strong className="text-foreground">independent online retailer</strong> specializing in printers, scanners, and related technology products. We are a small business dedicated to providing quality products.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     <strong className="text-foreground">Important:</strong> NationTechMart is not affiliated with, endorsed by, or sponsored by HP, Canon, Epson, Brother, or any other manufacturer. All product names, logos, and brands are property of their respective owners.
                   </p>
                   <p className="text-muted-foreground leading-relaxed">
-                    We operate independently and are solely responsible for our sales, customer service, and fulfillment. When you shop with us, you're buying from NationTechMart, not directly from a manufacturer.
+                    We operate independently and are solely responsible for our sales and fulfillment. When you shop with us, you're buying from NationTechMart, not directly from a manufacturer.
                   </p>
                 </div>
               </div>

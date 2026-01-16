@@ -28,9 +28,9 @@ const Contact = () => {
   return (
     <Layout>
       <SEO
-        title="Contact Us - Customer Service"
-        description="Contact NationTechMart customer service. Get help with orders, shipping, returns, or product questions. Email, phone, or send us a message online."
-        keywords="contact NationTechMart, customer service, printer help, order help"
+        title="Contact Us"
+        description="Contact NationTechMart. Get help with orders, shipping, returns, or product questions. Email, phone, or send us a message online."
+        keywords="contact NationTechMart, printer help, order help"
         canonicalUrl="/contact"
       />
 
@@ -123,7 +123,7 @@ const Contact = () => {
                 <div className="h-48 overflow-hidden">
                   <img
                     src="/assets/images/trust.jpg"
-                    alt="Trusted customer service"
+                    alt="Contact our team"
                     className="w-full h-full object-cover"
                   />
                 </div>

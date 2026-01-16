@@ -54,7 +54,7 @@ const faqs: FAQ[] = [
   {
     category: "shipping",
     question: "How do I track my order?",
-    answer: "Once your order ships, you'll receive a confirmation email with tracking information. Click the tracking link in the email or copy the tracking number to the carrier's website. If you haven't received a shipping confirmation within 3 business days, please contact our customer service team."
+    answer: "Once your order ships, you'll receive a confirmation email with tracking information. Click the tracking link in the email or copy the tracking number to the carrier's website. If you haven't received a shipping confirmation within 3 business days, please contact us."
   },
 
   // Returns (5)
@@ -142,7 +142,7 @@ const faqs: FAQ[] = [
   {
     category: "product",
     question: "Can I get product recommendations?",
-    answer: "While we're not able to provide personalized technical consultations, our product descriptions include specifications and use cases to help you make informed decisions. For specific technical questions, we recommend consulting the manufacturer's website or contacting their customer service team."
+    answer: "While we're not able to provide personalized technical consultations, our product descriptions include specifications and use cases to help you make informed decisions. For specific technical questions, we recommend consulting the manufacturer's website."
   },
   {
     category: "product",
@@ -159,7 +159,7 @@ const faqs: FAQ[] = [
   {
     category: "account",
     question: "How do I update my account information?",
-    answer: "If you have an account, you can update your information by logging in and accessing your account settings. To update information on a pending order, please contact our customer service team directly. For privacy-related requests, email us at contact@nationtechmart.com."
+    answer: "If you have an account, you can update your information by logging in and accessing your account settings. To update information on a pending order, please contact us directly. For privacy-related requests, email us at contact@nationtechmart.com."
   },
   {
     category: "account",
@@ -338,7 +338,7 @@ const FAQ = () => {
               Still Have Questions?
             </h2>
             <p className="text-muted-foreground mb-8">
-              Can't find what you're looking for? Our customer service team is here to help.
+              Can't find what you're looking for? We're here to help.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
               <Button asChild size="lg">

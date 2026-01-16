@@ -294,7 +294,7 @@ const Shipping = () => {
           <div className="max-w-3xl mx-auto bg-muted/30 rounded-xl p-6 md:p-8 text-center">
             <h3 className="text-xl font-bold text-foreground mb-2">Questions?</h3>
             <p className="text-muted-foreground mb-4">
-              Our customer customer service team is available Monday through Friday, 9 AM - 6 PM EST.
+              We're available Monday through Friday, 9 AM - 6 PM EST.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="mailto:contact@nationtechmart.com" className="text-primary hover:underline font-medium">

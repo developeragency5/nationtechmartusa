@@ -53,8 +53,8 @@ const About = () => {
                 </h1>
                 <p className="mt-4 text-base md:text-lg text-white/90 leading-relaxed">
                   We're an independent retailer dedicated to providing quality technology 
-                  products with exceptional customer service. No manufacturer affiliations—just 
-                  honest business and exceptional service.
+                  products. No manufacturer affiliations—just 
+                  honest business.
                 </p>
                 <div className="mt-6 flex flex-wrap gap-3 justify-start">
                   <Button asChild size="lg">
@@ -114,14 +114,7 @@ const About = () => {
                     <p className="text-sm text-muted-foreground">30-day returns, manufacturer warranties, and fair terms clearly stated.</p>
                   </div>
                 </li>
-                <li className="flex items-start gap-3">
-                  <CheckCircle className="h-6 w-6 text-primary shrink-0 mt-0.5" />
-                  <div>
-                    <p className="font-medium text-foreground">Customer Service</p>
-                    <p className="text-sm text-muted-foreground">Actual humans ready to help with questions before and after purchase.</p>
-                  </div>
-                </li>
-              </ul>
+                              </ul>
 
               <div className="pt-4">
                 <Button asChild variant="outline">
@@ -191,13 +184,11 @@ const About = () => {
               <p>
                 As an independent retailer, we're not bound to any single manufacturer. 
                 This independence allows us to focus solely on what matters most—finding 
-                the best products at competitive prices and delivering them with 
-                exceptional service.
+                the best products at competitive prices.
               </p>
               <p>
                 We understand that purchasing technology can be overwhelming. That's why 
-                we've built our business around transparency, clear communication, and 
-                genuine customer service. When you shop with us, you're not just a 
+                we've built our business around transparency and clear communication. When you shop with us, you're not just a 
                 transaction—you're part of our community.
               </p>
             </div>

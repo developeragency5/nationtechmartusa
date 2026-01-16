@@ -12,7 +12,7 @@ const Index = () => {
     <Layout>
       <SEO
         title="Home Printers, Office Printers, Laser & Inkjet Printers"
-        description="Shop quality home printers, office printers, laser printers, inkjet printers, and document scanners at competitive prices. Quick processing, easy returns, and exceptional customer service."
+        description="Shop quality home printers, office printers, laser printers, inkjet printers, and document scanners at competitive prices. Quick processing and easy returns."
         keywords="home printer, office printer, laser printer, inkjet printer, scanner, document scanner, buy printer online, printer shop"
         canonicalUrl="/"
       />
