@@ -108,7 +108,7 @@ const Shop = () => {
             alt="Woman checking copy of document at printer"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-transparent flex items-center">
+          <div className="absolute inset-0 bg-gradient-to-r from-background/50 to-transparent flex items-center">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
               <h1 className="text-3xl md:text-4xl font-bold text-foreground">
                 Shop Printers & Supplies
