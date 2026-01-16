@@ -3,7 +3,7 @@ import SEO from "@/components/shared/SEO";
 import TransparencySection from "@/components/shared/TransparencySection";
 import SiteNotice from "@/components/shared/SiteNotice";
 import { useEffect, useState } from "react";
-import { ShoppingBag, Loader2, Home, Building2, Zap, Layers, ScanLine } from "lucide-react";
+import { ShoppingBag, Loader2 } from "lucide-react";
 
 declare global {
   interface Window {
@@ -73,33 +73,6 @@ const Shop = () => {
     };
   }, []);
 
-  const categories = [
-    {
-      title: "Home Printers",
-      description: "For everyday home use",
-      icon: Home,
-      image: "/assets/images/home-office.jpg",
-    },
-    {
-      title: "Office Printers",
-      description: "For business needs",
-      icon: Building2,
-      image: "/assets/images/business-office.jpg",
-    },
-    {
-      title: "Laser Printers",
-      description: "Fast & efficient",
-      icon: Zap,
-      image: "/assets/images/laser-printing.jpg",
-    },
-    {
-      title: "All-in-One",
-      description: "Print, scan & copy",
-      icon: Layers,
-      image: "/assets/images/all-in-one.jpg",
-    },
-  ];
-
   return (
     <Layout>
       <SEO
@@ -141,68 +114,6 @@ const Shop = () => {
                 <div className="max-w-4xl mx-auto text-center">
                   <SiteNotice variant="compact" />
                 </div>
-              </div>
-            </div>
-          </section>
-
-          {/* Shop by Category */}
-          <section className="py-12 bg-background">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-              <div className="text-center mb-8">
-                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-2">Shop by Category</h2>
-                <p className="text-muted-foreground">Find the perfect printer or scanner for your needs</p>
-              </div>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-                <a 
-                  href="/shop#!/c/193853315"
-                  className="group p-6 bg-card rounded-xl border border-border/60 hover:border-primary/30 hover:shadow-lg transition-all duration-300 text-center"
-                >
-                  <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
-                    <Home className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="font-semibold text-foreground text-sm">Home Printers</h3>
-                  <p className="text-xs text-muted-foreground mt-1">For personal use</p>
-                </a>
-                <a 
-                  href="/shop#!/c/193855066"
-                  className="group p-6 bg-card rounded-xl border border-border/60 hover:border-primary/30 hover:shadow-lg transition-all duration-300 text-center"
-                >
-                  <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
-                    <Building2 className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="font-semibold text-foreground text-sm">Office Printers</h3>
-                  <p className="text-xs text-muted-foreground mt-1">For business needs</p>
-                </a>
-                <a 
-                  href="/shop#!/c/193859557"
-                  className="group p-6 bg-card rounded-xl border border-border/60 hover:border-primary/30 hover:shadow-lg transition-all duration-300 text-center"
-                >
-                  <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
-                    <Zap className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="font-semibold text-foreground text-sm">Inkjet Printers</h3>
-                  <p className="text-xs text-muted-foreground mt-1">Vibrant color printing</p>
-                </a>
-                <a 
-                  href="/shop#!/c/193855067"
-                  className="group p-6 bg-card rounded-xl border border-border/60 hover:border-primary/30 hover:shadow-lg transition-all duration-300 text-center"
-                >
-                  <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
-                    <Layers className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="font-semibold text-foreground text-sm">Laser Printers</h3>
-                  <p className="text-xs text-muted-foreground mt-1">Fast & efficient</p>
-                </a>
-                <a 
-                  href="/shop#!/c/193855068"
-                  className="group p-6 bg-card rounded-xl border border-border/60 hover:border-primary/30 hover:shadow-lg transition-all duration-300 text-center"
-                >
-                  <div className="w-12 h-12 mx-auto mb-3 rounded-xl bg-primary/10 flex items-center justify-center group-hover:bg-primary/15 transition-colors">
-                    <ScanLine className="h-6 w-6 text-primary" />
-                  </div>
-                  <h3 className="font-semibold text-foreground text-sm">Scanners</h3>
-                  <p className="text-xs text-muted-foreground mt-1">Document digitization</p>
-                </a>
               </div>
             </div>
           </section>
