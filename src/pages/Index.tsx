@@ -3,6 +3,7 @@ import SEO from "@/components/shared/SEO";
 import HeroSection from "@/components/home/HeroSection";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
 import AboutUsSection from "@/components/home/AboutUsSection";
+import WhoWeServe from "@/components/home/WhoWeServe";
 import ShopByUseCase from "@/components/home/ShopByUseCase";
 import WhyNationTechMart from "@/components/home/WhyNationTechMart";
 import OurApproach from "@/components/home/RealStorePromise";
@@ -20,6 +21,7 @@ const Index = () => {
       />
       <HeroSection />
       <AboutUsSection />
+      <WhoWeServe />
       <FeaturedProducts />
       <ShopByUseCase />
       <WhyNationTechMart />
