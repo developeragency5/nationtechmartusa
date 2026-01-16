@@ -40,29 +40,29 @@ const HeroSection = () => {
       </div>
 
       {/* Trust bar */}
-      <div className="">
+      <div className="bg-primary">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="py-4">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="flex items-center justify-center sm:justify-start gap-3">
-                <Truck className="h-5 w-5 text-primary shrink-0" />
+          <div className="py-6">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+              <div className="flex items-center justify-center sm:justify-start gap-4">
+                <Truck className="h-7 w-7 text-primary-foreground shrink-0" />
                 <div>
-                  <p className="text-sm font-medium text-foreground">Free Shipping</p>
-                  <p className="text-xs text-muted-foreground">On orders over $100</p>
+                  <p className="text-base font-semibold text-primary-foreground">Free Shipping</p>
+                  <p className="text-sm text-primary-foreground/80">On orders over $100</p>
                 </div>
               </div>
-              <div className="flex items-center justify-center gap-3">
-                <Shield className="h-5 w-5 text-primary shrink-0" />
+              <div className="flex items-center justify-center gap-4">
+                <Shield className="h-7 w-7 text-primary-foreground shrink-0" />
                 <div>
-                  <p className="text-sm font-medium text-foreground">Secure Checkout</p>
-                  <p className="text-xs text-muted-foreground">SSL encrypted</p>
+                  <p className="text-base font-semibold text-primary-foreground">Secure Checkout</p>
+                  <p className="text-sm text-primary-foreground/80">SSL encrypted</p>
                 </div>
               </div>
-              <div className="flex items-center justify-center sm:justify-end gap-3">
-                <RotateCcw className="h-5 w-5 text-primary shrink-0" />
+              <div className="flex items-center justify-center sm:justify-end gap-4">
+                <RotateCcw className="h-7 w-7 text-primary-foreground shrink-0" />
                 <div>
-                  <p className="text-sm font-medium text-foreground">Easy Returns</p>
-                  <p className="text-xs text-muted-foreground">30-day return policy</p>
+                  <p className="text-base font-semibold text-primary-foreground">Easy Returns</p>
+                  <p className="text-sm text-primary-foreground/80">30-day return policy</p>
                 </div>
               </div>
             </div>
