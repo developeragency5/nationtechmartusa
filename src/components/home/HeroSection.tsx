@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <section className="bg-background">
-      {/* Hero with background image - responsive, reduced height */}
-      <div className="relative w-full bg-muted max-h-[420px] md:max-h-[525px] overflow-hidden">
+      {/* Hero with background image - responsive height */}
+      <div className="relative w-full bg-muted max-h-[500px] md:max-h-[600px] overflow-hidden">
         <img
           src="/assets/images/hero-banner.jpg"
           alt="Young woman making a copy of a document in modern office"
