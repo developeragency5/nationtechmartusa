@@ -9,7 +9,7 @@ const faqs = [
   {
     question: "What is your shipping policy?",
     answer:
-      "We offer free shipping on all orders over $100 within the USA. Orders typically ship within 1-2 business days and standard delivery takes 3-7 business days.",
+      "We offer free shipping on all orders over $100. Orders typically ship within 1-2 business days and standard delivery takes 3-7 business days. See our shipping page for full details.",
   },
   {
     question: "What is your return policy?",
@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "Do you ship internationally?",
     answer:
-      "Currently, we only ship within the United States. Free shipping is available on orders over $100.",
+      "Currently, we only ship within the United States. See our shipping page for full policy details.",
   },
 ];
 

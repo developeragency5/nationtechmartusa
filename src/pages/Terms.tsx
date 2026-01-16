@@ -175,10 +175,16 @@ const Terms = () => {
                   <section id="shipping">
                     <h2 className="text-xl font-bold text-foreground mb-4">6. Shipping</h2>
                     <p className="text-muted-foreground leading-relaxed mb-3">
-                      We ship to U.S. addresses only. Shipping times are estimates, not guarantees. We're not responsible for carrier delays, weather, or other factors outside our control.
+                      <strong>Shipping is available to addresses within the United States only.</strong> We do not ship internationally.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-3">
+                      <strong>Free Shipping:</strong> Orders totaling $100 or more qualify for free standard shipping within the United States. Orders under $100 are subject to shipping charges calculated at checkout.
+                    </p>
+                    <p className="text-muted-foreground leading-relaxed mb-3">
+                      <strong>Delivery Times:</strong> Standard shipping typically takes 3-7 business days after processing. Shipping times are estimates, not guarantees. We're not responsible for carrier delays, weather, or other factors outside our control.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
-                      For full shipping details, see our <a href="/shipping" className="text-primary hover:underline">Shipping & Returns</a> page.
+                      For additional shipping details, see our <a href="/shipping" className="text-primary hover:underline">Shipping & Returns</a> page.
                     </p>
                   </section>
 

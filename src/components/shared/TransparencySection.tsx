@@ -12,7 +12,8 @@ const transparencyItems = [
     icon: Truck,
     title: "Shipping",
     description:
-      "Free shipping on orders over $100 (USA only). Standard delivery takes 3-7 business days after processing. Delivery times are estimates and may vary based on carrier conditions.",
+      "Free shipping on orders over $100. Standard delivery takes 3-7 business days after processing. See our shipping page for complete policy details.",
+    link: { href: "/shipping", label: "View Shipping Policy" },
   },
   {
     icon: RotateCcw,

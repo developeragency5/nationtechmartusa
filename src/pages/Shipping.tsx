@@ -7,7 +7,7 @@ const Shipping = () => {
     <Layout>
       <SEO
         title="Shipping & Returns Policy"
-        description="NationTechMart shipping and returns policy. Free shipping on orders over $100 (USA only), 30-day returns. Learn about delivery times and return process."
+        description="NationTechMart shipping and returns policy. Free shipping on orders over $100, 30-day returns. Learn about delivery times and return process."
         keywords="printer shipping, return policy, shipping rates, delivery time, order returns"
         canonicalUrl="/shipping"
       />
@@ -79,7 +79,7 @@ const Shipping = () => {
                 Shipping at a Glance
               </h2>
               <p className="text-lg font-medium text-primary">
-                Free shipping on orders over $100 (USA only)
+                Free Shipping on Orders Over $100
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -129,17 +129,26 @@ const Shipping = () => {
         </div>
       </section>
 
-      {/* Shipping Summary */}
+      {/* Shipping Policy Details */}
       <section className="py-12 bg-accent/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-card rounded-xl border border-border p-6 text-center">
-              <Truck className="h-12 w-12 text-primary mx-auto mb-4" />
-              <h3 className="text-xl font-bold text-foreground mb-2">Free Shipping on Orders Over $100</h3>
-              <p className="text-muted-foreground mb-4">USA only • Standard delivery 3-7 business days</p>
-              <p className="text-sm text-muted-foreground">
-                Delivery times are estimates from ship date, not order date. Actual delivery may vary.
-              </p>
+            <div className="bg-card rounded-xl border border-border p-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Truck className="h-8 w-8 text-primary shrink-0" />
+                <h3 className="text-xl font-bold text-foreground">Shipping Policy</h3>
+              </div>
+              <div className="space-y-4 text-muted-foreground">
+                <p>
+                  <strong className="text-foreground">Free Shipping:</strong> Orders totaling $100 or more qualify for free standard shipping.
+                </p>
+                <p>
+                  <strong className="text-foreground">Geographic Availability:</strong> Shipping is available to addresses within the United States only. We do not ship internationally at this time.
+                </p>
+                <p>
+                  <strong className="text-foreground">Delivery Time:</strong> Standard delivery takes 3-7 business days after your order ships. Delivery times are estimates and may vary based on carrier conditions and destination.
+                </p>
+              </div>
             </div>
           </div>
         </div>

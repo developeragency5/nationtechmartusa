@@ -4,7 +4,7 @@ const badges = [
   {
     icon: Truck,
     title: "Free Shipping",
-    description: "On orders over $100 (USA)",
+    description: "On orders over $100 *",
   },
   {
     icon: RotateCcw,

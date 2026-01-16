@@ -127,7 +127,7 @@ const TrustCenter = () => {
                     <li className="flex items-start space-x-3">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                       <span className="text-muted-foreground">
-                        <strong className="text-foreground">Free shipping</strong> on orders over $100 (USA only).
+                        <strong className="text-foreground">Free shipping</strong> on orders over $100. *
                       </span>
                     </li>
                     <li className="flex items-start space-x-3">
@@ -165,11 +165,12 @@ const TrustCenter = () => {
                     <div className="bg-card rounded-xl border border-border/60 p-6">
                       <h3 className="font-semibold text-foreground mb-3">Shipping</h3>
                       <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Free shipping on orders over $100 (USA only)</li>
+                        <li>• Free shipping on orders over $100 *</li>
                         <li>• Orders typically ship within 1-2 business days</li>
                         <li>• Standard delivery takes 3-7 business days</li>
                         <li>• Carriers include UPS, FedEx, and USPS</li>
                       </ul>
+                      <p className="text-xs text-muted-foreground mt-3">* See shipping page for full details</p>
                     </div>
                     <div className="bg-card rounded-xl border border-border/60 p-6">
                       <h3 className="font-semibold text-foreground mb-3">Returns</h3>
