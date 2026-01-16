@@ -4,8 +4,8 @@ import { Truck, RotateCcw, Headphones } from "lucide-react";
 
 const benefits = [
   {
-    title: "Fast Shipping",
-    description: "Most orders ship within 1-2 business days. Standard delivery takes 3-7 business days across the USA.",
+    title: "Quick Processing",
+    description: "Most orders are processed within 1–2 business days, subject to availability and carrier conditions.",
     image: "/assets/images/shipping.jpg",
     alt: "Shipping and delivery illustration with packages and delivery truck",
     icon: Truck,
