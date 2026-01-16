@@ -14,19 +14,18 @@ const HeroSection = () => {
             className="w-full h-full object-cover"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-foreground/70" />
         </div>
 
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-          <div className="py-16 lg:py-24">
-            <div className="max-w-xl">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-background leading-tight tracking-tight">
+          <div className="py-16 lg:py-24 flex justify-end">
+            <div className="max-w-xl bg-black/40 backdrop-blur-sm p-6 rounded-lg text-right">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
                 Quality Technology Products For Your Business
               </h1>
-              <p className="mt-4 text-base md:text-lg text-background/80 leading-relaxed">
+              <p className="mt-4 text-base md:text-lg text-white/90 leading-relaxed">
                 Discover our selection of printers, scanners, and office equipment at competitive prices.
               </p>
-              <div className="mt-6 flex flex-wrap gap-3">
+              <div className="mt-6 flex flex-wrap gap-3 justify-end">
                 <Button asChild size="lg">
                   <Link to="/shop">
                     Shop Now
