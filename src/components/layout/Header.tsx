@@ -45,6 +45,8 @@ const Header = () => {
       script.onload = () => {
         if (window.Ecwid?.OnAPILoaded) {
           window.Ecwid.OnAPILoaded.add(() => setEcwidLoaded(true));
+        } else {
+          setTimeout(() => setEcwidLoaded(true), 1000);
         }
       };
       document.body.appendChild(script);
@@ -98,16 +100,23 @@ const Header = () => {
             <Button 
               variant="ghost" 
               size="icon"
-              onClick={openAccount}
+              onClick={() => {
+                if (window.Ecwid) {
+                  (window as any).Ecwid.openPage('account');
+                } else {
+                  window.location.href = '/shop#!/~/account';
+                }
+              }}
+              data-testid="button-user-account"
               aria-label="My Account"
             >
               <User className="h-5 w-5" />
             </Button>
-            
             <Button 
               variant="ghost" 
               size="icon"
               onClick={openCart}
+              data-testid="button-cart"
               aria-label="Shopping Cart"
             >
               <ShoppingCart className="h-5 w-5" />
@@ -120,6 +129,7 @@ const Header = () => {
               variant="ghost" 
               size="icon"
               onClick={openCart}
+              data-testid="button-cart-mobile"
               aria-label="Shopping Cart"
             >
               <ShoppingCart className="h-5 w-5" />
@@ -143,17 +153,6 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border">
             <nav className="flex flex-col gap-1">
-              <button
-                onClick={() => {
-                  openAccount();
-                  setIsMenuOpen(false);
-                }}
-                className="flex items-center gap-2 text-sm font-medium px-3 py-2 rounded text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
-              >
-                <User className="h-4 w-4" />
-                My Account
-              </button>
-              
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
