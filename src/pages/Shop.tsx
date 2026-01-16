@@ -102,7 +102,7 @@ const Shop = () => {
 
       {/* Hero Banner with Independent Retailer Disclosure */}
       <section className="relative overflow-hidden">
-        <div className="relative h-56 md:h-72">
+        <div className="relative h-72 md:h-96">
           <img
             src="/assets/images/shop-banner.jpg"
             alt="Woman checking copy of document at printer"
