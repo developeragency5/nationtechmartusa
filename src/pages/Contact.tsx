@@ -96,7 +96,7 @@ const Contact = () => {
         <img
           src="/assets/images/contact-banner.jpg"
           alt="Customer assistance representative with headset"
-          className="w-full h-auto max-h-[400px] object-cover"
+          className="w-full h-auto max-h-[500px] object-cover"
           loading="eager"
         />
         <div className="absolute inset-0 flex items-center">
