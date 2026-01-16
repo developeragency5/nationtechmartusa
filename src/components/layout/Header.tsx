@@ -112,10 +112,6 @@ const Header = () => {
             >
               <ShoppingCart className="h-5 w-5" />
             </Button>
-            
-            <Button asChild>
-              <Link to="/shop">Shop Now</Link>
-            </Button>
           </div>
 
           {/* Mobile Menu Button + Cart */}
@@ -172,11 +168,6 @@ const Header = () => {
                   {link.label}
                 </Link>
               ))}
-              <div className="pt-3 px-3">
-                <Button asChild className="w-full">
-                  <Link to="/shop" onClick={() => setIsMenuOpen(false)}>Shop Now</Link>
-                </Button>
-              </div>
             </nav>
           </div>
         )}
