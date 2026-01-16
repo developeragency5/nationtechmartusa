@@ -34,10 +34,19 @@ const Header = () => {
   ];
 
   const isActive = (path: string) => {
+    const currentHash = window.location.hash;
+    const currentPath = location.pathname;
+    
     if (path.includes('#')) {
-      return window.location.href.includes(path);
+      const hashPart = path.split('#')[1];
+      return currentHash.includes(hashPart);
     }
-    return location.pathname === path;
+    
+    if (path === '/shop') {
+      return currentPath === '/shop' && !currentHash.includes('/c/');
+    }
+    
+    return currentPath === path;
   };
 
   const isHashLink = (href: string) => href.includes('#');
