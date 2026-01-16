@@ -10,7 +10,8 @@ const HeroSection = () => {
         <img
           src="/assets/images/hero-banner.jpg"
           alt="Young woman making a copy of a document in modern office"
-          className="w-full h-auto object-cover object-top"
+          className="w-full h-auto object-cover"
+          style={{ objectPosition: 'center 3%' }}
           loading="eager"
         />
         <div className="absolute inset-0 flex items-center">
