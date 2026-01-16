@@ -30,7 +30,7 @@ const WhyNationTechMart = () => {
             Why NationTechMart
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We focus on what matters: quality products, fair prices, and honest service.
+            We focus on what matters: quality products and fair prices.
           </p>
         </div>
 

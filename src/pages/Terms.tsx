@@ -22,9 +22,9 @@ const Terms = () => {
   return (
     <Layout>
       <SEO
-        title="Terms of Service"
-        description="NationTechMart terms of service. Read our policies on orders, pricing, payment, shipping, returns, and warranty for home printers, office printers, and scanners."
-        keywords="terms of service, purchase terms, order policy, NationTechMart terms"
+        title="Terms and Conditions"
+        description="NationTechMart terms and conditions. Read our policies on orders, pricing, payment, shipping, returns, and warranty for home printers, office printers, and scanners."
+        keywords="terms and conditions, purchase terms, order policy, NationTechMart terms"
         canonicalUrl="/terms"
       />
 
@@ -32,14 +32,14 @@ const Terms = () => {
       <section className="relative h-48 md:h-56 overflow-hidden">
         <img
           src="/assets/images/trust.jpg"
-          alt="Terms of Service"
+          alt="Terms and Conditions"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/70 flex items-center">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl">
               <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-                Terms of Service
+                Terms and Conditions
               </h1>
               <p className="text-muted-foreground">
                 The rules and guidelines for using our website and purchasing from us.
@@ -198,7 +198,7 @@ const Terms = () => {
                       <strong>NationTechMart is not the manufacturer.</strong> We do not provide product warranties.
                     </p>
                     <p className="text-muted-foreground leading-relaxed mb-3">
-                      Products are covered by the manufacturer's warranty, if any. Warranty terms vary by product and brand. For warranty service, you may need to contact the manufacturer directly.
+                      Products are covered by the manufacturer's warranty, if any. Warranty terms vary by product and brand. For warranty claims, you may need to contact the manufacturer directly.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
                       We can provide proof of purchase to support warranty claims upon request.

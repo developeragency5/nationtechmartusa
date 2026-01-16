@@ -10,7 +10,7 @@ const values = [
     title: "Customer First",
     description: "Your satisfaction is our top priority. We listen, respond, and work to exceed your expectations with every interaction.",
     image: "/assets/images/values-customer.jpg",
-    alt: "Customer service and partnership illustration with handshake",
+    alt: "Customer partnership illustration with handshake",
   },
   {
     title: "Quality Focus",
@@ -20,7 +20,7 @@ const values = [
   },
   {
     title: "Honest Business",
-    description: "Transparency in pricing, policies, and communication. No hidden fees, no misleading claims—just straightforward service.",
+    description: "Transparency in pricing, policies, and communication. No hidden fees, no misleading claims—just straightforward business.",
     image: "/assets/images/values-integrity.jpg",
     alt: "Transparency and honesty concept with open book",
   },
@@ -31,7 +31,7 @@ const About = () => {
     <Layout>
       <SEO
         title="About Us - Independent Technology Retailer"
-        description="Learn about NationTechMart, an independent online retailer specializing in home printers, office printers, and document scanners. Quality products, exceptional service."
+        description="Learn about NationTechMart, an independent online retailer specializing in home printers, office printers, and document scanners. Quality products at competitive prices."
         keywords="about NationTechMart, printer retailer, technology store, office equipment supplier"
         canonicalUrl="/about"
       />

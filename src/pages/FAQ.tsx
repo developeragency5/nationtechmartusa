@@ -137,7 +137,7 @@ const faqs: FAQ[] = [
   {
     category: "product",
     question: "Why are your prices different from the manufacturer's website?",
-    answer: "As an independent retailer, our pricing is based on our costs from suppliers, market conditions, and competitive factors. Prices may be higher or lower than the manufacturer's suggested retail price. We strive to offer competitive pricing while maintaining quality service."
+    answer: "As an independent retailer, our pricing is based on our costs from suppliers, market conditions, and competitive factors. Prices may be higher or lower than the manufacturer's suggested retail price. We strive to offer competitive pricing."
   },
   {
     category: "product",

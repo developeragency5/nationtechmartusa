@@ -170,11 +170,11 @@ const Privacy = () => {
                     </p>
                     <ul className="text-muted-foreground space-y-2 list-disc list-inside">
                       <li><strong>Process orders:</strong> Fulfill purchases, send shipping confirmations, handle returns</li>
-                      <li><strong>Customer service:</strong> Respond to questions and resolve issues</li>
+                      <li><strong>Communication:</strong> Respond to questions and resolve issues</li>
                       <li><strong>Transactional emails:</strong> Order confirmations, shipping updates, return status</li>
                       <li><strong>Security:</strong> Detect and prevent fraud, protect our systems</li>
                       <li><strong>Legal compliance:</strong> Meet tax, legal, and regulatory requirements</li>
-                      <li><strong>Improve our service:</strong> Understand how customers use our site, fix problems</li>
+                      <li><strong>Improve our website:</strong> Understand how customers use our site, fix problems</li>
                     </ul>
                   </section>
 
@@ -202,7 +202,7 @@ const Privacy = () => {
                     <ul className="text-muted-foreground space-y-2 list-disc list-inside">
                       <li><strong>Payment processors:</strong> To complete transactions</li>
                       <li><strong>Shipping carriers:</strong> To deliver your orders (name, address, phone for delivery purposes)</li>
-                      <li><strong>Service providers:</strong> Companies that help us run our business (email delivery, website hosting) under confidentiality agreements</li>
+                      <li><strong>Business partners:</strong> Companies that help us run our business (email delivery, website hosting) under confidentiality agreements</li>
                       <li><strong>Legal requirements:</strong> If required by law, court order, or to protect our rights</li>
                     </ul>
                   </section>
@@ -257,7 +257,7 @@ const Privacy = () => {
                   <section id="retention">
                     <h2 className="text-xl font-bold text-foreground mb-4">9. Data Retention</h2>
                     <p className="text-muted-foreground leading-relaxed">
-                      We keep your information as long as needed to provide services, comply with legal obligations (such as tax records), resolve disputes, and enforce our agreements. Order records are typically retained for 7 years for tax purposes.
+                      We keep your information as long as needed to fulfill orders, comply with legal obligations (such as tax records), resolve disputes, and enforce our agreements. Order records are typically retained for 7 years for tax purposes.
                     </p>
                   </section>
 

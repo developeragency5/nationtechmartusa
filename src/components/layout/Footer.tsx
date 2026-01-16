@@ -14,7 +14,7 @@ const Footer = () => {
               <img src={logoImage} alt="NationTechMart" className="h-10 w-auto" />
             </Link>
             <p className="text-muted-foreground leading-relaxed">
-              Your trusted source for quality technology products. We're committed to providing excellent service and competitive prices.
+              Your trusted source for quality technology products at competitive prices.
             </p>
           </div>
 
@@ -45,7 +45,7 @@ const Footer = () => {
                 Shipping & Returns
               </Link>
               <Link to="/terms" className="text-muted-foreground hover:text-primary transition-colors">
-                Terms of Service
+                Terms & Conditions
               </Link>
               <Link to="/privacy" className="text-muted-foreground hover:text-primary transition-colors">
                 Privacy Policy

@@ -38,7 +38,7 @@ const Contact = () => {
       <section className="relative h-64 md:h-80 overflow-hidden">
         <img
           src="/assets/images/support.jpg"
-          alt="Customer service team ready to help"
+          alt="Our team ready to help"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-transparent flex items-center">
@@ -132,8 +132,7 @@ const Contact = () => {
                     Contact Information
                   </h3>
                   <p className="text-muted-foreground mb-6">
-                    We're committed to providing helpful, honest service for all your 
-                    printer and technology needs. Reach out through any of these channels.
+                    We're here to help with your printer and technology needs. Reach out through any of these channels.
                   </p>
                   
                   <div className="space-y-4">
@@ -201,7 +200,7 @@ const Contact = () => {
             <div className="rounded-xl overflow-hidden h-64">
               <img
                 src="/assets/images/shipping.jpg"
-                alt="Fast and reliable service"
+                alt="Fast and reliable delivery"
                 className="w-full h-full object-cover"
               />
             </div>
