@@ -2,8 +2,8 @@ import { Heart, CheckCircle } from "lucide-react";
 
 const commitments = [
   {
-    title: "Genuine HP Products",
-    description: "We offer authentic HP equipment with original manufacturer warranties and specifications.",
+    title: "Genuine Products",
+    description: "We offer authentic equipment with original manufacturer warranties and specifications.",
   },
   {
     title: "Transparent Pricing",
