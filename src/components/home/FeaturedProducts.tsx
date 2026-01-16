@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import featuredProduct1 from "@/assets/products/hp-deskjet-2827e.png";
 import featuredProduct2 from "@/assets/products/hp-officejet-8135e.png";
+import featuredProduct3 from "@/assets/products/hp-envy-7955e.png";
 
 interface FeaturedProduct {
   name: string;
@@ -26,6 +27,13 @@ const featuredProducts: FeaturedProduct[] = [
     image: featuredProduct2,
     url: "/shop#!/HP-OfficeJet-8135e-Wireless-All-in-One-Color-Inkjet-Printer-with-3-Months-of-Ink-Trial-for-Office-Use/p/806466580",
     category: "Office Printers",
+  },
+  {
+    name: "HP Envy 7955e Wireless Photo All-in-One Color Inkjet Printer with Auto Duplex Printing",
+    shortName: "HP Envy 7955e Photo Printer",
+    image: featuredProduct3,
+    url: "/shop#!/HP-Envy-7955e-Wireless-Photo-All-in-One-Color-Inkjet-Printer-with-Auto-Duplex-Printing/p/806452376",
+    category: "Inkjet Printers",
   },
 ];
 
