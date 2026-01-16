@@ -91,26 +91,21 @@ const Contact = () => {
         canonicalUrl="/contact"
       />
 
-      {/* Hero Section with Image */}
-      <section className="relative bg-muted overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="/assets/images/support.jpg"
-            alt="Customer assistance representative"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/50 to-transparent" />
-        </div>
-        <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-20 md:py-28">
-          <div className="max-w-2xl">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">
-              Contact NationTechMart
-            </h1>
-            <p className="text-lg text-white/90 leading-relaxed">
-              NationTechMart is an independent online retailer offering printers, scanners, and related technology products. 
-              This Contact Us page is provided to help customers reach us for order-related questions, general product information, 
-              and store policy inquiries.
-            </p>
+      {/* Hero Banner with Image */}
+      <section className="relative w-full bg-muted">
+        <img
+          src="/assets/images/support.jpg"
+          alt="Customer assistance representative"
+          className="w-full h-auto max-h-[400px] object-cover"
+          loading="eager"
+        />
+        <div className="absolute inset-0 flex items-center">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-start">
+            <div className="bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
+                Contact NationTechMart
+              </h1>
+            </div>
           </div>
         </div>
       </section>
