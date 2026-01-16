@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import ImageCard from "@/components/shared/ImageCard";
+import { ArrowRight } from "lucide-react";
 
 const categories = [
   {
@@ -7,30 +7,35 @@ const categories = [
     image: "/assets/images/category-home-printers.png",
     alt: "Compact home printer",
     categoryId: "193853315",
+    gradient: "from-blue-500/20 to-cyan-500/20",
   },
   {
     title: "Office Printers",
     image: "/assets/images/category-office-printers.png",
     alt: "Professional office printer",
     categoryId: "193855066",
+    gradient: "from-purple-500/20 to-pink-500/20",
   },
   {
     title: "Inkjet Printers",
     image: "/assets/images/category-inkjet-printers.png",
     alt: "Inkjet printer with smartphone",
     categoryId: "193859557",
+    gradient: "from-green-500/20 to-emerald-500/20",
   },
   {
     title: "Laser Printers",
     image: "/assets/images/category-laser-printers.png",
     alt: "Laser printer",
     categoryId: "193855067",
+    gradient: "from-orange-500/20 to-amber-500/20",
   },
   {
     title: "Document Scanners",
     image: "/assets/images/scanner-category.png",
     alt: "Document scanner with keyboard",
     categoryId: "193855068",
+    gradient: "from-rose-500/20 to-red-500/20",
   },
 ];
 
@@ -55,20 +60,33 @@ const ShopByUseCase = () => {
               className="group block"
               data-testid={`link-category-${category.title.toLowerCase().replace(/\s+/g, '-')}`}
             >
-              <div className="bg-card rounded-2xl border border-border/60 overflow-hidden hover:border-primary/30 hover:shadow-lg transition-all duration-300">
-                <ImageCard
-                  src={category.image}
-                  alt={category.alt}
-                  size="card"
-                  rounded="sm"
-                  shadow="none"
-                  className="group-hover:scale-105 transition-transform duration-300"
-                />
-                <div className="p-4 text-center">
-                  <h3 className="font-bold text-foreground text-sm md:text-base group-hover:text-primary transition-colors">
-                    {category.title}
-                  </h3>
+              <div className="relative bg-card rounded-2xl border border-border/60 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">
+                {/* Gradient overlay on hover */}
+                <div className={`absolute inset-0 bg-gradient-to-br ${category.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10 pointer-events-none`} />
+                
+                {/* Image container */}
+                <div className="relative aspect-square overflow-hidden">
+                  <img
+                    src={category.image}
+                    alt={category.alt}
+                    className="w-full h-full object-cover transition-all duration-500 group-hover:scale-110 group-hover:rotate-2"
+                  />
+                  {/* Shine effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700 ease-in-out" />
                 </div>
+                
+                {/* Title section */}
+                <div className="relative z-20 p-4 text-center bg-card/80 backdrop-blur-sm">
+                  <div className="flex items-center justify-center gap-2">
+                    <h3 className="font-bold text-foreground text-sm md:text-base group-hover:text-primary transition-colors duration-300">
+                      {category.title}
+                    </h3>
+                    <ArrowRight className="w-4 h-4 text-primary opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300" />
+                  </div>
+                </div>
+
+                {/* Border glow effect */}
+                <div className="absolute inset-0 rounded-2xl border-2 border-primary/0 group-hover:border-primary/50 transition-all duration-500 pointer-events-none" />
               </div>
             </Link>
           ))}
