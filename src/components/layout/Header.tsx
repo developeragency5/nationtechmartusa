@@ -56,24 +56,13 @@ const Header = () => {
   }, []);
 
   const openCart = () => {
-    const w = window as any;
-    if (w.Ecwid && typeof w.Ecwid.openPage === 'function') {
-      w.Ecwid.openPage('cart');
-    } else {
-      // Fallback: navigate to shop page with cart hash
-      window.location.href = '/shop#!/~/cart';
-    }
+    // Always navigate to shop page with cart hash - Ecwid handles the display
+    window.location.href = '/shop#!/~/cart';
   };
 
   const openAccount = () => {
-    const w = window as any;
-    if (w.Ecwid && typeof w.Ecwid.openPage === 'function') {
-      // Opens sign-in dialog or account page if already logged in
-      w.Ecwid.openPage('signin');
-    } else {
-      // Fallback: navigate to shop page with signin hash
-      window.location.href = '/shop#!/~/signin';
-    }
+    // Always navigate to shop page with signin hash - Ecwid handles the display
+    window.location.href = '/shop#!/~/signin';
   };
 
   return (

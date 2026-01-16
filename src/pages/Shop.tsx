@@ -23,6 +23,20 @@ declare global {
 
 const Shop = () => {
   const [isLoading, setIsLoading] = useState(true);
+  const [isEcwidOverlay, setIsEcwidOverlay] = useState(false);
+
+  // Check if URL hash indicates cart, signin, or account page
+  useEffect(() => {
+    const checkHash = () => {
+      const hash = window.location.hash;
+      const isOverlay = hash.includes('cart') || hash.includes('signin') || hash.includes('account');
+      setIsEcwidOverlay(isOverlay);
+    };
+    
+    checkHash();
+    window.addEventListener('hashchange', checkHash);
+    return () => window.removeEventListener('hashchange', checkHash);
+  }, []);
 
   useEffect(() => {
     // Ecwid configuration
@@ -100,72 +114,75 @@ const Shop = () => {
         ]}
       />
 
-      {/* Hero Banner with Independent Retailer Disclosure - responsive, full image visible */}
-      <section className="relative">
-        <div className="relative w-full bg-muted">
-          <img
-            src="/assets/images/shop-banner.jpg"
-            alt="Woman checking copy of document at printer"
-            className="w-full h-auto"
-          />
-          <div className="absolute inset-0 flex items-center">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-end">
-              <div className="text-right bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg">
-                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                  Shop Printers & Supplies
-                </h1>
-                <p className="text-sm sm:text-base text-white/90 mt-2">
-                  Quality products at competitive prices with fast USA shipping.
-                </p>
+      {/* Hero Banner - hidden when showing cart/signin/account */}
+      {!isEcwidOverlay && (
+        <>
+          <section className="relative">
+            <div className="relative w-full bg-muted">
+              <img
+                src="/assets/images/shop-banner.jpg"
+                alt="Woman checking copy of document at printer"
+                className="w-full h-auto"
+              />
+              <div className="absolute inset-0 flex items-center">
+                <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-end">
+                  <div className="text-right bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg">
+                    <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
+                      Shop Printers & Supplies
+                    </h1>
+                    <p className="text-sm sm:text-base text-white/90 mt-2">
+                      Quality products at competitive prices with fast USA shipping.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-        <div className="py-4 bg-card border-b border-border/60">
-          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-            <div className="max-w-4xl mx-auto text-center">
-              <SiteNotice variant="compact" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-
-      {/* Before You Buy Box */}
-      <section className="py-6 bg-card border-y border-border/60">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-card border border-border/60 rounded-xl p-5">
-              <h3 className="text-sm font-semibold text-foreground mb-3">Before You Buy</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
-                <Link to="/shipping" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                  <Clock className="h-4 w-4 shrink-0" />
-                  <span>Free shipping on orders over $100</span>
-                </Link>
-                <Link to="/shipping" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                  <RotateCcw className="h-4 w-4 shrink-0" />
-                  <span>30-day return window</span>
-                </Link>
-                <Link to="/terms" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                  <Shield className="h-4 w-4 shrink-0" />
-                  <span>Manufacturer warranty</span>
-                </Link>
-                <Link to="/contact" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-                  <Mail className="h-4 w-4 shrink-0" />
-                  <span>Questions? Contact us</span>
-                </Link>
+            <div className="py-4 bg-card border-b border-border/60">
+              <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+                <div className="max-w-4xl mx-auto text-center">
+                  <SiteNotice variant="compact" />
+                </div>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
+          </section>
+
+          {/* Before You Buy Box */}
+          <section className="py-6 bg-card border-y border-border/60">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+              <div className="max-w-4xl mx-auto">
+                <div className="bg-card border border-border/60 rounded-xl p-5">
+                  <h3 className="text-sm font-semibold text-foreground mb-3">Before You Buy</h3>
+                  <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
+                    <Link to="/shipping" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                      <Clock className="h-4 w-4 shrink-0" />
+                      <span>Free shipping on orders over $100</span>
+                    </Link>
+                    <Link to="/shipping" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                      <RotateCcw className="h-4 w-4 shrink-0" />
+                      <span>30-day return window</span>
+                    </Link>
+                    <Link to="/terms" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                      <Shield className="h-4 w-4 shrink-0" />
+                      <span>Manufacturer warranty</span>
+                    </Link>
+                    <Link to="/contact" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
+                      <Mail className="h-4 w-4 shrink-0" />
+                      <span>Questions? Contact us</span>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </>
+      )}
 
       {/* Ecwid Store Embed */}
-      <section className="py-16 md:py-20 bg-card">
+      <section className={`bg-card ${isEcwidOverlay ? 'py-8' : 'py-16 md:py-20'}`}>
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="max-w-6xl mx-auto relative">
-            {/* Loading State - OUTSIDE the Ecwid container to avoid DOM conflicts */}
-            {isLoading && (
+            {/* Loading State - only show for product browsing, not cart/signin */}
+            {isLoading && !isEcwidOverlay && (
               <div className="flex flex-col items-center justify-center py-16">
                 <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-6">
                   <ShoppingBag className="h-8 w-8 text-primary animate-pulse" />
@@ -192,48 +209,50 @@ const Shop = () => {
             {/* Ecwid container - React won't manage its children */}
             <div 
               id="my-store-128774264" 
-              className={`min-h-[400px] ${isLoading ? 'hidden' : ''}`}
+              className={`min-h-[400px] ${isLoading && !isEcwidOverlay ? 'hidden' : ''}`}
             />
           </div>
         </div>
       </section>
 
-      {/* Transparency Section */}
-      <TransparencySection />
+      {/* Transparency Section - hidden for cart/signin/account */}
+      {!isEcwidOverlay && <TransparencySection />}
 
-      {/* Links Section */}
-      <section className="py-16 md:py-20 bg-card border-t border-border/60">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
-              <Link 
-                to="/shipping" 
-                className="group flex items-center p-6 lg:p-8 bg-card rounded-2xl border border-border/60 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
-              >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mr-5 group-hover:bg-primary/15 transition-colors">
-                  <Truck className="h-7 w-7 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground text-lg mb-1">Shipping & Returns</h3>
-                  <p className="text-muted-foreground">View our shipping options and return policy</p>
-                </div>
-              </Link>
-              <Link 
-                to="/contact" 
-                className="group flex items-center p-6 lg:p-8 bg-card rounded-2xl border border-border/60 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
-              >
-                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mr-5 group-hover:bg-primary/15 transition-colors">
-                  <MessageSquare className="h-7 w-7 text-primary" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-foreground text-lg mb-1">Contact Us</h3>
-                  <p className="text-muted-foreground">Have questions? We're here to help</p>
-                </div>
-              </Link>
+      {/* Links Section - hidden for cart/signin/account */}
+      {!isEcwidOverlay && (
+        <section className="py-16 md:py-20 bg-card border-t border-border/60">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div className="max-w-4xl mx-auto">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
+                <Link 
+                  to="/shipping" 
+                  className="group flex items-center p-6 lg:p-8 bg-card rounded-2xl border border-border/60 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mr-5 group-hover:bg-primary/15 transition-colors">
+                    <Truck className="h-7 w-7 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground text-lg mb-1">Shipping & Returns</h3>
+                    <p className="text-muted-foreground">View our shipping options and return policy</p>
+                  </div>
+                </Link>
+                <Link 
+                  to="/contact" 
+                  className="group flex items-center p-6 lg:p-8 bg-card rounded-2xl border border-border/60 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+                >
+                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mr-5 group-hover:bg-primary/15 transition-colors">
+                    <MessageSquare className="h-7 w-7 text-primary" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-foreground text-lg mb-1">Contact Us</h3>
+                    <p className="text-muted-foreground">Have questions? We're here to help</p>
+                  </div>
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
     </Layout>
   );
 };
