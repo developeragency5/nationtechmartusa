@@ -56,19 +56,13 @@ const Header = () => {
   }, []);
 
   const openCart = () => {
-    if (window.Ecwid) {
-      (window as any).Ecwid.openPage('cart');
-    } else {
-      window.location.href = '/shop';
-    }
+    // Navigate to shop page with cart hash - Ecwid will handle the cart display
+    window.location.href = '/shop#!/~/cart';
   };
 
   const openAccount = () => {
-    if (window.Ecwid) {
-      (window as any).Ecwid.openPage('account');
-    } else {
-      window.location.href = '/shop';
-    }
+    // Navigate to shop page with account hash - Ecwid will handle the account display
+    window.location.href = '/shop#!/~/account';
   };
 
   return (
@@ -100,13 +94,7 @@ const Header = () => {
             <Button 
               variant="ghost" 
               size="icon"
-              onClick={() => {
-                if (window.Ecwid) {
-                  (window as any).Ecwid.openPage('account');
-                } else {
-                  window.location.href = '/shop#!/~/account';
-                }
-              }}
+              onClick={openAccount}
               data-testid="button-user-account"
               aria-label="My Account"
             >
