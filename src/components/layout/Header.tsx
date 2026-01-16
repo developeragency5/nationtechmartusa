@@ -1,7 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, ShoppingCart, User } from "lucide-react";
 import { useState, useEffect } from "react";
-import { Button } from "@/components/ui/button";
 import logoImage from "@/assets/logo.png";
 
 declare global {
@@ -56,32 +55,84 @@ const Header = () => {
   }, []);
 
   const openCart = () => {
-    // Always navigate to shop page with cart hash - Ecwid handles the display
     window.location.href = '/shop#!/~/cart';
   };
 
   const openAccount = () => {
-    // Always navigate to shop page with signin hash - Ecwid handles the display
     window.location.href = '/shop#!/~/signin';
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-background border-b border-border">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center">
-            <img src={logoImage} alt="NationTechMart" className="h-10 w-auto" />
-          </Link>
+    <header className="sticky top-0 z-50 bg-background">
+      {/* Top Row - Logo and Account/Cart */}
+      <div className="border-b border-border">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+          <div className="flex items-center justify-between h-14">
+            {/* Logo */}
+            <Link to="/" className="flex items-center">
+              <img src={logoImage} alt="NationTechMart" className="h-10 w-auto" />
+            </Link>
 
+            {/* Desktop Account/Cart */}
+            <div className="hidden md:flex items-center gap-6">
+              <button 
+                onClick={openAccount}
+                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="button-user-account"
+              >
+                <User className="h-5 w-5" />
+                <span className="text-xs">Sign In</span>
+              </button>
+              <button 
+                onClick={openCart}
+                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="button-cart"
+              >
+                <ShoppingCart className="h-5 w-5" />
+                <span className="text-xs">Cart</span>
+              </button>
+            </div>
+
+            {/* Mobile Menu Button + Cart */}
+            <div className="md:hidden flex items-center gap-2">
+              <button 
+                onClick={openCart}
+                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
+                data-testid="button-cart-mobile"
+              >
+                <ShoppingCart className="h-5 w-5" />
+                <span className="text-xs">Cart</span>
+              </button>
+              
+              <button
+                className="p-2 rounded hover:bg-muted transition-colors"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label="Toggle menu"
+              >
+                {isMenuOpen ? (
+                  <X className="h-5 w-5 text-foreground" />
+                ) : (
+                  <Menu className="h-5 w-5 text-foreground" />
+                )}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Row - Navigation */}
+      <div className="border-b border-border bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex items-center justify-center gap-2 py-2">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 to={link.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
-                  isActive(link.href) ? "text-primary" : "text-muted-foreground"
+                className={`px-5 py-2 text-sm font-medium rounded-md transition-colors ${
+                  isActive(link.href) 
+                    ? "bg-primary text-primary-foreground" 
+                    : "text-muted-foreground hover:text-foreground hover:bg-muted"
                 }`}
               >
                 {link.label}
@@ -89,66 +140,17 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* Desktop Actions */}
-          <div className="hidden md:flex items-center gap-2">
-            <Button 
-              variant="ghost" 
-              size="icon"
-              onClick={openAccount}
-              data-testid="button-user-account"
-              aria-label="My Account"
-            >
-              <User className="h-5 w-5" />
-            </Button>
-            <Button 
-              variant="ghost" 
-              size="icon"
-              onClick={openCart}
-              data-testid="button-cart"
-              aria-label="Shopping Cart"
-            >
-              <ShoppingCart className="h-5 w-5" />
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button + Cart */}
-          <div className="md:hidden flex items-center gap-1">
-            <Button 
-              variant="ghost" 
-              size="icon"
-              onClick={openCart}
-              data-testid="button-cart-mobile"
-              aria-label="Shopping Cart"
-            >
-              <ShoppingCart className="h-5 w-5" />
-            </Button>
-            
-            <button
-              className="p-2 rounded hover:bg-muted transition-colors"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? (
-                <X className="h-5 w-5 text-foreground" />
-              ) : (
-                <Menu className="h-5 w-5 text-foreground" />
-              )}
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile Navigation */}
-        {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border">
-            <nav className="flex flex-col gap-1">
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+            <nav className="md:hidden py-3 flex flex-col gap-1">
               {navLinks.map((link) => (
                 <Link
                   key={link.href}
                   to={link.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-sm font-medium px-3 py-2 rounded transition-colors ${
+                  className={`px-4 py-2 text-sm font-medium rounded-md transition-colors ${
                     isActive(link.href) 
-                      ? "text-primary bg-primary/5" 
+                      ? "bg-primary text-primary-foreground" 
                       : "text-muted-foreground hover:text-foreground hover:bg-muted"
                   }`}
                 >
@@ -156,8 +158,8 @@ const Header = () => {
                 </Link>
               ))}
             </nav>
-          </div>
-        )}
+          )}
+        </div>
       </div>
     </header>
   );
