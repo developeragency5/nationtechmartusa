@@ -113,7 +113,7 @@ const Contact = () => {
       {/* Description Section */}
       <section className="py-10 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <p className="text-lg text-muted-foreground leading-relaxed text-center">
+          <p className="text-lg text-muted-foreground leading-relaxed text-center" data-testid="text-contact-description">
             NationTechMart is an independent online retailer offering printers, scanners, and related technology products. 
             This Contact Us page is provided to help customers reach us for order-related questions, general product information, 
             and store policy inquiries.
