@@ -111,10 +111,10 @@ const Shop = () => {
           <div className="absolute inset-0 flex items-center">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-end">
               <div className="text-right">
-                <h1 className="text-3xl md:text-4xl font-bold text-foreground">
+                <h1 className="text-3xl md:text-4xl font-bold text-white">
                   Shop Printers & Supplies
                 </h1>
-                <p className="text-muted-foreground mt-2">
+                <p className="text-white/90 mt-2">
                   Quality products at competitive prices with fast USA shipping.
                 </p>
               </div>
