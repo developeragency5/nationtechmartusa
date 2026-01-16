@@ -4,7 +4,6 @@ import ImageCard from "@/components/shared/ImageCard";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
-import aboutBanner from "@assets/confident-businessman-and-engineering-team-in-the-2026-01-05-0_1768522887572.jpg";
 
 const values = [
   {
@@ -41,7 +40,7 @@ const About = () => {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img
-            src={aboutBanner}
+            src="/assets/images/about.jpg"
             alt="About NationTechMart - Professional team collaboration"
             className="w-full h-full object-cover"
             loading="eager"
