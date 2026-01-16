@@ -102,11 +102,11 @@ const Shop = () => {
 
       {/* Hero Banner with Independent Retailer Disclosure - responsive, no cropping */}
       <section className="relative">
-        <div className="relative w-full bg-muted">
+        <div className="relative w-full bg-muted max-h-[350px] md:max-h-[450px] overflow-hidden">
           <img
             src="/assets/images/shop-banner.jpg"
             alt="Woman checking copy of document at printer"
-            className="w-full h-auto object-contain"
+            className="w-full h-full object-contain"
           />
           <div className="absolute inset-0 flex items-center">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-end">

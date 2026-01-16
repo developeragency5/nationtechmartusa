@@ -6,11 +6,11 @@ const HeroSection = () => {
   return (
     <section className="bg-background">
       {/* Hero with background image - responsive, no cropping */}
-      <div className="relative w-full bg-muted">
+      <div className="relative w-full bg-muted max-h-[400px] md:max-h-[500px] overflow-hidden">
         <img
           src="/assets/images/hero-banner.jpg"
           alt="Young woman making a copy of a document in modern office"
-          className="w-full h-auto object-contain"
+          className="w-full h-full object-contain"
           loading="eager"
         />
         <div className="absolute inset-0 flex items-center">

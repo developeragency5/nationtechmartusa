@@ -13,11 +13,11 @@ const Shipping = () => {
       />
 
       {/* Hero Banner - responsive, no cropping */}
-      <section className="relative w-full bg-muted">
+      <section className="relative w-full bg-muted max-h-[300px] md:max-h-[400px] overflow-hidden">
         <img
           src="/assets/images/shipping.jpg"
           alt="Packages ready for shipping"
-          className="w-full h-auto object-contain"
+          className="w-full h-full object-contain"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/90 to-background/50 flex items-center">
           <div className="container mx-auto px-4">

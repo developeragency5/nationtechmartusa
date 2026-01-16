@@ -37,11 +37,11 @@ const About = () => {
       />
 
       {/* Hero Banner with Image - responsive, no cropping */}
-      <section className="relative w-full bg-muted">
+      <section className="relative w-full bg-muted max-h-[400px] md:max-h-[500px] overflow-hidden">
         <img
           src="/assets/images/about-banner.jpg"
           alt="Happy diverse executive business people working together in meeting"
-          className="w-full h-auto object-contain"
+          className="w-full h-full object-contain"
           loading="eager"
         />
         <div className="absolute inset-0 flex items-center">
