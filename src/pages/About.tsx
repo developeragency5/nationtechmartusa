@@ -57,7 +57,7 @@ const About = () => {
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
                 We're an independent retailer dedicated to providing quality technology 
                 products with exceptional customer service. No manufacturer affiliations—just 
-                honest business and real support.
+                honest business and dedicated support.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button asChild size="lg">
@@ -119,7 +119,7 @@ const About = () => {
                 <li className="flex items-start gap-3">
                   <CheckCircle className="h-6 w-6 text-primary shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium text-foreground">Real Support</p>
+                    <p className="font-medium text-foreground">Dedicated Support</p>
                     <p className="text-sm text-muted-foreground">Actual humans ready to help with questions before and after purchase.</p>
                   </div>
                 </li>

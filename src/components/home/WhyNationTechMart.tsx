@@ -20,7 +20,7 @@ const benefits = [
     link: "/shipping",
   },
   {
-    title: "Real Support",
+    title: "Dedicated Support",
     description: "Questions before or after your purchase? Our team is here to help via email and our support center.",
     image: "/assets/images/support.jpg",
     alt: "Customer support illustration with headset and chat bubbles",

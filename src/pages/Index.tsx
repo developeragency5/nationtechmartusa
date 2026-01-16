@@ -3,7 +3,7 @@ import SEO from "@/components/shared/SEO";
 import HeroSection from "@/components/home/HeroSection";
 import ShopByUseCase from "@/components/home/ShopByUseCase";
 import WhyNationTechMart from "@/components/home/WhyNationTechMart";
-import RealStorePromise from "@/components/home/RealStorePromise";
+import OurApproach from "@/components/home/RealStorePromise";
 import TransparencySection from "@/components/shared/TransparencySection";
 import FAQSection from "@/components/home/FAQSection";
 
@@ -19,7 +19,7 @@ const Index = () => {
       <HeroSection />
       <ShopByUseCase />
       <WhyNationTechMart />
-      <RealStorePromise />
+      <OurApproach />
       <TransparencySection />
       <FAQSection />
     </Layout>
