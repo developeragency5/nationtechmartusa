@@ -15,15 +15,15 @@ const HeroSection = () => {
             loading="eager"
           />
           <div className="absolute inset-0 flex items-center">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-end">
-              <div className="max-w-xl bg-black/40 backdrop-blur-sm p-6 rounded-lg text-right">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-start">
+              <div className="max-w-xl bg-black/40 backdrop-blur-sm p-6 rounded-lg text-left">
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
                 Quality Technology Products For Your Business
               </h1>
               <p className="mt-4 text-base md:text-lg text-white/90 leading-relaxed">
                 Discover our selection of printers, scanners, and office equipment at competitive prices.
               </p>
-              <div className="mt-6 flex flex-wrap gap-3 justify-end">
+              <div className="mt-6 flex flex-wrap gap-3 justify-start">
                 <Button asChild size="lg">
                   <Link to="/shop">
                     Shop Now
