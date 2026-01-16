@@ -110,7 +110,7 @@ const Shop = () => {
           />
           <div className="absolute inset-0 flex items-center">
             <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-end">
-              <div className="text-right">
+              <div className="text-right bg-black/40 backdrop-blur-sm p-6 rounded-lg">
                 <h1 className="text-3xl md:text-4xl font-bold text-white">
                   Shop Printers & Supplies
                 </h1>
