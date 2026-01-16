@@ -4,6 +4,7 @@ import HeroSection from "@/components/home/HeroSection";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
 import AboutUsSection from "@/components/home/AboutUsSection";
 import WhoWeServe from "@/components/home/WhoWeServe";
+import OurCommitment from "@/components/home/OurCommitment";
 import ShopByUseCase from "@/components/home/ShopByUseCase";
 import WhyNationTechMart from "@/components/home/WhyNationTechMart";
 import OurApproach from "@/components/home/RealStorePromise";
@@ -22,6 +23,7 @@ const Index = () => {
       <HeroSection />
       <AboutUsSection />
       <WhoWeServe />
+      <OurCommitment />
       <FeaturedProducts />
       <ShopByUseCase />
       <WhyNationTechMart />
