@@ -4,7 +4,7 @@ import TransparencySection from "@/components/shared/TransparencySection";
 import SiteNotice from "@/components/shared/SiteNotice";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { Truck, MessageSquare, ShoppingBag, Loader2, Home, Building2, Zap, Layers, ScanLine } from "lucide-react";
+import { MessageSquare, ShoppingBag, Loader2, Home, Building2, Zap, Layers, ScanLine } from "lucide-react";
 
 declare global {
   interface Window {
@@ -252,37 +252,23 @@ const Shop = () => {
       {/* Transparency Section - hidden for cart/signin/account */}
       {!isEcwidOverlay && <TransparencySection />}
 
-      {/* Links Section - hidden for cart/signin/account */}
+      {/* Contact Section - hidden for cart/signin/account */}
       {!isEcwidOverlay && (
         <section className="py-16 md:py-20 bg-card border-t border-border/60">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-            <div className="max-w-4xl mx-auto">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 lg:gap-8">
-                <Link 
-                  to="/shipping" 
-                  className="group flex items-center p-6 lg:p-8 bg-card rounded-2xl border border-border/60 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
-                >
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mr-5 group-hover:bg-primary/15 transition-colors">
-                    <Truck className="h-7 w-7 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground text-lg mb-1">Shipping & Returns</h3>
-                    <p className="text-muted-foreground">View our shipping options and return policy</p>
-                  </div>
-                </Link>
-                <Link 
-                  to="/contact" 
-                  className="group flex items-center p-6 lg:p-8 bg-card rounded-2xl border border-border/60 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
-                >
-                  <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mr-5 group-hover:bg-primary/15 transition-colors">
-                    <MessageSquare className="h-7 w-7 text-primary" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-foreground text-lg mb-1">Contact Us</h3>
-                    <p className="text-muted-foreground">Have questions? We're here to help</p>
-                  </div>
-                </Link>
-              </div>
+            <div className="max-w-xl mx-auto">
+              <Link 
+                to="/contact" 
+                className="group flex items-center p-6 lg:p-8 bg-card rounded-2xl border border-border/60 hover:border-primary/30 hover:shadow-lg transition-all duration-300"
+              >
+                <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mr-5 group-hover:bg-primary/15 transition-colors">
+                  <MessageSquare className="h-7 w-7 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-foreground text-lg mb-1">Contact Us</h3>
+                  <p className="text-muted-foreground">Have questions? We're here to help</p>
+                </div>
+              </Link>
             </div>
           </div>
         </section>
