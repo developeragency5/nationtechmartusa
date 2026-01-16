@@ -37,38 +37,36 @@ const About = () => {
       />
 
       {/* Hero Banner with Image */}
-      <section className="relative overflow-hidden">
-        <div className="absolute inset-0 z-0">
+      <section className="relative">
+        <div className="relative h-80 md:h-[28rem]">
           <img
             src="/assets/images/about.jpg"
             alt="About NationTechMart - Professional team collaboration"
             className="w-full h-full object-cover"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-background/50 to-transparent" />
-        </div>
-
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl relative z-10">
-          <div className="py-24 md:py-32 lg:py-40">
-            <div className="max-w-2xl">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-6 tracking-tight">
-                About NationTechMart
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-8">
-                We're an independent retailer dedicated to providing quality technology 
-                products with exceptional customer service. No manufacturer affiliations—just 
-                honest business and dedicated support.
-              </p>
-              <div className="flex flex-wrap gap-4">
-                <Button asChild size="lg">
-                  <Link to="/shop">
-                    Shop Products
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button asChild variant="outline" size="lg">
-                  <Link to="/contact">Contact Us</Link>
-                </Button>
+          <div className="absolute inset-0 flex items-center">
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-start">
+              <div className="max-w-xl bg-black/40 backdrop-blur-sm p-6 rounded-lg text-left">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
+                  About NationTechMart
+                </h1>
+                <p className="mt-4 text-base md:text-lg text-white/90 leading-relaxed">
+                  We're an independent retailer dedicated to providing quality technology 
+                  products with exceptional customer service. No manufacturer affiliations—just 
+                  honest business and dedicated support.
+                </p>
+                <div className="mt-6 flex flex-wrap gap-3 justify-start">
+                  <Button asChild size="lg">
+                    <Link to="/shop">
+                      Shop Products
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                  <Button asChild variant="secondary" size="lg" className="bg-background text-foreground hover:bg-background/90">
+                    <Link to="/contact">Contact Us</Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>
