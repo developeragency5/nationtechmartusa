@@ -24,7 +24,7 @@ const AboutUsSection = () => {
               </p>
             </div>
             <div className="mt-6">
-              <Button asChild variant="outline" data-testid="button-learn-more-about">
+              <Button asChild data-testid="button-learn-more-about">
                 <Link to="/about">
                   Learn More About Us
                   <ArrowRight className="ml-2 h-4 w-4" />
