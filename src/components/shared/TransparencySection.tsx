@@ -10,9 +10,9 @@ const transparencyItems = [
   },
   {
     icon: Truck,
-    title: "Shipping Timelines",
+    title: "Shipping",
     description:
-      "Standard shipping typically takes 3-7 business days after processing. Express options are available at checkout. Delivery times are estimates and may vary based on carrier conditions and destination.",
+      "Free shipping on orders over $100 (USA only). Standard delivery takes 3-7 business days after processing. Delivery times are estimates and may vary based on carrier conditions.",
   },
   {
     icon: RotateCcw,

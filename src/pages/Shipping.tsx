@@ -7,7 +7,7 @@ const Shipping = () => {
     <Layout>
       <SEO
         title="Shipping & Returns Policy"
-        description="NationTechMart shipping and returns policy. Free shipping on orders over $50, 30-day returns, USA shipping only. Learn about delivery times, carriers, and return process."
+        description="NationTechMart shipping and returns policy. Free shipping on orders over $100 (USA only), 30-day returns. Learn about delivery times and return process."
         keywords="printer shipping, return policy, shipping rates, delivery time, order returns"
         canonicalUrl="/shipping"
       />
@@ -78,8 +78,8 @@ const Shipping = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
                 Shipping at a Glance
               </h2>
-              <p className="text-muted-foreground">
-                USA shipping only • Free on orders over $50
+              <p className="text-lg font-medium text-primary">
+                Free shipping on orders over $100 (USA only)
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -106,7 +106,7 @@ const Shipping = () => {
                   <h3 className="font-bold text-foreground mb-2">Carriers & Delivery</h3>
                   <p className="text-sm text-muted-foreground">
                     We ship via <strong>UPS, FedEx, and USPS</strong>. Standard delivery takes 3-7 
-                    business days; express options available.
+                    business days.
                   </p>
                 </div>
               </div>
@@ -129,39 +129,18 @@ const Shipping = () => {
         </div>
       </section>
 
-      {/* Shipping Rates Table */}
+      {/* Shipping Summary */}
       <section className="py-12 bg-accent/20">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <h3 className="text-xl font-bold text-foreground mb-6 text-center">Shipping Rates</h3>
-            <div className="bg-card rounded-xl border border-border overflow-hidden">
-              <div className="divide-y divide-border">
-                <div className="flex justify-between items-center p-4">
-                  <div>
-                    <span className="font-medium text-foreground">Standard Shipping</span>
-                    <p className="text-xs text-muted-foreground">3-7 business days</p>
-                  </div>
-                  <span className="text-foreground font-medium">Free on $50+ / $5.99</span>
-                </div>
-                <div className="flex justify-between items-center p-4">
-                  <div>
-                    <span className="font-medium text-foreground">Express Shipping</span>
-                    <p className="text-xs text-muted-foreground">2-3 business days</p>
-                  </div>
-                  <span className="text-foreground font-medium">$12.99</span>
-                </div>
-                <div className="flex justify-between items-center p-4">
-                  <div>
-                    <span className="font-medium text-foreground">Overnight Shipping</span>
-                    <p className="text-xs text-muted-foreground">Next business day</p>
-                  </div>
-                  <span className="text-foreground font-medium">$24.99</span>
-                </div>
-              </div>
+            <div className="bg-card rounded-xl border border-border p-6 text-center">
+              <Truck className="h-12 w-12 text-primary mx-auto mb-4" />
+              <h3 className="text-xl font-bold text-foreground mb-2">Free Shipping on Orders Over $100</h3>
+              <p className="text-muted-foreground mb-4">USA only • Standard delivery 3-7 business days</p>
+              <p className="text-sm text-muted-foreground">
+                Delivery times are estimates from ship date, not order date. Actual delivery may vary.
+              </p>
             </div>
-            <p className="text-xs text-muted-foreground text-center mt-4">
-              Delivery times are estimates from ship date, not order date. Actual delivery may vary.
-            </p>
           </div>
         </div>
       </section>

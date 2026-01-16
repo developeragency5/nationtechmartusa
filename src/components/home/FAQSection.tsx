@@ -7,9 +7,9 @@ import {
 
 const faqs = [
   {
-    question: "How long does shipping take?",
+    question: "What is your shipping policy?",
     answer:
-      "Standard shipping typically takes 3-7 business days within the continental United States. Express shipping options are available at checkout for faster delivery. Please note that processing time (1-2 business days) is not included in shipping estimates.",
+      "We offer free shipping on all orders over $100 within the USA. Orders typically ship within 1-2 business days and standard delivery takes 3-7 business days.",
   },
   {
     question: "What is your return policy?",
@@ -34,7 +34,7 @@ const faqs = [
   {
     question: "Do you ship internationally?",
     answer:
-      "Currently, we only ship within the United States. We're working on expanding our shipping options to serve international customers in the future. Please check back for updates or subscribe to our newsletter for announcements.",
+      "Currently, we only ship within the United States. Free shipping is available on orders over $100.",
   },
 ];
 

@@ -140,7 +140,7 @@ const Shop = () => {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm">
                 <Link to="/shipping" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
                   <Clock className="h-4 w-4 shrink-0" />
-                  <span>Shipping: 3-7 business days</span>
+                  <span>Free shipping on orders $100+</span>
                 </Link>
                 <Link to="/shipping" className="flex items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
                   <RotateCcw className="h-4 w-4 shrink-0" />
