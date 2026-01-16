@@ -91,7 +91,7 @@ const FeaturedProducts = () => {
 
         <div className="text-center mt-10">
           <Link to="/shop">
-            <Button variant="outline" size="lg" data-testid="button-view-all-products">
+            <Button size="lg" data-testid="button-view-all-products">
               View All Products
               <ArrowRight className="h-4 w-4 ml-2" />
             </Button>

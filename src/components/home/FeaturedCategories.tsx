@@ -62,7 +62,7 @@ const FeaturedCategories = () => {
           ))}
         </div>
         <div className="text-center mt-14">
-          <Button asChild variant="outline" size="lg">
+          <Button asChild size="lg">
             <Link to="/shop">Browse All Products</Link>
           </Button>
         </div>
