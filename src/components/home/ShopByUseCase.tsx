@@ -6,26 +6,31 @@ const categories = [
     title: "Home Printers",
     image: "/assets/images/category-home-printers.png",
     alt: "Compact home printer",
+    categoryId: "193853315",
   },
   {
     title: "Office Printers",
     image: "/assets/images/category-office-printers.png",
     alt: "Professional office printer",
+    categoryId: "193855066",
   },
   {
     title: "Inkjet Printers",
     image: "/assets/images/category-inkjet-printers.png",
     alt: "Inkjet printer with smartphone",
+    categoryId: "193859557",
   },
   {
     title: "Laser Printers",
     image: "/assets/images/category-laser-printers.png",
     alt: "Laser printer",
+    categoryId: "193855067",
   },
   {
     title: "Document Scanners",
     image: "/assets/images/category-document-scanners.png",
     alt: "Document scanner",
+    categoryId: "193855068",
   },
 ];
 
@@ -46,7 +51,7 @@ const ShopByUseCase = () => {
           {categories.map((category, index) => (
             <Link
               key={index}
-              to="/shop"
+              to={`/shop#!/c/${category.categoryId}`}
               className="group block"
               data-testid={`link-category-${category.title.toLowerCase().replace(/\s+/g, '-')}`}
             >
