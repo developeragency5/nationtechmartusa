@@ -94,8 +94,8 @@ const Contact = () => {
       {/* Hero Banner with Image */}
       <section className="relative w-full bg-muted">
         <img
-          src="/assets/images/support.jpg"
-          alt="Customer assistance representative"
+          src="/assets/images/contact-banner.jpg"
+          alt="Customer assistance representative with headset"
           className="w-full h-auto max-h-[400px] object-cover"
           loading="eager"
         />
@@ -103,13 +103,23 @@ const Contact = () => {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-start">
             <div className="bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
-                Contact NationTechMart
+                Contact Us
               </h1>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Description Section */}
+      <section className="py-10 bg-background">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
+          <p className="text-lg text-muted-foreground leading-relaxed text-center">
+            NationTechMart is an independent online retailer offering printers, scanners, and related technology products. 
+            This Contact Us page is provided to help customers reach us for order-related questions, general product information, 
+            and store policy inquiries.
+          </p>
+        </div>
+      </section>
 
       {/* What You Can Contact Us About */}
       <section className="py-16 bg-background">
