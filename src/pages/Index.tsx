@@ -19,8 +19,8 @@ const Index = () => {
         canonicalUrl="/"
       />
       <HeroSection />
-      <FeaturedProducts />
       <AboutUsSection />
+      <FeaturedProducts />
       <ShopByUseCase />
       <WhyNationTechMart />
       <OurApproach />
