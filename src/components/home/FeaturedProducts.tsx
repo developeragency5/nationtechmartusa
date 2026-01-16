@@ -4,6 +4,7 @@ import { ArrowRight } from "lucide-react";
 import featuredProduct1 from "@/assets/products/hp-deskjet-2827e.png";
 import featuredProduct2 from "@/assets/products/hp-officejet-8135e.png";
 import featuredProduct3 from "@/assets/products/hp-envy-7955e.png";
+import featuredProduct4 from "@/assets/products/hp-laserjet-m110w.png";
 
 interface FeaturedProduct {
   name: string;
@@ -34,6 +35,13 @@ const featuredProducts: FeaturedProduct[] = [
     image: featuredProduct3,
     url: "/shop#!/HP-Envy-7955e-Wireless-Photo-All-in-One-Color-Inkjet-Printer-with-Auto-Duplex-Printing/p/806452376",
     category: "Inkjet Printers",
+  },
+  {
+    name: "HP LaserJet M110w Compact Wireless Monochrome Laser Printer",
+    shortName: "HP LaserJet M110w Laser Printer",
+    image: featuredProduct4,
+    url: "/shop#!/HP-LaserJet-M110w-Compact-Wireless-Monochrome-Laser-Printer/p/806466884",
+    category: "Laser Printers",
   },
 ];
 
