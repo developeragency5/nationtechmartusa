@@ -27,23 +27,23 @@ const Privacy = () => {
         canonicalUrl="/privacy"
       />
 
-      {/* Hero Banner */}
-      <section className="relative h-48 md:h-56 overflow-hidden">
+      {/* Hero Banner - responsive, no cropping */}
+      <section className="relative w-full bg-muted">
         <img
           src="/assets/images/trust.jpg"
           alt="Privacy Policy"
-          className="w-full h-full object-cover"
+          className="w-full h-auto object-contain"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/95 to-background/70 flex items-center">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl">
-              <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-foreground mb-2">
                 Privacy Policy
               </h1>
-              <p className="text-muted-foreground">
+              <p className="text-sm sm:text-base text-muted-foreground">
                 How we collect, use, and protect your personal information.
               </p>
-              <p className="text-sm text-muted-foreground mt-2">
+              <p className="text-xs sm:text-sm text-muted-foreground mt-2">
                 Last updated: January 2025
               </p>
             </div>

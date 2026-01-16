@@ -36,37 +36,35 @@ const About = () => {
         canonicalUrl="/about"
       />
 
-      {/* Hero Banner with Image */}
-      <section className="relative">
-        <div className="relative h-80 md:h-[28rem]">
-          <img
-            src="/assets/images/about-banner.jpg"
-            alt="Happy diverse executive business people working together in meeting"
-            className="w-full h-full object-cover"
-            loading="eager"
-          />
-          <div className="absolute inset-0 flex items-center">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-start">
-              <div className="max-w-xl bg-black/40 backdrop-blur-sm p-6 rounded-lg text-left">
-                <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
-                  About NationTechMart
-                </h1>
-                <p className="mt-4 text-base md:text-lg text-white/90 leading-relaxed">
-                  We're an independent retailer dedicated to providing quality technology 
-                  products. No manufacturer affiliations—just 
-                  honest business.
-                </p>
-                <div className="mt-6 flex flex-wrap gap-3 justify-start">
-                  <Button asChild size="lg">
-                    <Link to="/shop">
-                      Shop Products
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
-                  </Button>
-                  <Button asChild variant="secondary" size="lg" className="bg-background text-foreground hover:bg-background/90">
-                    <Link to="/contact">Contact Us</Link>
-                  </Button>
-                </div>
+      {/* Hero Banner with Image - responsive, no cropping */}
+      <section className="relative w-full bg-muted">
+        <img
+          src="/assets/images/about-banner.jpg"
+          alt="Happy diverse executive business people working together in meeting"
+          className="w-full h-auto object-contain"
+          loading="eager"
+        />
+        <div className="absolute inset-0 flex items-center">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-start">
+            <div className="max-w-xl bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg text-left">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
+                About NationTechMart
+              </h1>
+              <p className="mt-3 md:mt-4 text-sm sm:text-base md:text-lg text-white/90 leading-relaxed">
+                We're an independent retailer dedicated to providing quality technology 
+                products. No manufacturer affiliations—just 
+                honest business.
+              </p>
+              <div className="mt-4 md:mt-6 flex flex-wrap gap-3 justify-start">
+                <Button asChild size="lg">
+                  <Link to="/shop">
+                    Shop Products
+                    <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </Button>
+                <Button asChild variant="secondary" size="lg" className="bg-background text-foreground hover:bg-background/90">
+                  <Link to="/contact">Contact Us</Link>
+                </Button>
               </div>
             </div>
           </div>

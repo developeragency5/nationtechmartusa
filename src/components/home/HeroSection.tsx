@@ -5,25 +5,24 @@ import { Link } from "react-router-dom";
 const HeroSection = () => {
   return (
     <section className="bg-background">
-      {/* Hero with background image */}
-      <div className="relative">
-        <div className="relative h-80 md:h-[28rem]">
-          <img
-            src="/assets/images/hero-banner.jpg"
-            alt="Young woman making a copy of a document in modern office"
-            className="w-full h-full object-cover"
-            loading="eager"
-          />
-          <div className="absolute inset-0 flex items-center">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-start">
-              <div className="max-w-xl bg-black/40 backdrop-blur-sm p-6 rounded-lg text-left">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
+      {/* Hero with background image - responsive, no cropping */}
+      <div className="relative w-full bg-muted">
+        <img
+          src="/assets/images/hero-banner.jpg"
+          alt="Young woman making a copy of a document in modern office"
+          className="w-full h-auto object-contain"
+          loading="eager"
+        />
+        <div className="absolute inset-0 flex items-center">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-start">
+            <div className="max-w-xl bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg text-left">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
                 Quality Technology Products For Your Business
               </h1>
-              <p className="mt-4 text-base md:text-lg text-white/90 leading-relaxed">
+              <p className="mt-3 md:mt-4 text-sm sm:text-base md:text-lg text-white/90 leading-relaxed">
                 Discover our selection of printers, scanners, and office equipment at competitive prices.
               </p>
-              <div className="mt-6 flex flex-wrap gap-3 justify-start">
+              <div className="mt-4 md:mt-6 flex flex-wrap gap-3 justify-start">
                 <Button asChild size="lg">
                   <Link to="/shop">
                     Shop Now
@@ -33,7 +32,6 @@ const HeroSection = () => {
                 <Button asChild variant="secondary" size="lg" className="bg-background text-foreground hover:bg-background/90">
                   <Link to="/about">Learn More</Link>
                 </Button>
-              </div>
               </div>
             </div>
           </div>

@@ -34,20 +34,20 @@ const Contact = () => {
         canonicalUrl="/contact"
       />
 
-      {/* Hero Banner */}
-      <section className="relative h-64 md:h-80 overflow-hidden">
+      {/* Hero Banner - responsive, no cropping */}
+      <section className="relative w-full bg-muted">
         <img
           src="/assets/images/support.jpg"
           alt="Our team ready to help"
-          className="w-full h-full object-cover"
+          className="w-full h-auto object-contain"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background/70 via-background/40 to-transparent flex items-center">
           <div className="container mx-auto px-4">
             <div className="max-w-2xl">
-              <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-foreground mb-3 md:mb-4">
                 Contact Us
               </h1>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-sm sm:text-base md:text-lg text-muted-foreground">
                 Have a question or need assistance? Our friendly team is here to help 
                 you with orders, products, and more.
               </p>
