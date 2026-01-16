@@ -28,8 +28,8 @@ const categories = [
   },
   {
     title: "Document Scanners",
-    image: "/assets/images/category-document-scanners.png",
-    alt: "Document scanner",
+    image: "/assets/images/scanner-category.png",
+    alt: "Document scanner with keyboard",
     categoryId: "193855068",
   },
 ];
