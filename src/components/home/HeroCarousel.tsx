@@ -33,14 +33,6 @@ const slides: Slide[] = [
     primaryText: "View Printers",
     align: "right",
   },
-  {
-    image: "/assets/images/contact-banner.jpg",
-    alt: "Professional team member ready to answer questions",
-    heading: "Free Shipping on Orders Over $100",
-    subtext: "Clear product information, competitive pricing, and fast delivery across the USA.",
-    primaryLink: "/shop",
-    primaryText: "Browse Products",
-  },
 ];
 
 const HeroCarousel = () => {
