@@ -95,16 +95,19 @@ const Contact = () => {
       <section className="relative w-full bg-muted">
         <img
           src="/assets/images/contact-banner.jpg"
-          alt="Customer assistance representative with headset"
+          alt="Professional team member ready to answer questions"
           className="w-full h-auto max-h-[500px] object-cover"
           loading="eager"
         />
         <div className="absolute inset-0 flex items-center">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-start">
-            <div className="bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg">
+            <div className="max-w-xl bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
                 Contact Us
               </h1>
+              <p className="mt-3 md:mt-4 text-sm sm:text-base md:text-lg text-white/90 leading-relaxed">
+                Have questions about orders, products, or policies? We're here to help with clear answers and quick responses.
+              </p>
             </div>
           </div>
         </div>
