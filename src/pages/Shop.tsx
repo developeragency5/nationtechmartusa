@@ -147,37 +147,6 @@ const Shop = () => {
         ]}
       />
 
-      {/* Default Hero Banner - shown when not viewing a specific category */}
-      {!isEcwidOverlay && !currentCategory && (
-        <section className="relative">
-          <div className="relative w-full bg-muted">
-            <img
-              src="/assets/images/shop-banner.jpg"
-              alt="Woman checking copy of document at printer"
-              className="w-full h-auto"
-            />
-            <div className="absolute inset-0 flex items-center">
-              <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-end">
-                <div className="text-right bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg">
-                  <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white">
-                    Shop Printers & Supplies
-                  </h1>
-                  <p className="text-sm sm:text-base text-white/90 mt-2">
-                    Quality products at competitive prices with fast USA shipping.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="py-4 bg-card border-b border-border/60">
-            <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-              <div className="max-w-4xl mx-auto text-center">
-                <SiteNotice variant="compact" />
-              </div>
-            </div>
-          </div>
-        </section>
-      )}
 
       {/* ==================== HOME PRINTERS - TOP CONTENT ==================== */}
       {!isEcwidOverlay && currentCategory === "home-printers" && (
