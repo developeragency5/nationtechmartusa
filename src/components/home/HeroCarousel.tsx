@@ -12,6 +12,7 @@ interface Slide {
   primaryText: string;
   secondaryLink?: string;
   secondaryText?: string;
+  align?: "left" | "right";
 }
 
 const slides: Slide[] = [
@@ -30,6 +31,7 @@ const slides: Slide[] = [
     subtext: "Find the right printer for your needs with detailed specifications and honest pricing.",
     primaryLink: "/shop",
     primaryText: "View Printers",
+    align: "right",
   },
   {
     image: "/assets/images/contact-banner.jpg",
@@ -95,7 +97,7 @@ const HeroCarousel = () => {
               loading={index === 0 ? "eager" : "lazy"}
             />
             <div className="absolute inset-0 flex items-center">
-              <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-start">
+              <div className={`container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex ${slide.align === "right" ? "justify-end" : "justify-start"}`}>
                 <div 
                   className={`max-w-xl bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg text-left transform transition-all duration-500 ${
                     index === currentSlide ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
