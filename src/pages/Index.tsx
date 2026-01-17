@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/shared/SEO";
 import HeroCarousel from "@/components/home/HeroCarousel";
+import PrinterCategoryGuide from "@/components/home/PrinterCategoryGuide";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
 import AboutUsSection from "@/components/home/AboutUsSection";
 import WhoWeServe from "@/components/home/WhoWeServe";
@@ -21,6 +22,7 @@ const Index = () => {
         canonicalUrl="/"
       />
       <HeroCarousel />
+      <PrinterCategoryGuide />
       <AboutUsSection />
       <WhoWeServe />
       <OurCommitment />
