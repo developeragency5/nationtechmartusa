@@ -1,6 +1,6 @@
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/shared/SEO";
-import HeroSection from "@/components/home/HeroSection";
+import HeroCarousel from "@/components/home/HeroCarousel";
 import FeaturedProducts from "@/components/home/FeaturedProducts";
 import AboutUsSection from "@/components/home/AboutUsSection";
 import WhoWeServe from "@/components/home/WhoWeServe";
@@ -20,7 +20,7 @@ const Index = () => {
         keywords="home printer, office printer, laser printer, inkjet printer, scanner, document scanner, buy printer online, printer shop"
         canonicalUrl="/"
       />
-      <HeroSection />
+      <HeroCarousel />
       <AboutUsSection />
       <WhoWeServe />
       <OurCommitment />
