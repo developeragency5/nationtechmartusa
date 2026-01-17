@@ -26,18 +26,18 @@ const slides: Slide[] = [
   {
     image: "/assets/images/shop-banner.jpg",
     alt: "Woman using office printer copier in modern workplace",
-    heading: "Free Shipping on Orders Over $100",
-    subtext: "Clear product information, competitive pricing, and fast delivery across the USA.",
+    heading: "Inkjet, Laser & All-in-One Printers",
+    subtext: "Find the right printer for your needs with detailed specifications and honest pricing.",
     primaryLink: "/shop",
-    primaryText: "Browse Products",
+    primaryText: "View Printers",
   },
   {
     image: "/assets/images/contact-banner.jpg",
     alt: "Professional team member ready to answer questions",
-    heading: "Inkjet, Laser & All-in-One Printers",
-    subtext: "Find the right printer for your needs with detailed specifications and honest pricing.",
-    primaryLink: "/shop#category:inkjet",
-    primaryText: "View Printers",
+    heading: "Free Shipping on Orders Over $100",
+    subtext: "Clear product information, competitive pricing, and fast delivery across the USA.",
+    primaryLink: "/shop",
+    primaryText: "Browse Products",
   },
 ];
 
