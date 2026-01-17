@@ -29,6 +29,11 @@ npm run dev
 Configured for static deployment. Build output goes to `dist/` directory.
 
 ## Recent Changes
+- January 17, 2026: Added "Find the Right Printer" category guide section to homepage
+  - New PrinterCategoryGuide component with 5 category cards (Home, Office, Inkjet, Laser, Scanners)
+  - Each card includes description, highlights, and link to category page
+  - Updated About page banner to 21:9 aspect ratio
+  - Updated 2nd carousel banner heading to "Home, Office, Inkjet & Laser Printers"
 - January 15, 2026: Imported from Lovable to Replit environment
   - Updated Vite config to use port 5000 and allow all hosts
   - Configured static deployment
