@@ -91,14 +91,16 @@ const Contact = () => {
         canonicalUrl="/contact"
       />
 
-      {/* Hero Banner with Image */}
+      {/* Hero Banner with Image - 21:9 aspect ratio */}
       <section className="relative w-full bg-muted">
-        <img
-          src="/assets/images/contact-banner.jpg"
-          alt="Professional team member ready to answer questions"
-          className="w-full h-auto max-h-[500px] object-cover"
-          loading="eager"
-        />
+        <div className="relative w-full" style={{ aspectRatio: '21/9' }}>
+          <img
+            src="/assets/images/contact-banner.jpg"
+            alt="Professional team member ready to answer questions"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+          />
+        </div>
         <div className="absolute inset-0 flex items-center">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-start">
             <div className="max-w-xl bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg">
