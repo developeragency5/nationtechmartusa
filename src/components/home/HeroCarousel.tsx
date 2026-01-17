@@ -27,7 +27,7 @@ const slides: Slide[] = [
   {
     image: "/assets/images/shop-banner.jpg",
     alt: "Woman using office printer copier in modern workplace",
-    heading: "Inkjet, Laser & All-in-One Printers",
+    heading: "Home, Office, Inkjet, Laser & Scanners",
     subtext: "Find the right printer for your needs with detailed specifications and honest pricing.",
     primaryLink: "/shop",
     primaryText: "View Printers",
