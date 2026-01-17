@@ -36,14 +36,16 @@ const About = () => {
         canonicalUrl="/about"
       />
 
-      {/* Hero Banner with Image - responsive, full image visible */}
+      {/* Hero Banner with Image - 21:9 aspect ratio */}
       <section className="relative w-full bg-muted">
-        <img
-          src="/assets/images/about-banner.jpg"
-          alt="Happy diverse executive business people working together in meeting"
-          className="w-full h-auto"
-          loading="eager"
-        />
+        <div className="relative w-full" style={{ aspectRatio: '21/9' }}>
+          <img
+            src="/assets/images/about-banner.jpg"
+            alt="Happy diverse executive business people working together in meeting"
+            className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+          />
+        </div>
         <div className="absolute inset-0 flex items-center">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex justify-start">
             <div className="max-w-xl bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg text-left">
