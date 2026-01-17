@@ -147,6 +147,36 @@ const Shop = () => {
         ]}
       />
 
+      {/* ==================== ALL PRODUCTS - TOP CONTENT ==================== */}
+      {!isEcwidOverlay && !currentCategory && (
+        <section className="py-12 md:py-16 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div className="max-w-4xl mx-auto">
+              <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
+                Shop Home Printers, Office Printers & Scanners
+              </h1>
+              <div className="prose prose-lg max-w-none text-muted-foreground mb-8">
+                <p className="text-base md:text-lg leading-relaxed mb-4">
+                  NationTechMart offers a curated selection of printers and scanners for home users, small businesses, and professional offices. Whether you need a compact inkjet for occasional home printing, a high-speed laser for demanding office workflows, or a document scanner for digital archiving, we have options to match your needs and budget.
+                </p>
+                <p className="text-base md:text-lg leading-relaxed">
+                  Browse our complete catalog below to explore home printers, office printers, inkjet printers, laser printers, and document scanners from trusted brands. Each product page includes detailed specifications, honest pricing, and clear information to help you make an informed decision.
+                </p>
+              </div>
+              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8">
+                <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">Why Shop With NationTechMart</h2>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Free shipping on orders over $100</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Competitive pricing with no hidden fees</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Detailed product specifications and honest descriptions</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Fast shipping across the USA</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">30-day return policy for peace of mind</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* ==================== HOME PRINTERS - TOP CONTENT ==================== */}
       {!isEcwidOverlay && currentCategory === "home-printers" && (
