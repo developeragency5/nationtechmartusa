@@ -6,9 +6,7 @@ import FeaturedProducts from "@/components/home/FeaturedProducts";
 import AboutUsSection from "@/components/home/AboutUsSection";
 import WhoWeServe from "@/components/home/WhoWeServe";
 import OurCommitment from "@/components/home/OurCommitment";
-import ShopByUseCase from "@/components/home/ShopByUseCase";
 import WhyNationTechMart from "@/components/home/WhyNationTechMart";
-import OurApproach from "@/components/home/RealStorePromise";
 import TransparencySection from "@/components/shared/TransparencySection";
 import FAQSection from "@/components/home/FAQSection";
 
@@ -25,10 +23,8 @@ const Index = () => {
       <AboutUsSection />
       <PrinterCategoryGuide />
       <FeaturedProducts />
-      <ShopByUseCase />
       <WhyNationTechMart />
       <OurCommitment />
-      <OurApproach />
       <WhoWeServe />
       <TransparencySection />
       <FAQSection />

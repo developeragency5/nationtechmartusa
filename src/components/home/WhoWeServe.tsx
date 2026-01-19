@@ -25,7 +25,7 @@ const audiences = [
   {
     icon: Building2,
     title: "IT Professionals",
-    description: "looking for detailed specifications, fleet management insights, and enterprise deployment guidance",
+    description: "looking for detailed specifications and enterprise deployment guidance",
     color: "text-purple-500",
     bgColor: "bg-purple-50 dark:bg-purple-950/30",
   },
@@ -33,31 +33,32 @@ const audiences = [
 
 const WhoWeServe = () => {
   return (
-    <section className="py-16 md:py-20 bg-muted/30">
+    <section className="py-16 md:py-20 bg-muted/30" data-testid="section-who-we-serve">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-6xl">
         <div className="bg-card rounded-xl border border-border p-8 md:p-10">
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex flex-wrap items-center gap-3 mb-8">
             <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
               <Users className="h-5 w-5 text-primary" />
             </div>
-            <h2 className="text-2xl font-bold text-foreground">Who We Serve</h2>
+            <h2 className="text-2xl font-bold text-foreground" data-testid="text-who-we-serve-heading">Who We Serve</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
             {audiences.map((audience) => (
               <div
                 key={audience.title}
-                className={`group p-5 rounded-xl ${audience.bgColor} transition-all duration-300 hover:scale-[1.02] hover:shadow-lg cursor-default border border-transparent hover:border-primary/20`}
+                className={`p-5 rounded-xl ${audience.bgColor} border border-transparent`}
+                data-testid={`audience-${audience.title.toLowerCase().replace(/\s+/g, '-')}`}
               >
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-xl bg-white dark:bg-background flex items-center justify-center shrink-0 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:shadow-md">
-                    <audience.icon className={`h-6 w-6 ${audience.color} transition-transform duration-300 group-hover:scale-110`} />
+                <div className="flex flex-wrap items-start gap-4">
+                  <div className="w-12 h-12 rounded-xl bg-white dark:bg-background flex items-center justify-center shrink-0 shadow-sm">
+                    <audience.icon className={`h-6 w-6 ${audience.color}`} />
                   </div>
-                  <div>
-                    <h3 className={`font-semibold ${audience.color} mb-1 transition-all duration-300`}>
+                  <div className="flex-1 min-w-0">
+                    <h3 className={`font-semibold ${audience.color} mb-1`}>
                       {audience.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed transition-colors duration-300 group-hover:text-foreground/80">
+                    <p className="text-muted-foreground text-sm leading-relaxed">
                       {audience.description}
                     </p>
                   </div>
@@ -67,7 +68,7 @@ const WhoWeServe = () => {
           </div>
 
           <p className="text-muted-foreground text-center text-sm">
-            No matter your experience level, our product selection and guidance adapts to provide the information you need.
+            No matter your experience level, our product selection adapts to provide the information you need.
           </p>
         </div>
       </div>

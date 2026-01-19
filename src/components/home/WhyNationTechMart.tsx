@@ -1,68 +1,58 @@
-import { Link } from "react-router-dom";
-import ImageCard from "@/components/shared/ImageCard";
-import { Truck, RotateCcw } from "lucide-react";
+import { Truck, RotateCcw, Shield, DollarSign } from "lucide-react";
 
 const benefits = [
   {
-    title: "Quick Processing",
-    description: "Most orders are processed within 1–2 business days, subject to availability and carrier conditions.",
-    image: "/assets/images/shipping.jpg",
-    alt: "Shipping and delivery illustration with packages and delivery truck",
+    title: "Free Shipping",
+    description: "Free shipping on all orders over $100. Fast, reliable delivery to your doorstep.",
     icon: Truck,
-    link: "/shipping",
   },
   {
     title: "Easy Returns",
     description: "30-day return window on eligible items. Hassle-free process with clear instructions.",
-    image: "/assets/images/returns.jpg",
-    alt: "Returns process illustration with circular arrows",
     icon: RotateCcw,
-    link: "/shipping",
+  },
+  {
+    title: "Genuine Products",
+    description: "All products are authentic with original manufacturer warranties and specifications.",
+    icon: Shield,
+  },
+  {
+    title: "Transparent Pricing",
+    description: "Competitive rates with no hidden fees or surprise charges at checkout.",
+    icon: DollarSign,
   },
 ];
 
 const WhyNationTechMart = () => {
   return (
-    <section className="py-20 md:py-28 bg-background">
+    <section className="py-16 md:py-20 bg-background" data-testid="section-why-nationtechmart">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight" data-testid="text-why-heading">
             Why NationTechMart
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We focus on what matters: quality products and fair prices.
+            We focus on what matters: quality products, fair prices, and a hassle-free experience.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {benefits.map((benefit, index) => (
-            <Link
+            <div
               key={index}
-              to={benefit.link}
-              className="group block"
+              className="bg-card rounded-xl border border-border/60 p-6 text-center"
+              data-testid={`benefit-${benefit.title.toLowerCase().replace(/\s+/g, '-')}`}
             >
-              <div className="bg-card rounded-2xl border border-border/60 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 h-full">
-                <div className="relative overflow-hidden">
-                  <img
-                    src={benefit.image}
-                    alt={benefit.alt}
-                    className="w-full aspect-[4/3] object-cover transition-all duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500" />
-                  <div className="absolute top-4 left-4 w-12 h-12 rounded-xl bg-background/90 backdrop-blur-sm flex items-center justify-center shadow-md transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
-                    <benefit.icon className="h-6 w-6 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
-                  </div>
-                </div>
-                <div className="p-6">
-                  <h3 className="font-bold text-foreground text-xl mb-2 group-hover:text-primary transition-colors duration-300">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    {benefit.description}
-                  </p>
-                </div>
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <benefit.icon className="h-7 w-7 text-primary" />
               </div>
-            </Link>
+              <h3 className="font-semibold text-foreground text-lg mb-2">
+                {benefit.title}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {benefit.description}
+              </p>
+            </div>
           ))}
         </div>
       </div>
