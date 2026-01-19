@@ -63,27 +63,26 @@ const FeaturedProducts = () => {
             <a
               key={index}
               href={product.url}
-              className="group bg-card border border-border/60 rounded-xl overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2"
+              className="bg-card border border-border/60 rounded-xl overflow-hidden"
               data-testid={`featured-product-${index}`}
             >
-              <div className="relative aspect-square bg-white p-4 flex items-center justify-center overflow-hidden">
+              <div className="aspect-square bg-white p-4 flex items-center justify-center">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="max-h-full max-w-full object-contain transition-all duration-500 group-hover:scale-110"
+                  className="max-h-full max-w-full object-contain"
                 />
-                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-primary/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-500" />
               </div>
               <div className="p-4">
-                <span className="text-xs font-medium text-primary mb-1 block px-2 py-0.5 bg-primary/10 rounded-full w-fit transition-all duration-300 group-hover:bg-primary group-hover:text-primary-foreground">
+                <span className="text-xs font-medium text-primary mb-1 block px-2 py-0.5 bg-primary/10 rounded-full w-fit">
                   {product.category}
                 </span>
-                <h3 className="font-semibold text-foreground text-sm leading-tight mb-3 mt-2 line-clamp-2 group-hover:text-primary transition-colors duration-300">
+                <h3 className="font-semibold text-foreground text-sm leading-tight mb-3 mt-2 line-clamp-2">
                   {product.shortName}
                 </h3>
-                <div className="flex items-center text-primary text-sm font-medium">
+                <div className="flex flex-wrap items-center gap-1 text-primary text-sm font-medium">
                   View Product
-                  <ArrowRight className="h-4 w-4 ml-1 transition-transform duration-300 group-hover:translate-x-2" />
+                  <ArrowRight className="h-4 w-4" />
                 </div>
               </div>
             </a>
