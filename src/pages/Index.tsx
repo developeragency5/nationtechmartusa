@@ -22,13 +22,13 @@ const Index = () => {
         canonicalUrl="/"
       />
       <HeroCarousel />
-      <AboutUsSection />
       <PrinterCategoryGuide />
-      <WhoWeServe />
-      <OurCommitment />
       <FeaturedProducts />
       <ShopByUseCase />
+      <AboutUsSection />
+      <WhoWeServe />
       <WhyNationTechMart />
+      <OurCommitment />
       <OurApproach />
       <TransparencySection />
       <FAQSection />
