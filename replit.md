@@ -29,6 +29,12 @@ npm run dev
 Configured for static deployment. Build output goes to `dist/` directory.
 
 ## Recent Changes
+- January 19, 2026: Homepage restructure and cleanup
+  - Removed duplicate ShopByUseCase section (replaced by PrinterCategoryGuide)
+  - Removed minimal OurApproach section
+  - Expanded WhyNationTechMart from 2 to 4 benefits (Free Shipping, Easy Returns, Genuine Products, Transparent Pricing)
+  - Removed hover effects from WhoWeServe section per design guidelines
+  - Final homepage order: Hero → About Us → Printer Guide → Featured Products → Why NationTechMart → Our Commitment → Who We Serve → Transparency → FAQ
 - January 17, 2026: Added "Find the Right Printer" category guide section to homepage
   - New PrinterCategoryGuide component with 5 category cards (Home, Office, Inkjet, Laser, Scanners)
   - Each card includes description, highlights, and link to category page
