@@ -22,8 +22,8 @@ const Index = () => {
         canonicalUrl="/"
       />
       <HeroCarousel />
-      <PrinterCategoryGuide />
       <AboutUsSection />
+      <PrinterCategoryGuide />
       <WhoWeServe />
       <OurCommitment />
       <FeaturedProducts />
