@@ -4,7 +4,7 @@ import easyReturnsIcon from "@/assets/easy-returns-icon.png";
 
 const benefits = [
   {
-    title: "Free Shipping",
+    title: "Fast Shipping",
     description: "Free shipping on all orders over $100. Fast, reliable delivery to your doorstep.",
     icon: null,
     customIcon: fastShippingIcon,
