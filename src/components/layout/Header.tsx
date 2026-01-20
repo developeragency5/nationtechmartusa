@@ -5,6 +5,7 @@ import logoImage from "@/assets/logo.png";
 import searchIcon from "@/assets/search-icon.png";
 import userIcon from "@/assets/user-icon.png";
 import cartIcon from "@/assets/cart-icon.png";
+import favouriteIcon from "@/assets/favourite-icon.png";
 
 declare global {
   interface Window {
@@ -91,6 +92,10 @@ const Header = () => {
     window.location.href = '/shop#!/~/search';
   };
 
+  const openFavourites = () => {
+    window.location.href = '/shop#!/~/favorites';
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-background">
       {/* Top Row - Logo and Account/Cart */}
@@ -104,6 +109,14 @@ const Header = () => {
 
             {/* Desktop Account/Cart */}
             <div className="hidden md:flex items-center gap-6">
+              <button 
+                onClick={openFavourites}
+                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
+                data-testid="button-favourites"
+              >
+                <img src={favouriteIcon} alt="Favourites" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
+                <span className="text-xs">Favourites</span>
+              </button>
               <button 
                 onClick={openSearch}
                 className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
@@ -132,6 +145,14 @@ const Header = () => {
 
             {/* Mobile Menu Button + Cart */}
             <div className="md:hidden flex items-center gap-3">
+              <button 
+                onClick={openFavourites}
+                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
+                data-testid="button-favourites-mobile"
+              >
+                <img src={favouriteIcon} alt="Favourites" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
+                <span className="text-xs">Favourites</span>
+              </button>
               <button 
                 onClick={openSearch}
                 className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
