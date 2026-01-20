@@ -1,7 +1,8 @@
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ShoppingCart, User, Search } from "lucide-react";
+import { Menu, X, ShoppingCart, User } from "lucide-react";
 import { useState, useEffect } from "react";
 import logoImage from "@/assets/logo.png";
+import searchIcon from "@/assets/search-icon.png";
 
 declare global {
   interface Window {
@@ -106,7 +107,7 @@ const Header = () => {
                 className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
                 data-testid="button-search"
               >
-                <Search className="h-5 w-5" />
+                <img src={searchIcon} alt="Search" className="h-5 w-5" />
                 <span className="text-xs">Search</span>
               </button>
               <button 
@@ -134,7 +135,7 @@ const Header = () => {
                 className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
                 data-testid="button-search-mobile"
               >
-                <Search className="h-5 w-5" />
+                <img src={searchIcon} alt="Search" className="h-5 w-5" />
                 <span className="text-xs">Search</span>
               </button>
               <button 
