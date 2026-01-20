@@ -7,6 +7,7 @@ import featuredProduct3 from "@/assets/products/hp-envy-7955e.png";
 import featuredProduct4 from "@/assets/products/hp-laserjet-m110w.png";
 import featuredProduct5 from "@/assets/products/hp-smart-tank-651.png";
 import featuredProduct6 from "@/assets/products/hp-laserjet-pro-4001dn.jpg";
+import featuredProduct7 from "@/assets/products/hp-scanjet-enterprise-n9000.png";
 
 interface FeaturedProduct {
   name: string;
@@ -60,11 +61,11 @@ const featuredProducts: FeaturedProduct[] = [
     category: "Laser Printers",
   },
   {
-    name: "HP Envy 6455e Wireless All-in-One Color Inkjet Printer with Bonus Ink",
-    shortName: "HP Envy 6455e All-in-One Printer",
-    image: featuredProduct3,
-    url: "/shop#!/HP-Envy-6455e-Wireless-All-in-One-Color-Inkjet-Printer/p/806452377",
-    category: "Inkjet Printers",
+    name: "HP ScanJet Enterprise Flow N9000 snw1 Sheet-feed Scanner",
+    shortName: "HP ScanJet Enterprise N9000 Scanner",
+    image: featuredProduct7,
+    url: "/shop#!/HP-ScanJet-Enterprise-Flow-N9000-snw1-Sheet-feed-Scanner/p/806466788",
+    category: "Scanners",
   },
   {
     name: "HP LaserJet Pro M404n Business Laser Printer with Ethernet Connectivity",
