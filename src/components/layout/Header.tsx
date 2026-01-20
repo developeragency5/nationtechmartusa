@@ -1,8 +1,9 @@
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ShoppingCart, User } from "lucide-react";
+import { Menu, X, ShoppingCart } from "lucide-react";
 import { useState, useEffect } from "react";
 import logoImage from "@/assets/logo.png";
 import searchIcon from "@/assets/search-icon.png";
+import userIcon from "@/assets/user-icon.png";
 
 declare global {
   interface Window {
@@ -115,7 +116,7 @@ const Header = () => {
                 className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
                 data-testid="button-user-account"
               >
-                <User className="h-5 w-5" />
+                <img src={userIcon} alt="Sign In" className="h-5 w-5" />
                 <span className="text-xs">Sign In</span>
               </button>
               <button 
