@@ -10,7 +10,7 @@ const faqs = [
   {
     question: "What is your shipping policy?",
     answer:
-      "Shipping costs are calculated at checkout based on your address and order details. Orders typically ship within 1-2 business days and standard delivery takes 3-7 business days. See our shipping page for full details.",
+      "Shipping details are shown at checkout. Orders typically ship within 1-2 business days and standard delivery takes 3-7 business days. See our shipping page for full details.",
   },
   {
     question: "What is your return policy?",

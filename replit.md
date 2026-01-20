@@ -28,12 +28,22 @@ npm run dev
 ## Deployment
 Configured for static deployment. Build output goes to `dist/` directory.
 
+## Compliance Guidelines (CRITICAL)
+- **Shipping**: NEVER use "Free Shipping" - always use "Shipping details are shown at checkout"
+- **Warranty**: Use conditional language: "Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand"
+- **No endorsement language**: Avoid "curated", "hand-picked", "official", "authorized", "certified", "partner", "approved"
+- **Guides**: We do NOT offer guides - use "Clear Product Information" instead
+- **Trademark Notice**: Required in footer
+
 ## Recent Changes
-- January 20, 2026: Homepage updates
-  - Restored ShopByUseCase and OurApproach sections
-  - Replaced About NationTechMart section image with new team printer photo
-  - Expanded WhyNationTechMart to 4 benefits (Free Shipping, Easy Returns, Genuine Products, Transparent Pricing)
-  - Removed hover effects from WhoWeServe section per design guidelines
+- January 20, 2026: Compliance overhaul for Google/Bing Ads and HP trademark safety
+  - Removed ALL "Free Shipping" → "Shipping details are shown at checkout" (Ecwid compatible)
+  - Trust Bar: Shipping Details Shown at Checkout | Secure Checkout – SSL encrypted | Easy Returns – 30-day policy (eligibility applies)
+  - "Genuine Products" → "Authentic Products" with conditional warranty language
+  - "Professional Guides" → "Clear Product Information"
+  - "curated selection" → "wide selection", "Hand-picked" → "Popular"
+  - Added Trademark Notice to footer
+  - Added return policy disclaimers (eligibility applies, exclusions may apply)
   - Homepage order: Hero → About Us → Printer Guide → Featured Products → Shop by Category → Why NationTechMart → Our Commitment → Our Approach → Who We Serve → Transparency → FAQ
 - January 17, 2026: Added "Find the Right Printer" category guide section to homepage
   - New PrinterCategoryGuide component with 5 category cards (Home, Office, Inkjet, Laser, Scanners)

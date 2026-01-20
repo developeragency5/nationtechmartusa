@@ -12,7 +12,7 @@ const transparencyItems = [
     icon: Truck,
     title: "Shipping",
     description:
-      "Shipping costs are calculated at checkout based on your address and order details. Standard delivery takes 3-7 business days after processing. See our shipping page for complete policy details.",
+      "Shipping details are shown at checkout. Standard delivery takes 3-7 business days after processing. See our shipping page for complete policy details.",
     link: { href: "/shipping", label: "View Shipping Policy" },
   },
   {

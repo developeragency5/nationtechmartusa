@@ -21,9 +21,9 @@ const AboutUsSection = () => {
               <p>
                 Our goal is straightforward: provide reliable technology
                 products with transparent pricing, clear policies, and a hassle-free
-                shopping experience. Shipping costs calculated at checkout,
+                shopping experience. Shipping details are shown at checkout,
                 easy 30-day returns (eligibility applies), and products include
-                applicable manufacturer warranty coverage where offered.
+                applicable manufacturer standard warranty coverage where offered.
               </p>
             </div>
             <div className="mt-6">

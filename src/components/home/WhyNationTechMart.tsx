@@ -5,8 +5,8 @@ import transparentPricingIcon from "@/assets/transparent-pricing-icon.png";
 
 const benefits = [
   {
-    title: "Competitive Shipping",
-    description: "Shipping costs calculated at checkout based on your address and order details. Fast, reliable delivery.",
+    title: "Fast Delivery",
+    description: "Shipping details are shown at checkout. Fast, reliable delivery to your doorstep.",
     icon: null,
     customIcon: fastShippingIcon,
   },

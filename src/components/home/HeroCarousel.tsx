@@ -203,10 +203,7 @@ const HeroCarousel = () => {
                 <Truck className="h-5 w-5 text-primary-foreground shrink-0" />
                 <div>
                   <p className="text-sm font-semibold text-primary-foreground">
-                    Shipping Calculated at Checkout
-                  </p>
-                  <p className="text-xs text-primary-foreground/80">
-                    Based on address and order details
+                    Shipping Details Shown at Checkout
                   </p>
                 </div>
               </div>
