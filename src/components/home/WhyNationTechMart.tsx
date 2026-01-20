@@ -1,25 +1,30 @@
-import { Truck, RotateCcw, Shield, DollarSign } from "lucide-react";
+import { RotateCcw, Shield, DollarSign } from "lucide-react";
+import fastShippingIcon from "@/assets/fast-shipping-icon.png";
 
 const benefits = [
   {
     title: "Free Shipping",
     description: "Free shipping on all orders over $100. Fast, reliable delivery to your doorstep.",
-    icon: Truck,
+    icon: null,
+    customIcon: fastShippingIcon,
   },
   {
     title: "Easy Returns",
     description: "30-day return window on eligible items. Hassle-free process with clear instructions.",
     icon: RotateCcw,
+    customIcon: null,
   },
   {
     title: "Genuine Products",
     description: "All products are authentic with original manufacturer warranties and specifications.",
     icon: Shield,
+    customIcon: null,
   },
   {
     title: "Transparent Pricing",
     description: "Competitive rates with no hidden fees or surprise charges at checkout.",
     icon: DollarSign,
+    customIcon: null,
   },
 ];
 
@@ -43,8 +48,20 @@ const WhyNationTechMart = () => {
               className="bg-card rounded-xl border border-border/60 p-6 text-center"
               data-testid={`benefit-${benefit.title.toLowerCase().replace(/\s+/g, '-')}`}
             >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <benefit.icon className="h-7 w-7 text-primary" />
+              <div className="w-14 h-14 flex items-center justify-center mx-auto mb-4 group">
+                {benefit.customIcon ? (
+                  <img
+                    src={benefit.customIcon}
+                    alt={benefit.title}
+                    className="h-12 w-12 object-contain transition-transform duration-300 hover:scale-110 hover:translate-x-1"
+                  />
+                ) : (
+                  benefit.icon && (
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
+                      <benefit.icon className="h-7 w-7 text-primary" />
+                    </div>
+                  )
+                )}
               </div>
               <h3 className="font-semibold text-foreground text-lg mb-2">
                 {benefit.title}
