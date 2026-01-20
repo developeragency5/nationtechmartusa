@@ -1,41 +1,46 @@
 import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Home, Building2, Droplets, Zap, ScanLine } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import homePrinterIcon from "@/assets/home-printer-icon.png";
+import officePrinterIcon from "@/assets/office-printer-icon.png";
+import inkjetPrinterIcon from "@/assets/inkjet-printer-icon.png";
+import laserPrinterIcon from "@/assets/laser-printer-icon.png";
+import scannerIcon from "@/assets/scanner-icon.png";
 
 const categories = [
   {
     title: "Home Printers",
     description: "Perfect for everyday family use. Print school projects, photos, and documents with ease. Compact designs that fit any home office or study space.",
-    icon: Home,
+    customIcon: homePrinterIcon,
     link: "/shop/home-printers",
     highlights: ["Compact & space-saving", "Photo printing", "Wireless connectivity"],
   },
   {
     title: "Office Printers",
     description: "Built for productivity and reliability. Handle high-volume printing with fast speeds and professional-quality output for your business needs.",
-    icon: Building2,
+    customIcon: officePrinterIcon,
     link: "/shop/office-printers",
     highlights: ["High-volume capacity", "Fast print speeds", "Network ready"],
   },
   {
     title: "Inkjet Printers",
     description: "Ideal for vibrant color printing and photos. Inkjet technology delivers exceptional detail and color accuracy for creative projects and documents.",
-    icon: Droplets,
+    customIcon: inkjetPrinterIcon,
     link: "/shop/inkjet-printers",
     highlights: ["Vivid color output", "Photo-quality prints", "Versatile media"],
   },
   {
     title: "Laser Printers",
     description: "Fast, efficient, and cost-effective for text-heavy documents. Laser technology offers crisp text and lower cost-per-page for high-volume printing.",
-    icon: Zap,
+    customIcon: laserPrinterIcon,
     link: "/shop/laser-printers",
     highlights: ["Sharp text quality", "Low cost per page", "High-speed output"],
   },
   {
     title: "Scanners",
     description: "Digitize documents, photos, and artwork with precision. From flatbed to portable options, find the right scanner for your digitization needs.",
-    icon: ScanLine,
+    customIcon: scannerIcon,
     link: "/shop/scanners",
     highlights: ["High resolution", "Document management", "Photo scanning"],
   },
@@ -62,7 +67,6 @@ const PrinterCategoryGuide = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((category, index) => {
-            const IconComponent = category.icon;
             const categorySlug = category.title.toLowerCase().replace(/\s+/g, '-');
             return (
               <Card
@@ -72,8 +76,12 @@ const PrinterCategoryGuide = () => {
               >
                 <CardContent className="p-6">
                   <div className="flex flex-wrap items-start gap-4">
-                    <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
-                      <IconComponent className="h-6 w-6 text-primary" />
+                    <div className="w-14 h-14 flex items-center justify-center shrink-0">
+                      <img
+                        src={category.customIcon}
+                        alt={category.title}
+                        className="h-12 w-12 object-contain transition-transform duration-300 hover:scale-110"
+                      />
                     </div>
                     <div className="flex-1 min-w-0">
                       <h3 
