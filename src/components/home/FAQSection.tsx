@@ -10,27 +10,27 @@ const faqs = [
   {
     question: "What is your shipping policy?",
     answer:
-      "We offer free shipping on all orders over $100. Orders typically ship within 1-2 business days and standard delivery takes 3-7 business days. See our shipping page for full details.",
+      "Shipping costs are calculated at checkout based on your address and order details. Orders typically ship within 1-2 business days and standard delivery takes 3-7 business days. See our shipping page for full details.",
   },
   {
     question: "What is your return policy?",
     answer:
-      "We offer a 30-day return policy for most items in their original, unopened packaging. Some products may have different return windows. Please visit our Shipping & Returns page for complete details on our return process and any exceptions.",
+      "We offer a 30-day return policy for most items in their original, unopened packaging. Some products may have different return windows and exclusions apply. Please visit our Shipping & Returns page for complete details on our return process and any exceptions.",
   },
   {
     question: "Do you offer warranty on products?",
     answer:
-      "All products sold by NationTechMart include the manufacturer's standard warranty. Warranty terms vary by product and manufacturer. Extended warranty options may be available for select items. Please check individual product listings for specific warranty information.",
+      "Products sold by NationTechMart include applicable manufacturer standard warranty coverage where offered. Warranty terms vary by product and manufacturer. Please check individual product listings for specific warranty information.",
   },
   {
     question: "How can I track my order?",
     answer:
-      "Once your order ships, you'll receive a confirmation email with tracking information. You can use this tracking number on the carrier's website to monitor your package's progress. If you have any issues tracking your order, our team is here to help.",
+      "Once your order ships, you'll receive a confirmation email with tracking information. You can use this tracking number on the carrier's website to monitor your package's progress.",
   },
   {
     question: "Is my payment information secure?",
     answer:
-      "Yes, absolutely. We use industry-standard SSL encryption to protect your personal and payment information. We never store your complete credit card information on our servers. All transactions are processed through secure, PCI-compliant payment processors.",
+      "Yes. We use industry-standard SSL encryption to protect your personal and payment information. We never store your complete credit card information on our servers. All transactions are processed through secure, PCI-compliant payment processors.",
   },
   {
     question: "Do you ship internationally?",

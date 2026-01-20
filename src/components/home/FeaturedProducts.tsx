@@ -85,7 +85,7 @@ const FeaturedProducts = () => {
             Featured Products
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Hand-picked printers and scanners for home and office use
+            Popular printers and scanners for home and office use
           </p>
         </div>
 

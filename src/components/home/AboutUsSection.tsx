@@ -20,9 +20,10 @@ const AboutUsSection = () => {
               </p>
               <p>
                 Our goal is straightforward: provide reliable technology
-                products with honest pricing, clear policies, and a hassle-free
-                shopping experience. Free shipping on orders over $100,
-                manufacturer standard warranties where applicable.
+                products with transparent pricing, clear policies, and a hassle-free
+                shopping experience. Shipping costs calculated at checkout,
+                easy 30-day returns (eligibility applies), and products include
+                applicable manufacturer warranty coverage where offered.
               </p>
             </div>
             <div className="mt-6">

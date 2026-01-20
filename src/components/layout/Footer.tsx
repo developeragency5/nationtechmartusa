@@ -124,8 +124,13 @@ const Footer = () => {
             </div>
           </div>
           
+          {/* Trademark Notice */}
+          <p className="mt-6 text-xs text-muted-foreground text-center">
+            <strong>Trademark Notice:</strong> All product names, logos, and brands are property of their respective owners. NationTechMart is an independent retailer. No affiliation or endorsement is implied.
+          </p>
+          
           {/* Disclaimer - Required Site Notice */}
-          <SiteNotice className="mt-8" />
+          <SiteNotice className="mt-6" />
         </div>
       </div>
     </footer>

@@ -1,0 +1,59 @@
+IMPORTANT: You MUST APPLY the following changes.
+Do NOT restate my content.
+Do NOT return the same text.
+You must MODIFY the homepage copy to reflect the rules below.
+
+TASK:
+Rewrite my NationTechMart homepage text and APPLY ALL required compliance changes. 
+Return ONLY the UPDATED homepage content with changes implemented.
+
+MANDATORY CHANGES YOU MUST APPLY:
+
+1) SHIPPING (CRITICAL)
+- We DO NOT offer free shipping.
+- REMOVE every mention of:
+  “Free Shipping”, “Free shipping over $100”, “Free delivery”.
+- REPLACE with:
+  “Shipping costs are calculated at checkout based on address and order details.”
+- Update Trust Bar to:
+  • Shipping Calculated at Checkout  
+  • Secure Checkout – SSL encrypted  
+  • Easy Returns – 30-day return policy (eligibility applies)
+
+2) REMOVE ENDORSEMENT LANGUAGE
+- Replace “curated selection” → “wide selection”
+- Remove any wording that implies endorsement, preference, or special sourcing.
+
+3) WARRANTIES (NO ABSOLUTE CLAIMS)
+- REMOVE “manufacturer warranties on all products”.
+- USE THIS EXACT LANGUAGE instead:
+  “Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand.”
+
+4) GUIDES (WE DO NOT OFFER GUIDES)
+- REMOVE any mention of:
+  “Professional Guides”, “Educational guides”, “Buying guides”, or similar.
+- REPLACE with:
+  “Clear Product Information: We provide detailed specifications and compatibility details on product pages so you can choose confidently.”
+
+5) AUTHENTIC PRODUCTS (NO AUTHORIZED IMPLICATION)
+- Replace “Genuine Products” wording with:
+  “Authentic Products: We sell new, authentic products sourced through lawful distribution channels. Warranty coverage varies by product and brand.”
+
+6) TRADEMARK DISCLAIMER (MUST ADD)
+- Add this exact line near the bottom of the homepage:
+  “Trademark Notice: All product names, logos, and brands are property of their respective owners. No affiliation or endorsement is implied.”
+
+STRICT RULES:
+- Do NOT add “official”, “authorized”, “certified”, “partner”, “approved”.
+- Keep HP product model names unchanged.
+- Do NOT change layout, sections, or button labels unless required for compliance.
+- Tone must remain professional, neutral, and factual.
+
+OUTPUT FORMAT:
+Return the FULL homepage content again, section by section, with ALL changes applied.
+Do NOT explain what you changed.
+Do NOT repeat instructions.
+Only output the updated homepage text.
+
+HERE IS THE CURRENT HOMEPAGE CONTENT:
+[PASTE HOMEPAGE CONTENT HERE]

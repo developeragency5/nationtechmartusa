@@ -5,20 +5,20 @@ import transparentPricingIcon from "@/assets/transparent-pricing-icon.png";
 
 const benefits = [
   {
-    title: "Fast Shipping",
-    description: "Free shipping on all orders over $100. Fast, reliable delivery to your doorstep.",
+    title: "Competitive Shipping",
+    description: "Shipping costs calculated at checkout based on your address and order details. Fast, reliable delivery.",
     icon: null,
     customIcon: fastShippingIcon,
   },
   {
     title: "Easy Returns",
-    description: "30-day return window on eligible items. Hassle-free process with clear instructions.",
+    description: "30-day return window on eligible items. Straightforward process with clear instructions (exclusions may apply).",
     icon: null,
     customIcon: easyReturnsIcon,
   },
   {
-    title: "Fast and Secure Shopping",
-    description: "Browse and buy with confidence. Your transactions are protected with industry-standard security.",
+    title: "Secure Shopping",
+    description: "Browse and buy with confidence. Your transactions are protected with industry-standard SSL encryption.",
     icon: null,
     customIcon: secureShoppingIcon,
   },

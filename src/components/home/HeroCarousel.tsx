@@ -37,7 +37,7 @@ const slides: Slide[] = [
     alt: "Woman using office printer copier in modern workplace",
     heading: "Home, Office, Inkjet & Laser Printers",
     subtext:
-      "Find the right printer for your needs with detailed specifications and honest pricing.",
+      "Find the right printer for your needs with detailed specifications and transparent pricing.",
     primaryLink: "/shop",
     primaryText: "View Printers",
     align: "right",
@@ -203,10 +203,10 @@ const HeroCarousel = () => {
                 <Truck className="h-5 w-5 text-primary-foreground shrink-0" />
                 <div>
                   <p className="text-sm font-semibold text-primary-foreground">
-                    Free Shipping
+                    Shipping Calculated at Checkout
                   </p>
                   <p className="text-xs text-primary-foreground/80">
-                    On orders over $100
+                    Based on address and order details
                   </p>
                 </div>
               </div>
@@ -228,7 +228,7 @@ const HeroCarousel = () => {
                     Easy Returns
                   </p>
                   <p className="text-xs text-primary-foreground/80">
-                    30-day return policy
+                    30-day policy (eligibility applies)
                   </p>
                 </div>
               </div>

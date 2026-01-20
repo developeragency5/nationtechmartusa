@@ -25,7 +25,7 @@ const audiences = [
   {
     icon: Building2,
     title: "IT Professionals",
-    description: "looking for detailed specifications and enterprise deployment guidance",
+    description: "looking for detailed specifications and deployment information",
     color: "text-purple-500",
     bgColor: "bg-purple-50 dark:bg-purple-950/30",
   },
@@ -68,7 +68,7 @@ const WhoWeServe = () => {
           </div>
 
           <p className="text-muted-foreground text-center text-sm">
-            No matter your experience level, our product selection adapts to provide the information you need.
+            No matter your experience level, our product listings provide the information you need.
           </p>
         </div>
       </div>

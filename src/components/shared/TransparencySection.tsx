@@ -12,21 +12,21 @@ const transparencyItems = [
     icon: Truck,
     title: "Shipping",
     description:
-      "Free shipping on orders over $100. Standard delivery takes 3-7 business days after processing. See our shipping page for complete policy details.",
+      "Shipping costs are calculated at checkout based on your address and order details. Standard delivery takes 3-7 business days after processing. See our shipping page for complete policy details.",
     link: { href: "/shipping", label: "View Shipping Policy" },
   },
   {
     icon: RotateCcw,
     title: "Returns",
     description:
-      "Most unopened items may be returned within 30 days of delivery. Some restrictions apply. Please review our full policy for eligibility, exclusions, and return procedures.",
+      "Most unopened items may be returned within 30 days of delivery. Some restrictions and exclusions apply. Please review our full policy for eligibility and return procedures.",
     link: { href: "/shipping", label: "View Returns Policy" },
   },
   {
     icon: Shield,
     title: "Warranty Information",
     description:
-      "Products are covered by the manufacturer's standard warranty, which may vary by product and brand. Warranty terms and coverage details are available on individual product pages. NationTechMart does not provide additional warranty coverage unless otherwise stated.",
+      "Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand. Warranty details are available on individual product pages. NationTechMart does not provide additional warranty coverage unless otherwise stated.",
   },
 ];
 

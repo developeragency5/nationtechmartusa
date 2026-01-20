@@ -2,8 +2,8 @@ import { Heart, CheckCircle } from "lucide-react";
 
 const commitments = [
   {
-    title: "Genuine Products",
-    description: "We sell new, authentic equipment sourced through lawful distribution channels, covered by applicable manufacturer standard warranties.",
+    title: "Authentic Products",
+    description: "We sell new, authentic products sourced through lawful distribution channels. Warranty coverage varies by product and brand.",
   },
   {
     title: "Transparent Pricing",
@@ -14,8 +14,8 @@ const commitments = [
     description: "Secure payment options with order tracking information provided for every purchase.",
   },
   {
-    title: "Professional Guides",
-    description: "Comprehensive educational resources to help you make informed decisions throughout your buying journey.",
+    title: "Clear Product Information",
+    description: "We provide detailed specifications and compatibility details on product pages so you can choose confidently.",
   },
 ];
 
@@ -49,8 +49,8 @@ const OurCommitment = () => {
           </div>
 
           <p className="text-center text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            Whether you're purchasing your first home office printer or upgrading an entire corporate print fleet,{" "}
-            <span className="font-semibold text-foreground">NationTechMart provides the guidance, selection, and care</span>{" "}
+            Whether you're purchasing your first home office printer or upgrading equipment for your business,{" "}
+            <span className="font-semibold text-foreground">NationTechMart provides the selection and information</span>{" "}
             you need for a confident purchasing experience.
           </p>
         </div>
