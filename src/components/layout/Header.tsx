@@ -106,26 +106,26 @@ const Header = () => {
             <div className="hidden md:flex items-center gap-6">
               <button 
                 onClick={openSearch}
-                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
+                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
                 data-testid="button-search"
               >
-                <img src={searchIcon} alt="Search" className="h-5 w-5" />
+                <img src={searchIcon} alt="Search" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                 <span className="text-xs">Search</span>
               </button>
               <button 
                 onClick={openAccount}
-                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
+                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
                 data-testid="button-user-account"
               >
-                <img src={userIcon} alt="Sign In" className="h-5 w-5" />
+                <img src={userIcon} alt="Sign In" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                 <span className="text-xs">Sign In</span>
               </button>
               <button 
                 onClick={openCart}
-                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
+                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
                 data-testid="button-cart"
               >
-                <img src={cartIcon} alt="Cart" className="h-5 w-5" />
+                <img src={cartIcon} alt="Cart" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                 <span className="text-xs">Cart</span>
               </button>
             </div>
@@ -134,18 +134,18 @@ const Header = () => {
             <div className="md:hidden flex items-center gap-3">
               <button 
                 onClick={openSearch}
-                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
+                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
                 data-testid="button-search-mobile"
               >
-                <img src={searchIcon} alt="Search" className="h-5 w-5" />
+                <img src={searchIcon} alt="Search" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                 <span className="text-xs">Search</span>
               </button>
               <button 
                 onClick={openCart}
-                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-colors"
+                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
                 data-testid="button-cart-mobile"
               >
-                <img src={cartIcon} alt="Cart" className="h-5 w-5" />
+                <img src={cartIcon} alt="Cart" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                 <span className="text-xs">Cart</span>
               </button>
               
