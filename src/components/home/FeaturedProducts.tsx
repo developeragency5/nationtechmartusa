@@ -5,6 +5,7 @@ import featuredProduct1 from "@/assets/products/hp-deskjet-2827e.png";
 import featuredProduct2 from "@/assets/products/hp-officejet-8135e.png";
 import featuredProduct3 from "@/assets/products/hp-envy-7955e.png";
 import featuredProduct4 from "@/assets/products/hp-laserjet-m110w.png";
+import featuredProduct5 from "@/assets/products/hp-smart-tank-651.png";
 
 interface FeaturedProduct {
   name: string;
@@ -44,10 +45,10 @@ const featuredProducts: FeaturedProduct[] = [
     category: "Laser Printers",
   },
   {
-    name: "HP DeskJet 4155e Wireless All-in-One Inkjet Printer with Instant Ink Ready",
-    shortName: "HP DeskJet 4155e All-in-One Printer",
-    image: featuredProduct1,
-    url: "/shop#!/HP-DeskJet-4155e-Wireless-All-in-One-Inkjet-Printer/p/806466785",
+    name: "HP Smart Tank Plus 651 Wireless All-in-One Ink Tank Printer",
+    shortName: "HP Smart Tank Plus 651 Printer",
+    image: featuredProduct5,
+    url: "/shop#!/HP-Smart-Tank-Plus-651-Wireless-All-in-One-Ink-Tank-Printer/p/806466786",
     category: "Home Printers",
   },
   {
