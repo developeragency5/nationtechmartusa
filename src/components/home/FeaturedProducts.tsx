@@ -43,6 +43,34 @@ const featuredProducts: FeaturedProduct[] = [
     url: "/shop#!/HP-LaserJet-M110w-Compact-Wireless-Monochrome-Laser-Printer/p/806466884",
     category: "Laser Printers",
   },
+  {
+    name: "HP DeskJet 4155e Wireless All-in-One Inkjet Printer with Instant Ink Ready",
+    shortName: "HP DeskJet 4155e All-in-One Printer",
+    image: featuredProduct1,
+    url: "/shop#!/HP-DeskJet-4155e-Wireless-All-in-One-Inkjet-Printer/p/806466785",
+    category: "Home Printers",
+  },
+  {
+    name: "HP OfficeJet Pro 9015e Wireless All-in-One Color Printer for Small Business",
+    shortName: "HP OfficeJet Pro 9015e Printer",
+    image: featuredProduct2,
+    url: "/shop#!/HP-OfficeJet-Pro-9015e-Wireless-All-in-One-Color-Printer/p/806466581",
+    category: "Office Printers",
+  },
+  {
+    name: "HP Envy 6455e Wireless All-in-One Color Inkjet Printer with Bonus Ink",
+    shortName: "HP Envy 6455e All-in-One Printer",
+    image: featuredProduct3,
+    url: "/shop#!/HP-Envy-6455e-Wireless-All-in-One-Color-Inkjet-Printer/p/806452377",
+    category: "Inkjet Printers",
+  },
+  {
+    name: "HP LaserJet Pro M404n Business Laser Printer with Ethernet Connectivity",
+    shortName: "HP LaserJet Pro M404n Printer",
+    image: featuredProduct4,
+    url: "/shop#!/HP-LaserJet-Pro-M404n-Business-Laser-Printer/p/806466885",
+    category: "Laser Printers",
+  },
 ];
 
 const FeaturedProducts = () => {
