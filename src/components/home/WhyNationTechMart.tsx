@@ -16,8 +16,8 @@ const benefits = [
     customIcon: easyReturnsIcon,
   },
   {
-    title: "Genuine Products",
-    description: "All products are authentic with original manufacturer warranties and specifications.",
+    title: "Fast and Secure Shopping",
+    description: "Browse and buy with confidence. Your transactions are protected with industry-standard security.",
     icon: Shield,
     customIcon: null,
   },
