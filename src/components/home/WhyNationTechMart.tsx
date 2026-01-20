@@ -1,6 +1,7 @@
-import { Shield, DollarSign } from "lucide-react";
+import { DollarSign } from "lucide-react";
 import fastShippingIcon from "@/assets/fast-shipping-icon.png";
 import easyReturnsIcon from "@/assets/easy-returns-icon.png";
+import secureShoppingIcon from "@/assets/secure-shopping-icon.png";
 
 const benefits = [
   {
@@ -18,8 +19,8 @@ const benefits = [
   {
     title: "Fast and Secure Shopping",
     description: "Browse and buy with confidence. Your transactions are protected with industry-standard security.",
-    icon: Shield,
-    customIcon: null,
+    icon: null,
+    customIcon: secureShoppingIcon,
   },
   {
     title: "Transparent Pricing",
