@@ -74,27 +74,23 @@ const PrinterCategoryGuide = () => {
                 className="hover-elevate border-border/50 bg-card"
                 data-testid={`card-category-${categorySlug}`}
               >
-                <CardContent className="p-6">
-                  <div className="flex flex-wrap items-start gap-4">
-                    <div className="w-14 h-14 flex items-center justify-center shrink-0">
-                      <img
-                        src={category.customIcon}
-                        alt={category.title}
-                        className="h-12 w-12 object-contain transition-transform duration-300 hover:scale-110"
-                      />
-                    </div>
-                    <div className="flex-1 min-w-0">
-                      <h3 
-                        className="text-xl font-semibold text-foreground mb-2"
-                        data-testid={`text-category-title-${categorySlug}`}
-                      >
-                        {category.title}
-                      </h3>
-                    </div>
+                <CardContent className="p-6 text-center">
+                  <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
+                    <img
+                      src={category.customIcon}
+                      alt={category.title}
+                      className="h-16 w-16 object-contain transition-transform duration-300 hover:scale-110"
+                    />
                   </div>
+                  <h3 
+                    className="text-xl font-semibold text-foreground mb-3"
+                    data-testid={`text-category-title-${categorySlug}`}
+                  >
+                    {category.title}
+                  </h3>
                   
                   <p 
-                    className="mt-4 text-muted-foreground leading-relaxed"
+                    className="text-muted-foreground leading-relaxed text-sm"
                     data-testid={`text-category-desc-${categorySlug}`}
                   >
                     {category.description}
@@ -104,7 +100,7 @@ const PrinterCategoryGuide = () => {
                     {category.highlights.map((highlight, idx) => (
                       <li
                         key={highlight}
-                        className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground"
+                        className="flex items-center justify-center gap-2 text-sm text-muted-foreground"
                         data-testid={`text-highlight-${categorySlug}-${idx}`}
                       >
                         <span className="w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
@@ -116,7 +112,7 @@ const PrinterCategoryGuide = () => {
                   <Button
                     asChild
                     variant="ghost"
-                    className="mt-6 w-full justify-between gap-2"
+                    className="mt-6 w-full justify-center gap-2"
                   >
                     <Link 
                       to={category.link} 
