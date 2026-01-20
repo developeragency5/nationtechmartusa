@@ -33,11 +33,14 @@ const Shop = () => {
   const [isEcwidOverlay, setIsEcwidOverlay] = useState(false);
   const [currentCategory, setCurrentCategory] = useState<string | null>(null);
 
+  const [isSearchView, setIsSearchView] = useState(false);
+
   useEffect(() => {
     const checkHash = () => {
       const hash = window.location.hash;
       const isOverlay = hash.includes('cart') || hash.includes('signin') || hash.includes('account');
       setIsEcwidOverlay(isOverlay);
+      setIsSearchView(hash.includes('/search') || hash.includes('~/search'));
 
       if (hash.includes(CATEGORY_IDS.HOME_PRINTERS)) {
         setCurrentCategory("home-printers");
@@ -148,7 +151,7 @@ const Shop = () => {
       />
 
       {/* ==================== ALL PRODUCTS - TOP CONTENT ==================== */}
-      {!isEcwidOverlay && !currentCategory && (
+      {!isEcwidOverlay && !currentCategory && !isSearchView && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto">
