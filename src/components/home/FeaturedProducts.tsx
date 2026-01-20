@@ -6,6 +6,7 @@ import featuredProduct2 from "@/assets/products/hp-officejet-8135e.png";
 import featuredProduct3 from "@/assets/products/hp-envy-7955e.png";
 import featuredProduct4 from "@/assets/products/hp-laserjet-m110w.png";
 import featuredProduct5 from "@/assets/products/hp-smart-tank-651.png";
+import featuredProduct6 from "@/assets/products/hp-laserjet-pro-4001dn.jpg";
 
 interface FeaturedProduct {
   name: string;
@@ -52,11 +53,11 @@ const featuredProducts: FeaturedProduct[] = [
     category: "Home Printers",
   },
   {
-    name: "HP OfficeJet Pro 9015e Wireless All-in-One Color Printer for Small Business",
-    shortName: "HP OfficeJet Pro 9015e Printer",
-    image: featuredProduct2,
-    url: "/shop#!/HP-OfficeJet-Pro-9015e-Wireless-All-in-One-Color-Printer/p/806466581",
-    category: "Office Printers",
+    name: "HP LaserJet Pro 4001dn Monochrome Laser Printer with Duplex Printing",
+    shortName: "HP LaserJet Pro 4001dn Printer",
+    image: featuredProduct6,
+    url: "/shop#!/HP-LaserJet-Pro-4001dn-Monochrome-Laser-Printer/p/806466787",
+    category: "Laser Printers",
   },
   {
     name: "HP Envy 6455e Wireless All-in-One Color Inkjet Printer with Bonus Ink",
