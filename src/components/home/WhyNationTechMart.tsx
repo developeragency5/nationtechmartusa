@@ -1,7 +1,7 @@
-import { DollarSign } from "lucide-react";
 import fastShippingIcon from "@/assets/fast-shipping-icon.png";
 import easyReturnsIcon from "@/assets/easy-returns-icon.png";
 import secureShoppingIcon from "@/assets/secure-shopping-icon.png";
+import transparentPricingIcon from "@/assets/transparent-pricing-icon.png";
 
 const benefits = [
   {
@@ -25,8 +25,8 @@ const benefits = [
   {
     title: "Transparent Pricing",
     description: "Competitive rates with no hidden fees or surprise charges at checkout.",
-    icon: DollarSign,
-    customIcon: null,
+    icon: null,
+    customIcon: transparentPricingIcon,
   },
 ];
 
