@@ -13,14 +13,16 @@ const AboutUsSection = () => {
             </h2>
             <div className="space-y-4 text-muted-foreground">
               <p>
-                NationTechMart is an independent online retailer specializing in printers, 
-                scanners, and office equipment. We're not affiliated with any manufacturer—we 
-                simply source quality products and offer them at competitive prices.
+                NationTechMart is an independent online retailer specializing in
+                printers, scanners, and office equipment. We're not affiliated
+                with any manufacturer—we simply source quality products and
+                offer them at competitive prices.
               </p>
               <p>
-                Our goal is straightforward: provide reliable technology products with honest 
-                pricing, clear policies, and a hassle-free shopping experience. Free shipping 
-                on orders over $100, easy 30-day returns, and manufacturer warranties on all products.
+                Our goal is straightforward: provide reliable technology
+                products with honest pricing, clear policies, and a hassle-free
+                shopping experience. Free shipping on orders over $100,
+                manufacturer standard warranties where applicable.
               </p>
             </div>
             <div className="mt-6">

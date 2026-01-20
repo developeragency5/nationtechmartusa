@@ -3,7 +3,7 @@ import { Heart, CheckCircle } from "lucide-react";
 const commitments = [
   {
     title: "Genuine Products",
-    description: "We offer authentic equipment with original manufacturer warranties and specifications.",
+    description: "We sell new, authentic equipment sourced through lawful distribution channels, covered by applicable manufacturer standard warranties.",
   },
   {
     title: "Transparent Pricing",

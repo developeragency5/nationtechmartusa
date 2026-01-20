@@ -1,0 +1,55 @@
+MASTER PROMPT — NationTechMart Homepage Compliance Rewrite (U.S. Search Ads Safe)
+
+I will paste my current NationTechMart homepage text below. Your task is to rewrite ONLY the text content to make it fully compliant for U.S. Google Search Ads and Microsoft/Bing Ads, and safe for HP trademark use as an independent online retailer.
+
+DO NOT change:
+- Layout / section order
+- Navigation labels
+- Button labels (unless they contain compliance issues)
+- Product model names in Featured Products (keep “HP DeskJet 2827e”, etc.)
+- Category names (Home Printers, Office Printers, Inkjet Printers, Laser Printers, Document Scanners)
+
+STRICT COMPLIANCE RULES:
+1) No affiliation claims:
+   - We are NOT affiliated with, endorsed by, sponsored by, partnered with, authorized by, or certified by HP or any manufacturer.
+   - Do NOT use words like: “official”, “authorized”, “certified”, “partner”, “approved”, “exclusive”, “preferred”, “direct from manufacturer”.
+
+2) Shipping truth:
+   - We DO NOT offer free shipping.
+   - Remove ALL mentions of “Free Shipping”, “Free shipping over $100”, “free delivery”, or anything implying free shipping.
+   - Replace with: “Shipping costs are calculated at checkout based on address and order details.”
+
+3) Warranty truth:
+   - Do NOT say “manufacturer warranties on all products”.
+   - Use conditional language:
+     “Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand.”
+
+4) Avoid endorsement-style wording:
+   - Replace “curated selection” with “wide selection”.
+   - Avoid language that implies special access or endorsement.
+
+5) Replace “guides” claim (we do NOT provide guides):
+   - Remove/replace “Professional Guides” and any “comprehensive guides/resources” claims.
+   - Replace with a truthful benefit:
+     “Clear Product Information: We provide detailed specifications and compatibility details on product pages so you can choose confidently.”
+
+6) Trust Bar update:
+   - Replace the Trust Bar items to be truthful and compliant.
+   - Use these 3 items exactly:
+     - “Shipping Calculated at Checkout”
+     - “Secure Checkout - SSL encrypted”
+     - “Easy Returns - 30-day return policy (eligibility applies)”
+   (If your rewrite mentions returns, include “eligibility/exclusions apply” somewhere to avoid absolute claims.)
+
+7) Add trademark notice (homepage bottom, near footer area):
+   Add this exact line:
+   “Trademark Notice: All product names, logos, and brands are property of their respective owners. No affiliation or endorsement is implied.”
+
+OUTPUT REQUIREMENTS:
+- Return the updated homepage copy in the SAME section-by-section format I provided:
+  HERO CAROUSEL (Slide 1/2), Trust Bar, About, Find the Right Printer cards, Featured Products, Shop by Category, Why NationTechMart, Our Commitment, Our Approach, Who We Serve, Transparency & Policies, FAQ, Newsletter.
+- Keep the tone: professional, neutral, factual, non-deceptive, e-commerce appropriate.
+- Avoid exaggerated claims (no “best”, “#1”, “guaranteed lowest price”, etc.) unless provable.
+
+NOW HERE IS MY CURRENT HOMEPAGE CONTENT:
+[PASTE HOMEPAGE CONTENT HERE]

@@ -1,6 +1,13 @@
 import { useState, useEffect, useCallback } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Truck, Shield, RotateCcw, ChevronLeft, ChevronRight } from "lucide-react";
+import {
+  ArrowRight,
+  Truck,
+  Shield,
+  RotateCcw,
+  ChevronLeft,
+  ChevronRight,
+} from "lucide-react";
 import { Link } from "react-router-dom";
 
 interface Slide {
@@ -20,7 +27,8 @@ const slides: Slide[] = [
     image: "/assets/images/hero-banner.jpg",
     alt: "Professional using printer in modern office environment",
     heading: "Printers & Scanners for Home and Office Use",
-    subtext: "Shop a curated selection of printers and document scanners designed for everyday home use, office environments, and business workflows.",
+    subtext:
+      "Shop a wide selection of printers and document scanners designed for everyday home use, office environments, and business workflows.",
     primaryLink: "/shop",
     primaryText: "Shop All Products",
   },
@@ -28,7 +36,8 @@ const slides: Slide[] = [
     image: "/assets/images/shop-banner.jpg",
     alt: "Woman using office printer copier in modern workplace",
     heading: "Home, Office, Inkjet & Laser Printers",
-    subtext: "Find the right printer for your needs with detailed specifications and honest pricing.",
+    subtext:
+      "Find the right printer for your needs with detailed specifications and honest pricing.",
     primaryLink: "/shop",
     primaryText: "View Printers",
     align: "right",
@@ -40,12 +49,15 @@ const HeroCarousel = () => {
   const [isPaused, setIsPaused] = useState(false);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
-  const goToSlide = useCallback((index: number) => {
-    if (isTransitioning) return;
-    setIsTransitioning(true);
-    setCurrentSlide(index);
-    setTimeout(() => setIsTransitioning(false), 500);
-  }, [isTransitioning]);
+  const goToSlide = useCallback(
+    (index: number) => {
+      if (isTransitioning) return;
+      setIsTransitioning(true);
+      setCurrentSlide(index);
+      setTimeout(() => setIsTransitioning(false), 500);
+    },
+    [isTransitioning],
+  );
 
   const nextSlide = useCallback(() => {
     goToSlide((currentSlide + 1) % slides.length);
@@ -57,7 +69,7 @@ const HeroCarousel = () => {
 
   useEffect(() => {
     if (isPaused) return;
-    
+
     const interval = setInterval(() => {
       nextSlide();
     }, 5000);
@@ -67,7 +79,7 @@ const HeroCarousel = () => {
 
   return (
     <section className="bg-background">
-      <div 
+      <div
         className="relative w-full bg-muted max-h-[500px] md:max-h-[600px] overflow-hidden"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
@@ -85,14 +97,18 @@ const HeroCarousel = () => {
               src={slide.image}
               alt={slide.alt}
               className="w-full h-auto object-cover min-h-[400px] md:min-h-[500px]"
-              style={{ objectPosition: 'center 20%' }}
+              style={{ objectPosition: "center 20%" }}
               loading={index === 0 ? "eager" : "lazy"}
             />
             <div className="absolute inset-0 flex items-center">
-              <div className={`container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex ${slide.align === "right" ? "justify-end" : "justify-start"}`}>
-                <div 
+              <div
+                className={`container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl flex ${slide.align === "right" ? "justify-end" : "justify-start"}`}
+              >
+                <div
                   className={`max-w-xl bg-black/40 backdrop-blur-sm p-4 md:p-6 rounded-lg text-left transform transition-all duration-500 ${
-                    index === currentSlide ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
+                    index === currentSlide
+                      ? "translate-y-0 opacity-100"
+                      : "translate-y-4 opacity-0"
                   }`}
                 >
                   <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
@@ -102,21 +118,27 @@ const HeroCarousel = () => {
                     {slide.subtext}
                   </p>
                   <div className="mt-4 md:mt-6 flex flex-wrap gap-3 justify-start">
-                    <Button asChild size="lg" data-testid={`button-carousel-primary-${index}`}>
+                    <Button
+                      asChild
+                      size="lg"
+                      data-testid={`button-carousel-primary-${index}`}
+                    >
                       <Link to={slide.primaryLink}>
                         {slide.primaryText}
                         <ArrowRight className="ml-2 h-4 w-4" />
                       </Link>
                     </Button>
                     {slide.secondaryText && slide.secondaryLink && (
-                      <Button 
-                        asChild 
-                        variant="secondary" 
-                        size="lg" 
+                      <Button
+                        asChild
+                        variant="secondary"
+                        size="lg"
                         className="bg-background text-foreground hover:bg-background/90"
                         data-testid={`button-carousel-secondary-${index}`}
                       >
-                        <Link to={slide.secondaryLink}>{slide.secondaryText}</Link>
+                        <Link to={slide.secondaryLink}>
+                          {slide.secondaryText}
+                        </Link>
                       </Button>
                     )}
                   </div>
@@ -152,7 +174,10 @@ const HeroCarousel = () => {
           <ChevronRight className="h-6 w-6" />
         </button>
 
-        <div className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2" data-testid="carousel-dots">
+        <div
+          className="absolute bottom-4 left-1/2 -translate-x-1/2 z-20 flex gap-2"
+          data-testid="carousel-dots"
+        >
           {slides.map((_, index) => (
             <button
               key={index}
@@ -177,22 +202,34 @@ const HeroCarousel = () => {
               <div className="flex items-center justify-center sm:justify-start gap-3">
                 <Truck className="h-5 w-5 text-primary-foreground shrink-0" />
                 <div>
-                  <p className="text-sm font-semibold text-primary-foreground">Free Shipping</p>
-                  <p className="text-xs text-primary-foreground/80">On orders over $100</p>
+                  <p className="text-sm font-semibold text-primary-foreground">
+                    Free Shipping
+                  </p>
+                  <p className="text-xs text-primary-foreground/80">
+                    On orders over $100
+                  </p>
                 </div>
               </div>
               <div className="flex items-center justify-center gap-3">
                 <Shield className="h-5 w-5 text-primary-foreground shrink-0" />
                 <div>
-                  <p className="text-sm font-semibold text-primary-foreground">Secure Checkout</p>
-                  <p className="text-xs text-primary-foreground/80">SSL encrypted</p>
+                  <p className="text-sm font-semibold text-primary-foreground">
+                    Secure Checkout
+                  </p>
+                  <p className="text-xs text-primary-foreground/80">
+                    SSL encrypted
+                  </p>
                 </div>
               </div>
               <div className="flex items-center justify-center sm:justify-end gap-3">
                 <RotateCcw className="h-5 w-5 text-primary-foreground shrink-0" />
                 <div>
-                  <p className="text-sm font-semibold text-primary-foreground">Easy Returns</p>
-                  <p className="text-xs text-primary-foreground/80">30-day return policy</p>
+                  <p className="text-sm font-semibold text-primary-foreground">
+                    Easy Returns
+                  </p>
+                  <p className="text-xs text-primary-foreground/80">
+                    30-day return policy
+                  </p>
                 </div>
               </div>
             </div>
