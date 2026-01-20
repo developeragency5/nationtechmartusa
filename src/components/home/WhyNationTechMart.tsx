@@ -1,5 +1,6 @@
-import { RotateCcw, Shield, DollarSign } from "lucide-react";
+import { Shield, DollarSign } from "lucide-react";
 import fastShippingIcon from "@/assets/fast-shipping-icon.png";
+import easyReturnsIcon from "@/assets/easy-returns-icon.png";
 
 const benefits = [
   {
@@ -11,8 +12,8 @@ const benefits = [
   {
     title: "Easy Returns",
     description: "30-day return window on eligible items. Hassle-free process with clear instructions.",
-    icon: RotateCcw,
-    customIcon: null,
+    icon: null,
+    customIcon: easyReturnsIcon,
   },
   {
     title: "Genuine Products",
