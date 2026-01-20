@@ -34,7 +34,7 @@ const AboutUsSection = () => {
           </div>
           <div className="relative">
             <img
-              src="/attached_assets/business-team-troubleshooting-modern-office-printe-2026-01-09-_1768934980041.jpg"
+              src="/assets/images/about-team.jpg"
               alt="Business team using modern office printer"
               className="w-full h-auto rounded-xl"
               loading="lazy"
