@@ -44,6 +44,14 @@ const categories = [
     link: "/shop/scanners",
     highlights: ["High resolution", "Document management", "Photo scanning"],
   },
+  {
+    title: "View All Products",
+    description: "Browse our complete catalog of printers, scanners, and accessories. Find the perfect solution for all your printing and scanning needs.",
+    customIcon: null,
+    link: "/shop",
+    highlights: ["Complete catalog", "All categories", "Best deals"],
+    isViewAll: true,
+  },
 ];
 
 const PrinterCategoryGuide = () => {
@@ -74,13 +82,19 @@ const PrinterCategoryGuide = () => {
                 className="hover-elevate border-border/50 bg-card"
                 data-testid={`card-category-${categorySlug}`}
               >
-                <CardContent className="p-6 text-center">
+                <CardContent className={`p-6 text-center ${(category as any).isViewAll ? 'bg-primary/5 flex flex-col justify-center h-full' : ''}`}>
                   <div className="w-20 h-20 mx-auto mb-4 flex items-center justify-center">
-                    <img
-                      src={category.customIcon}
-                      alt={category.title}
-                      className="h-16 w-16 object-contain transition-transform duration-300 hover:scale-110"
-                    />
+                    {category.customIcon ? (
+                      <img
+                        src={category.customIcon}
+                        alt={category.title}
+                        className="h-16 w-16 object-contain transition-transform duration-300 hover:scale-110"
+                      />
+                    ) : (
+                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                        <ArrowRight className="h-8 w-8 text-primary" />
+                      </div>
+                    )}
                   </div>
                   <h3 
                     className="text-xl font-semibold text-foreground mb-3"
@@ -111,14 +125,14 @@ const PrinterCategoryGuide = () => {
 
                   <Button
                     asChild
-                    variant="ghost"
+                    variant={(category as any).isViewAll ? "default" : "ghost"}
                     className="mt-6 w-full justify-center gap-2"
                   >
                     <Link 
                       to={category.link} 
                       data-testid={`link-category-${categorySlug}`}
                     >
-                      Browse {category.title}
+                      {(category as any).isViewAll ? "Shop Now" : `Browse ${category.title}`}
                       <ArrowRight className="h-4 w-4" />
                     </Link>
                   </Button>
@@ -128,14 +142,6 @@ const PrinterCategoryGuide = () => {
           })}
         </div>
 
-        <div className="mt-12 text-center">
-          <Button asChild size="lg">
-            <Link to="/shop" data-testid="link-view-all-products">
-              View All Products
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Link>
-          </Button>
-        </div>
       </div>
     </section>
   );
