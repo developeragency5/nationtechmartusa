@@ -36,12 +36,12 @@ const OurCommitment = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6 mb-10">
             {commitments.map((commitment) => (
-              <div key={commitment.title} className="group flex items-start gap-4 p-4 -ml-4 rounded-xl transition-all duration-300 hover:bg-primary/5 cursor-default">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
-                  <CheckCircle className="h-5 w-5 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
+              <div key={commitment.title} className="flex items-start gap-4 p-4 -ml-4 rounded-xl">
+                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
+                  <CheckCircle className="h-5 w-5 text-primary" />
                 </div>
                 <div>
-                  <span className="font-semibold text-foreground group-hover:text-primary transition-colors duration-300">{commitment.title}:</span>{" "}
+                  <span className="font-semibold text-foreground">{commitment.title}:</span>{" "}
                   <span className="text-muted-foreground">{commitment.description}</span>
                 </div>
               </div>
