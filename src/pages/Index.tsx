@@ -11,6 +11,7 @@ import WhyNationTechMart from "@/components/home/WhyNationTechMart";
 import OurApproach from "@/components/home/RealStorePromise";
 import TransparencySection from "@/components/shared/TransparencySection";
 import FAQSection from "@/components/home/FAQSection";
+import Newsletter from "@/components/home/Newsletter";
 
 const Index = () => {
   return (
@@ -32,6 +33,7 @@ const Index = () => {
       <WhoWeServe />
       <TransparencySection />
       <FAQSection />
+      <Newsletter />
     </Layout>
   );
 };
