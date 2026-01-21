@@ -1,0 +1,74 @@
+1️⃣ Replace “We recommend” (MANDATORY)
+Current
+
+We recommend
+
+Why
+
+Can be seen as endorsement / editorial recommendation with trademarked products.
+
+Fix (use one neutral label everywhere)
+
+Replace with:
+
+Featured Products
+or
+Highlighted Products
+
+2️⃣ Remove the non-laser product from Laser category (MANDATORY)
+Current (first item)
+
+HP Smart Tank 651 Wireless All-in-One Ink Tank Printer…
+
+That is NOT a laser printer (it’s an ink tank/inkjet-type line). This isn’t an ads-policy violation, but it hurts trust and can create misleading categorization issues if users click ads expecting “laser printers”.
+
+Fix
+
+Move HP Smart Tank 651 to Inkjet / Ink Tank / Home Printers category page
+
+Keep Laser page strictly laser models
+
+🟡 OPTIONAL IMPROVEMENTS (RECOMMENDED)
+3️⃣ Shipping wording consistency (optional)
+
+On other pages you’ve standardized to “shipping details shown at checkout”. Here you use:
+
+“Orders typically ship within 1–2 business days…”
+
+That’s fine if true, but best to match sitewide wording.
+
+Safer replacement:
+
+“Orders are typically processed within 1–2 business days. Delivery times vary by destination and carrier and generally range from 3–7 business days.”
+
+4️⃣ Warranty sentence consistency (optional)
+
+You currently say:
+
+“Products include applicable manufacturer standard warranty coverage where offered. Warranty terms vary…”
+
+Your standard “best” wording is one line:
+
+“Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand.”
+
+Use the same everywhere.
+
+5️⃣ Fix the SKU typo (strongly recommended)
+
+This line looks wrong:
+
+SKU HP LaserJet M209 High-Speed Monochrome Laser Printer for Office Use
+
+Should be like your other SKUs (PRN-...). Not an ads violation, but it looks unprofessional and can cause checkout/support issues.
+
+✅ TASKS TO GIVE REPLIT (COPY/PASTE)
+
+Replace “We recommend” with “Featured Products” (or “Highlighted Products”) everywhere on this page
+
+Remove/move HP Smart Tank 651 from Laser Printers page to the appropriate Inkjet/Ink Tank/Home category
+
+(Optional) Standardize shipping paragraph to “processed” + “delivery varies” language
+
+(Optional) Standardize warranty to one consistent sentence across site
+
+(Recommended) Fix the SKU format for HP LaserJet M209 to match the PRN- pattern

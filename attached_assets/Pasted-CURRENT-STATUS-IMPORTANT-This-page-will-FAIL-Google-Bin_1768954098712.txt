@@ -1,0 +1,146 @@
+CURRENT STATUS (IMPORTANT)
+
+This page will FAIL Google & Bing Search Ads review in its current form.
+
+Reason: it reintroduced multiple violations you already removed elsewhere.
+
+🔴 CRITICAL ISSUES (MUST FIX)
+1️⃣ ❌ “We recommend” (MANDATORY REMOVAL)
+Current
+We recommend
+HP DeskJet 2855e Wireless All-in-One…
+
+Why this fails
+
+Implies editorial endorsement
+
+Implies expertise or preference
+
+Frequently flagged with trademarked products
+
+✅ REQUIRED FIX
+
+Replace everywhere:
+
+We recommend
+
+
+⬇️
+
+Featured Product
+
+
+(Use only one neutral label, consistently.)
+
+2️⃣ ❌ “Free shipping on orders over $100” (HARD VIOLATION)
+Current
+Free shipping on orders over $100.
+
+Why this is critical
+
+You already confirmed: you do NOT offer free shipping
+
+This is misrepresentation
+
+This alone can trigger:
+
+Ad disapproval
+
+Account trust issues
+
+✅ REQUIRED FIX (MANDATORY)
+
+REMOVE this line entirely.
+
+Replace all shipping mentions with:
+
+Shipping details are shown at checkout.
+
+
+⚠️ Use this wording everywhere on this page.
+
+3️⃣ ❌ “Ink Trial / 3 Months of Ink Trial” (MANDATORY REMOVAL)
+Current examples
+with 3 Months of Ink Trial
+with Ink Trial
+
+Why this fails
+
+Trial availability varies by seller, region, promotion
+
+Ads reviewers treat this as unverifiable promotional benefit
+
+✅ REQUIRED FIX
+
+Remove all trial references from:
+
+Product titles
+
+Descriptions
+
+Example FIX
+
+HP OfficeJet 8135e Wireless All-in-One Color Inkjet Printer for Office Use
+
+4️⃣ ⚠️ Warranty wording inconsistency (MUST STANDARDIZE)
+Current (two versions used)
+
+“Products are covered by the manufacturer's standard warranty…”
+
+“Products include applicable manufacturer standard warranty…”
+
+Why this matters
+
+Inconsistent warranty language = reviewer friction.
+
+✅ REQUIRED STANDARD WORDING (USE EXACTLY)
+Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand.
+
+
+Replace all warranty sections with this exact sentence.
+
+🟡 OPTIONAL (BUT STRONGLY RECOMMENDED)
+5️⃣ Shipping timing certainty (soften)
+Current
+Standard delivery takes 3–7 business days
+
+Safer version
+Delivery times vary by destination and carrier and typically range from 3–7 business days.
+
+🟢 WHAT IS ALREADY GOOD (DO NOT CHANGE)
+
+These parts are clean and compliant:
+
+✔ Product names (minus trial wording)
+
+✔ Prices & SKUs
+
+✔ Category descriptions
+
+✔ Independent retailer disclaimer
+
+✔ HP trademark disclaimer
+
+✔ No “official / authorized / partner” language
+
+🛠️ TASKS TO GIVE REPLIT (CLEAR LIST)
+
+You can paste this directly into your task tracker.
+
+TASK LIST
+
+Replace “We recommend” → “Featured Product”
+
+Remove ALL “Free shipping” mentions
+
+Standardize shipping text to:
+
+“Shipping details are shown at checkout.”
+
+Remove ALL “Ink Trial / 3 Months of Ink Trial” references
+
+Standardize warranty wording (exact sentence provided)
+
+Do NOT change prices, SKUs, layout, or categories
+
+Keep trademark disclaimer unchanged
