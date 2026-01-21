@@ -241,7 +241,7 @@ const Shipping = () => {
                     Items That Cannot Be Returned
                   </h4>
                   <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
-                    <li>Opened software, ink cartridges, or toner</li>
+                    <li>Opened software or consumable supplies</li>
                     <li>Items marked "Final Sale" at purchase</li>
                     <li>Products with removed/altered serial numbers</li>
                     <li>Returns after the 30-day window</li>

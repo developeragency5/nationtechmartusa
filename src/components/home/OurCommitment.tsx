@@ -49,9 +49,9 @@ const OurCommitment = () => {
           </div>
 
           <p className="text-center text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            You might be buying your first photo printer. You could be replacing ink cartridges. Or you may want to upgrade to a faster color laser printer.{" "}
-            <span className="font-semibold text-foreground">NationTechMart has the information you need</span>{" "}
-            to make a confident buying decision for your office setup.
+            Whether you need a home printer, an office workgroup solution, or a high-speed laser printer,{" "}
+            <span className="font-semibold text-foreground">NationTechMart offers a wide selection</span>{" "}
+            of printers and scanners from well-known manufacturers.
           </p>
         </div>
       </div>

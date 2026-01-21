@@ -24,9 +24,8 @@ const AboutUsSection = () => {
                 for their reliability, performance, and ease of use.
               </p>
               <p>
-                Each listing gives clear details on the setup process. It also shows supported
-                connectivity options like embedded Wi-Fi. Additionally, it includes ongoing needs
-                such as ink cartridges or ink toner compatibility.
+                Each listing gives clear details on the setup process, supported
+                connectivity options like embedded Wi-Fi, and key specifications to help you find the right printer.
               </p>
               
             </div>
