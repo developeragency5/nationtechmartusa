@@ -26,9 +26,9 @@ const slides: Slide[] = [
   {
     image: "/assets/images/hero-banner.jpg",
     alt: "Professional using printer in modern office environment",
-    heading: "Printers & Scanners for Home and Office Use",
+    heading: "Printers & Scanners for Home and Office",
     subtext:
-      "Shop a wide range of printers and document scanners. Manufacturers design them for home offices, professional offices, and growing businesses. Whether you need color printing for presentations or black printing for documents, our printers provide great print quality.",
+      "Shop a wide range of printers and document scanners. Manufacturers design them for home offices, professional offices, and growing businesses. Whether you need color printing for presentations or black printing for documents.",
     primaryLink: "/shop",
     primaryText: "Shop All Products",
   },

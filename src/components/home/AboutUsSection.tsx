@@ -28,13 +28,7 @@ const AboutUsSection = () => {
                 connectivity options like embedded Wi-Fi. Additionally, it includes ongoing needs
                 such as ink cartridges or ink toner compatibility.
               </p>
-              <p>
-                Our goal is simple: we want to offer reliable technology products. We provide
-                clear pricing, accurate product details, and an easy shopping experience.
-                During checkout, customers can review shipping details, delivery timelines,
-                and secure payment options. Eligible products offer easy 30-day returns,
-                and manufacturers include standard warranty coverage where available.
-              </p>
+              
             </div>
             <div className="mt-6">
               <Button asChild data-testid="button-learn-more-about">
