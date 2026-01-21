@@ -1,0 +1,96 @@
+REQUIRED FIXES (MUST DO)
+1️⃣ “We recommend” → REMOVE (MANDATORY)
+Current
+We recommend
+HP ScanJet Pro N4000 snw1 …
+
+Why this is a problem
+
+Implies editorial endorsement
+
+Can be interpreted as expert recommendation
+
+Often flagged with trademarked products
+
+✅ REQUIRED REPLACEMENT
+
+Use one neutral label, consistently:
+
+Best option
+
+Featured Products
+
+
+(Also acceptable: “Highlighted Products”)
+
+❌ Do NOT use: “Recommended”, “Best”, “Top”, “Editor’s Choice”.
+
+2️⃣ ❌ “Free shipping on orders over $100” (HARD VIOLATION)
+Current
+Free shipping on orders over $100.
+
+Why this is critical
+
+You already confirmed: no free shipping
+
+This is misrepresentation
+
+One of the fastest ways to get ads disapproved
+
+✅ REQUIRED FIX (MANDATORY)
+
+Remove all free shipping references and replace every shipping mention with:
+
+Shipping details are shown at checkout.
+
+
+Use this wording only.
+
+3️⃣ ❌ Warranty wording inconsistency (MUST STANDARDIZE)
+Current
+
+“Products are covered by the manufacturer's standard warranty…”
+
+Required site-wide wording (USE EXACTLY)
+Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand.
+
+
+Consistency matters for ads reviewers.
+
+🟡 OPTIONAL (BUT RECOMMENDED)
+4️⃣ Delivery time certainty (optional softening)
+Current
+Standard delivery takes 3–7 business days
+
+Safer wording
+Delivery times vary by destination and carrier and typically range from 3–7 business days.
+
+🟢 WHAT IS ALREADY EXCELLENT (DO NOT CHANGE)
+
+These parts are fully compliant:
+
+✔ Product titles & prices
+
+✔ Correct scanner categorization
+
+✔ No “official / authorized / partner” language
+
+✔ Independent retailer disclaimer
+
+✔ HP trademark disclaimer
+
+✔ Neutral, educational category copy
+
+🛠️ TASKS TO GIVE REPLIT (CLEAR LIST)
+
+Replace “We recommend” with “Featured Products”
+
+Remove all “Free shipping” mentions
+
+Standardize shipping text to:
+
+“Shipping details are shown at checkout.”
+
+Replace warranty section with the approved standard sentence
+
+Do NOT change product titles, prices, SKUs, layout, or disclaimers

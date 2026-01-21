@@ -34,7 +34,7 @@ const faqs: FAQ[] = [
   {
     category: "shipping",
     question: "What is your shipping policy?",
-    answer: "We offer free shipping on all orders over $100. Orders typically ship within 1-2 business days, and standard delivery takes 3-7 business days. Please see our Shipping page for complete policy details including geographic restrictions."
+    answer: "Shipping details are shown at checkout. Orders are typically processed within 1-2 business days. Delivery times vary by destination and carrier and generally range from 3-7 business days. Please see our Shipping page for complete policy details including geographic restrictions."
   },
   {
     category: "shipping",
@@ -98,7 +98,7 @@ const faqs: FAQ[] = [
   {
     category: "warranty",
     question: "Does buying from NationTechMart affect manufacturer warranty?",
-    answer: "Most manufacturer warranties are honored regardless of where the product is purchased. However, some manufacturers may have specific requirements about purchasing from authorized retailers. We recommend verifying with the manufacturer if warranty coverage is a concern for your purchase."
+    answer: "Most manufacturer warranties are honored regardless of where the product is purchased. However, some manufacturers may have specific requirements about purchasing from authorized retailers. Please verify with the manufacturer if warranty coverage is a concern for your purchase."
   },
   {
     category: "warranty",

@@ -201,7 +201,7 @@ const Shop = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Designed for low to moderate print volumes</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Compact footprint suitable for desks and shelves</span></li>
-                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Wireless, Wi-Fi, and mobile printing options</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Wireless and mobile printing support</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Affordable upfront cost with efficient ink usage</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Simple controls and app-based management</span></li>
                 </ul>

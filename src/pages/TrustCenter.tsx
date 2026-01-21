@@ -85,7 +85,7 @@ const TrustCenter = () => {
                   </p>
                   <div className="bg-card rounded-xl border border-border/60 p-5 mt-6">
                     <p className="text-sm text-muted-foreground">
-                      <strong className="text-foreground">Note:</strong> Product availability, specifications, and packaging may vary. We recommend checking individual product listings for the most accurate information.
+                      <strong className="text-foreground">Note:</strong> Product availability, specifications, and packaging may vary. Please check individual product listings for the most accurate information.
                     </p>
                   </div>
                 </div>
@@ -127,7 +127,7 @@ const TrustCenter = () => {
                     <li className="flex items-start space-x-3">
                       <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 shrink-0" />
                       <span className="text-muted-foreground">
-                        <strong className="text-foreground">Free shipping</strong> on orders over $100
+                        <strong className="text-foreground">Shipping details</strong> are shown at checkout
                       </span>
                     </li>
                     <li className="flex items-start space-x-3">
@@ -165,9 +165,9 @@ const TrustCenter = () => {
                     <div className="bg-card rounded-xl border border-border/60 p-6">
                       <h3 className="font-semibold text-foreground mb-3">Shipping</h3>
                       <ul className="space-y-2 text-sm text-muted-foreground">
-                        <li>• Free shipping on orders over $100</li>
-                        <li>• Orders typically ship within 1-2 business days</li>
-                        <li>• Standard delivery takes 3-7 business days</li>
+                        <li>• Shipping details are shown at checkout</li>
+                        <li>• Orders are typically processed within 1-2 business days</li>
+                        <li>• Delivery times vary and generally range from 3-7 business days</li>
                         <li>• Carriers include UPS, FedEx, and USPS</li>
                       </ul>
                       <p className="text-xs text-muted-foreground mt-3">See shipping page for full details</p>
@@ -241,7 +241,7 @@ const TrustCenter = () => {
                   </ul>
                   <div className="bg-card rounded-xl border border-border/60 p-5">
                     <p className="text-sm text-muted-foreground">
-                      <strong className="text-foreground">Tip:</strong> We recommend reviewing the manufacturer's warranty terms before purchasing. Specific warranty information is available on individual product pages when provided by the manufacturer.
+                      <strong className="text-foreground">Tip:</strong> Please review the manufacturer's warranty terms before purchasing. Specific warranty information is available on individual product pages when provided by the manufacturer.
                     </p>
                   </div>
                 </div>
