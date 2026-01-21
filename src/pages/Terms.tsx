@@ -178,10 +178,10 @@ const Terms = () => {
                       <strong>Shipping is available to addresses within the United States only.</strong> We do not ship internationally.
                     </p>
                     <p className="text-muted-foreground leading-relaxed mb-3">
-                      <strong>Free Shipping:</strong> Orders totaling $100 or more qualify for free standard shipping within the United States. Orders under $100 are subject to shipping charges calculated at checkout.
+                      <strong>Shipping Rates:</strong> Shipping details and rates are shown at checkout based on your order and destination.
                     </p>
                     <p className="text-muted-foreground leading-relaxed mb-3">
-                      <strong>Delivery Times:</strong> Standard shipping typically takes 3-7 business days after processing. Shipping times are estimates, not guarantees. We're not responsible for carrier delays, weather, or other factors outside our control.
+                      <strong>Delivery Times:</strong> Delivery times vary by destination and carrier and typically range from 3-7 business days after processing. Shipping times are estimates, not guarantees. We're not responsible for carrier delays, weather, or other factors outside our control.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
                       For additional shipping details, see our <a href="/shipping" className="text-primary hover:underline">Shipping & Returns</a> page.
@@ -204,7 +204,7 @@ const Terms = () => {
                       <strong>NationTechMart is not the manufacturer.</strong> We do not provide product warranties.
                     </p>
                     <p className="text-muted-foreground leading-relaxed mb-3">
-                      Products are covered by the manufacturer's warranty, if any. Warranty terms vary by product and brand. For warranty claims, you may need to contact the manufacturer directly.
+                      Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand. For warranty claims, you may need to contact the manufacturer directly.
                     </p>
                     <p className="text-muted-foreground leading-relaxed">
                       We can provide proof of purchase to support warranty claims upon request.

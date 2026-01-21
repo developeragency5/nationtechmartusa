@@ -3,8 +3,8 @@ import { Shield, Truck, RotateCcw, Lock, Headphones, Award } from "lucide-react"
 const badges = [
   {
     icon: Truck,
-    title: "Free Shipping",
-    description: "On orders over $100",
+    title: "Fast Shipping",
+    description: "Details shown at checkout",
   },
   {
     icon: RotateCcw,

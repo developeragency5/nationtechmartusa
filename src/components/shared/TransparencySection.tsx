@@ -12,7 +12,7 @@ const transparencyItems = [
     icon: Truck,
     title: "Shipping",
     description:
-      "Orders typically ship within 1-2 business days. Standard delivery takes 3-7 business days after processing.",
+      "Orders are typically processed within 1-2 business days. Delivery times vary by destination and carrier and typically range from 3-7 business days.",
     link: { href: "/shipping", label: "View Shipping Policy" },
   },
   {

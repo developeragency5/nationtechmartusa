@@ -208,7 +208,7 @@ const TrustCenter = () => {
                 </h2>
                 <div className="prose prose-muted max-w-none">
                   <p className="text-muted-foreground leading-relaxed mb-4">
-                    Products sold by NationTechMart are covered by the <strong className="text-foreground">manufacturer's standard warranty</strong>. Warranty terms, coverage, and duration vary by product and manufacturer.
+                    Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand.
                   </p>
                   <p className="text-muted-foreground leading-relaxed mb-4">
                     <strong className="text-foreground">Important considerations:</strong>

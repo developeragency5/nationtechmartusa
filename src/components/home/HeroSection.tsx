@@ -47,8 +47,8 @@ const HeroSection = () => {
               <div className="flex items-center justify-center sm:justify-start gap-3">
                 <Truck className="h-5 w-5 text-primary-foreground shrink-0" />
                 <div>
-                  <p className="text-sm font-semibold text-primary-foreground">Free Shipping</p>
-                  <p className="text-xs text-primary-foreground/80">On orders over $100</p>
+                  <p className="text-sm font-semibold text-primary-foreground">Fast Shipping</p>
+                  <p className="text-xs text-primary-foreground/80">Details shown at checkout</p>
                 </div>
               </div>
               <div className="flex items-center justify-center gap-3">

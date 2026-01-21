@@ -88,7 +88,7 @@ const faqs: FAQ[] = [
   {
     category: "warranty",
     question: "What warranty do products come with?",
-    answer: "Products sold by NationTechMart include the manufacturer's standard warranty. Warranty terms, coverage, and duration vary by product and manufacturer. Specific warranty information is available on individual product pages. NationTechMart does not provide additional warranty coverage unless explicitly stated."
+    answer: "Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand. Specific warranty information is available on individual product pages. NationTechMart does not provide additional warranty coverage unless explicitly stated."
   },
   {
     category: "warranty",

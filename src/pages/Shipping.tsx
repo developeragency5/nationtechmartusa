@@ -7,7 +7,7 @@ const Shipping = () => {
     <Layout>
       <SEO
         title="Shipping & Returns Policy"
-        description="NationTechMart shipping and returns policy. Free shipping on orders over $100, 30-day returns. Learn about delivery times and return process."
+        description="NationTechMart shipping and returns policy. Shipping details shown at checkout, 30-day returns. Learn about delivery times and return process."
         keywords="printer shipping, return policy, shipping rates, delivery time, order returns"
         canonicalUrl="/shipping"
       />
@@ -79,7 +79,7 @@ const Shipping = () => {
                 Shipping at a Glance
               </h2>
               <p className="text-lg font-medium text-primary">
-                Free Shipping on Orders Over $100
+                Shipping Details Shown at Checkout
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -105,7 +105,7 @@ const Shipping = () => {
                 <div className="p-6">
                   <h3 className="font-bold text-foreground mb-2 group-hover:text-primary transition-colors duration-300">Carriers & Delivery</h3>
                   <p className="text-sm text-muted-foreground">
-                    We ship via <strong>UPS, FedEx, and USPS</strong>. Standard delivery takes 3-7 
+                    We ship via <strong>UPS, FedEx, and USPS</strong>. Delivery times vary and typically range from 3-7 
                     business days.
                   </p>
                 </div>
@@ -140,13 +140,13 @@ const Shipping = () => {
               </div>
               <div className="space-y-4 text-muted-foreground">
                 <p>
-                  <strong className="text-foreground">Free Shipping:</strong> Orders totaling $100 or more qualify for free standard shipping.
+                  <strong className="text-foreground">Shipping Rates:</strong> Shipping details and rates are shown at checkout based on your order and destination.
                 </p>
                 <p>
                   <strong className="text-foreground">Geographic Availability:</strong> Shipping is available to addresses within the United States only. We do not ship internationally at this time.
                 </p>
                 <p>
-                  <strong className="text-foreground">Delivery Time:</strong> Standard delivery takes 3-7 business days after your order ships. Delivery times are estimates and may vary based on carrier conditions and destination.
+                  <strong className="text-foreground">Delivery Time:</strong> Delivery times vary by destination and carrier and typically range from 3-7 business days after your order ships. Delivery times are estimates and may vary based on carrier conditions and destination.
                 </p>
               </div>
             </div>
