@@ -266,7 +266,7 @@ const Shipping = () => {
                     <strong>NationTechMart is not the manufacturer</strong> of the products we sell. We are an independent retailer.
                   </p>
                   <p className="text-muted-foreground mb-3">
-                    All products are covered by the manufacturer's warranty only. Warranty terms vary by product and brand. 
+                    Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand. 
                     For warranty claims, you may need to contact the manufacturer directly. We can provide proof of purchase upon request.
                   </p>
                 </div>
