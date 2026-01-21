@@ -182,42 +182,37 @@ const Contact = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {/* Business Info */}
               <div className="space-y-6">
-                {/* Business Address */}
+                {/* Online Store */}
                 <div className="bg-card rounded-xl border border-border p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                      <MapPin className="h-7 w-7 text-primary" />
+                      <ShoppingCart className="h-7 w-7 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">Business Address</h3>
+                      <h3 className="font-bold text-foreground mb-1">Online Store</h3>
                       <p className="text-foreground">
-                        NationTechMart<br />
-                        123 Technology Drive<br />
-                        Suite 100<br />
-                        San Francisco, CA 94105<br />
-                        United States
+                        Shop 24/7 at nationtechmart.com
                       </p>
                       <p className="text-sm text-muted-foreground mt-2">
-                        This address is provided for business correspondence only.
+                        Browse our selection of printers, scanners, and office equipment. Place orders anytime through our secure checkout.
                       </p>
                     </div>
                   </div>
                 </div>
 
-                {/* Business Hours */}
+                {/* Order Processing */}
                 <div className="bg-card rounded-xl border border-border p-6">
                   <div className="flex items-start gap-4">
                     <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-                      <Clock className="h-7 w-7 text-primary" />
+                      <Package className="h-7 w-7 text-primary" />
                     </div>
                     <div>
-                      <h3 className="font-bold text-foreground mb-1">Business Hours</h3>
+                      <h3 className="font-bold text-foreground mb-1">Order Processing</h3>
                       <p className="text-foreground">
-                        Monday – Friday: 9:00 AM – 6:00 PM (EST)<br />
-                        Saturday – Sunday: Closed
+                        Monday – Friday (EST)
                       </p>
                       <p className="text-sm text-muted-foreground mt-2">
-                        We review inquiries during standard business hours. Response times may vary depending on message volume.
+                        Orders are typically processed within 1-2 business days. You'll receive tracking information via email once your order ships.
                       </p>
                     </div>
                   </div>
