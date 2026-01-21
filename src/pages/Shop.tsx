@@ -263,7 +263,7 @@ const Shop = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Superior color accuracy and photo quality</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Prints on various media including photo paper and cardstock</span></li>
-                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Lower upfront cost compared to laser printers</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Affordable upfront investment</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Compact designs for space-conscious setups</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Ink tank options for high-volume, low-cost printing</span></li>
                 </ul>
@@ -286,7 +286,7 @@ const Shop = () => {
                   Laser printers use toner and heat fusion technology to deliver fast, precise output with exceptional text clarity. Built for speed and efficiency, laser printers are the go-to choice for offices and businesses that require high-volume document production with minimal downtime.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed">
-                  With lower cost per page, faster print speeds, and toner that doesn't dry out, laser printers offer long-term value for users who prioritize productivity and professional-quality documents.
+                  Laser printers offer long-term value for users who prioritize productivity and professional-quality documents, with fast print speeds and reliable toner-based output.
                 </p>
               </div>
               <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8">
@@ -294,8 +294,8 @@ const Shop = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Faster print speeds for high-volume needs</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Crisp, professional text quality</span></li>
-                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Lower cost per page than inkjet</span></li>
-                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Toner doesn't dry out like ink cartridges</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Efficient cost per page for high-volume printing</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Long-lasting toner with extended shelf life</span></li>
                   <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Durable output resistant to water and smudging</span></li>
                 </ul>
               </div>
@@ -465,7 +465,7 @@ const Shop = () => {
               <div>
                 <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Color Accuracy & Photo Quality</h2>
                 <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
-                  Inkjet technology excels at reproducing subtle color gradations and photographic detail. With individual ink cartridges for each color, you only replace what you use. Advanced print heads deliver precise droplet placement for stunning results on photo paper, cardstock, and specialty media.
+                  Inkjet technology excels at reproducing subtle color gradations and photographic detail. Advanced print heads deliver precise droplet placement for stunning results on photo paper, cardstock, and specialty media.
                 </p>
               </div>
               <div>
