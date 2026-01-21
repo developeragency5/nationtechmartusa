@@ -85,7 +85,7 @@ const FeaturedProducts = () => {
             Featured Products
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Popular printers and scanners for home and office use
+            Explore popular printers and scanners selected for performance, reliability, and value. Featured products include models designed for printing photos, fast document output, and steady print quality.
           </p>
         </div>
 

@@ -28,7 +28,7 @@ const slides: Slide[] = [
     alt: "Professional using printer in modern office environment",
     heading: "Printers & Scanners for Home and Office Use",
     subtext:
-      "Shop a wide selection of printers and document scanners designed for everyday home use, office environments, and business workflows.",
+      "Shop a wide range of printers and document scanners. Manufacturers design them for home offices, professional offices, and growing businesses. Whether you need color printing for presentations or black printing for documents, our printers provide great print quality.",
     primaryLink: "/shop",
     primaryText: "Shop All Products",
   },
@@ -37,7 +37,7 @@ const slides: Slide[] = [
     alt: "Woman using office printer copier in modern workplace",
     heading: "Home, Office, Inkjet & Laser Printers",
     subtext:
-      "Find the right printer for your needs with detailed specifications and transparent pricing.",
+      "Find the right printer with clear specifications, compatibility details, and transparent pricing. Product pages include key information on duplex printing, supported paper sizes, and real-world performance.",
     primaryLink: "/shop",
     primaryText: "View Printers",
     align: "right",
@@ -206,7 +206,7 @@ const HeroCarousel = () => {
                     Fast Shipping
                   </p>
                   <p className="text-xs text-primary-foreground/80">
-                    Details shown at checkout
+                    Shipping details are clearly shown at checkout
                   </p>
                 </div>
               </div>
@@ -217,7 +217,7 @@ const HeroCarousel = () => {
                     Secure Checkout
                   </p>
                   <p className="text-xs text-primary-foreground/80">
-                    SSL encrypted
+                    SSL-encrypted transactions protect your data
                   </p>
                 </div>
               </div>
@@ -228,7 +228,7 @@ const HeroCarousel = () => {
                     Easy Returns
                   </p>
                   <p className="text-xs text-primary-foreground/80">
-                    30-day policy (eligibility applies)
+                    30-day return policy on eligible items
                   </p>
                 </div>
               </div>

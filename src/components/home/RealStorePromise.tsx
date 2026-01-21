@@ -1,27 +1,54 @@
-import { Building2 } from "lucide-react";
-import { Link } from "react-router-dom";
+import { Search, ShieldCheck, Truck } from "lucide-react";
+
+const approaches = [
+  {
+    icon: Search,
+    title: "Research & Compare",
+    description: "Check the detailed specifications. Compare features like duplex printing, print speed, and supported media types. Choose what meets your needs.",
+  },
+  {
+    icon: ShieldCheck,
+    title: "Shop with Confidence",
+    description: "Enjoy secure checkout, transparent pricing, and clear policies you can rely on.",
+  },
+  {
+    icon: Truck,
+    title: "Reliable Delivery",
+    description: "Order tracking and shipping notifications keep you informed at every step.",
+  },
+];
 
 const OurApproach = () => {
   return (
-    <section className="py-8 bg-primary/5 border-y border-border/60">
+    <section className="py-16 md:py-20 bg-muted/30" data-testid="section-our-approach">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-8 text-center md:text-left">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
-              <Building2 className="h-6 w-6 text-primary" />
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight">
+            Our Approach
+          </h2>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            How we make your shopping experience better
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {approaches.map((approach, index) => (
+            <div
+              key={index}
+              className="bg-card rounded-xl border border-border/60 p-6 text-center"
+              data-testid={`approach-${approach.title.toLowerCase().replace(/\s+/g, '-')}`}
+            >
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
+                <approach.icon className="h-7 w-7 text-primary" />
+              </div>
+              <h3 className="font-semibold text-foreground text-lg mb-2">
+                {approach.title}
+              </h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                {approach.description}
+              </p>
             </div>
-            <div>
-              <p className="font-semibold text-foreground">Our Approach</p>
-              <p className="text-sm text-muted-foreground">We operate as an independent online retailer focused on transparent pricing and clear policies.</p>
-            </div>
-          </div>
-          
-          <Link 
-            to="/about" 
-            className="text-sm font-medium text-primary hover:underline"
-          >
-            Learn more about us →
-          </Link>
+          ))}
         </div>
       </div>
     </section>

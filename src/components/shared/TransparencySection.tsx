@@ -6,27 +6,27 @@ const transparencyItems = [
     icon: DollarSign,
     title: "Pricing & Taxes",
     description:
-      "All prices are listed in USD. Applicable sales tax will be calculated at checkout based on your shipping address. Final pricing may vary based on product availability and market conditions.",
+      "All prices are listed in USD. The system calculates applicable sales tax at checkout based on your shipping address.",
   },
   {
     icon: Truck,
     title: "Shipping",
     description:
-      "Shipping details are shown at checkout. Standard delivery takes 3-7 business days after processing. See our shipping page for complete policy details.",
+      "Orders typically ship within 1-2 business days. Standard delivery takes 3-7 business days after processing.",
     link: { href: "/shipping", label: "View Shipping Policy" },
   },
   {
     icon: RotateCcw,
     title: "Returns",
     description:
-      "Most unopened items may be returned within 30 days of delivery. Some restrictions and exclusions apply. Please review our full policy for eligibility and return procedures.",
+      "Most unopened items may be returned within 30 days of delivery. Restrictions and exclusions apply.",
     link: { href: "/shipping", label: "View Returns Policy" },
   },
   {
     icon: Shield,
     title: "Warranty Information",
     description:
-      "Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand. Warranty details are available on individual product pages. NationTechMart does not provide additional warranty coverage unless otherwise stated.",
+      "Products include applicable manufacturer standard warranty coverage where offered. Warranty terms vary by product and brand.",
   },
 ];
 
@@ -72,15 +72,6 @@ const TransparencySection = () => {
               </div>
             </div>
           ))}
-        </div>
-        <div className="mt-12 max-w-3xl mx-auto">
-          <div className="p-5 bg-card rounded-xl border border-border/60">
-            <p className="text-sm text-muted-foreground text-center leading-relaxed">
-              <strong className="text-foreground">Note:</strong> Information provided on this page is for general guidance only. 
-              Specific terms, conditions, and availability may vary. Please refer to individual product 
-              pages and our complete policies for detailed information applicable to your purchase.
-            </p>
-          </div>
         </div>
       </div>
     </section>

@@ -11,45 +11,45 @@ import scannerIcon from "@/assets/scanner-icon.png";
 const categories = [
   {
     title: "Home Printers",
-    description: "Perfect for everyday family use. Print school projects, photos, and documents with ease. Compact designs that fit any home office or study space.",
+    description: "Perfect for everyday printing needs at home and small home office setups.",
     customIcon: homePrinterIcon,
     link: "/shop/home-printers",
-    highlights: ["Compact & space-saving", "Photo printing", "Wireless connectivity"],
+    highlights: ["Compact design, easy setup", "Built-in Wi-Fi, wireless printing", "Handles daily print jobs smoothly"],
   },
   {
     title: "Office Printers",
-    description: "Built for productivity and reliability. Handle high-volume printing with fast speeds and professional-quality output for your business needs.",
+    description: "Built for productivity, durability, and consistent performance in busy work environments.",
     customIcon: officePrinterIcon,
     link: "/shop/office-printers",
-    highlights: ["High-volume capacity", "Fast print speeds", "Network ready"],
+    highlights: ["High-volume printing, fast speeds", "Duplex printing, network-ready", "Built-in security features"],
   },
   {
     title: "Inkjet Printers",
-    description: "Ideal for vibrant color printing and photos. Inkjet technology delivers exceptional detail and color accuracy for creative projects and documents.",
+    description: "Ideal for producing vibrant images, documents, and printing photos with accurate color reproduction.",
     customIcon: inkjetPrinterIcon,
     link: "/shop/inkjet-printers",
-    highlights: ["Vivid color output", "Photo-quality prints", "Versatile media"],
+    highlights: ["Great print quality, smooth colors", "Supports photo paper", "Flexible media handling"],
   },
   {
     title: "Laser Printers",
-    description: "Fast, efficient, and cost-effective for text-heavy documents. Laser technology offers crisp text and lower cost-per-page for high-volume printing.",
+    description: "Fast, efficient, and cost-effective printers designed for text-heavy workloads.",
     customIcon: laserPrinterIcon,
     link: "/shop/laser-printers",
-    highlights: ["Sharp text quality", "Low cost per page", "High-speed output"],
+    highlights: ["Clear, sharp text output", "Low cost per page", "Fast print speed, strong parts"],
   },
   {
     title: "Scanners",
-    description: "Digitize documents, photos, and artwork with precision. From flatbed to portable options, find the right scanner for your digitization needs.",
+    description: "Digitize documents with precision and reliability for home and office use.",
     customIcon: scannerIcon,
     link: "/shop/scanners",
-    highlights: ["High resolution", "Document management", "Photo scanning"],
+    highlights: ["High-resolution scanning", "Fast performance", "Automatic document feeders"],
   },
   {
-    title: "View All Products",
-    description: "Browse our complete catalog of printers, scanners, and accessories. Find the perfect solution for all your printing and scanning needs.",
+    title: "All-in-One Printers",
+    description: "Print, scan, copy, and fax in one convenient device.",
     customIcon: null,
     link: "/shop",
-    highlights: ["Complete catalog", "All categories", "Best deals"],
+    highlights: ["Space-saving, cost-effective", "Color touchscreen controls", "Wireless connectivity"],
     isViewAll: true,
   },
 ];
@@ -63,13 +63,13 @@ const PrinterCategoryGuide = () => {
             className="text-3xl md:text-4xl font-bold text-foreground tracking-tight"
             data-testid="text-category-guide-heading"
           >
-            Find the Right Printer for Your Needs
+            Find the Right Printer
           </h2>
           <p 
             className="mt-4 text-lg text-muted-foreground max-w-2xl mx-auto"
             data-testid="text-category-guide-description"
           >
-            Not sure which printer is right for you? Explore our categories to find the perfect match for your home, office, or creative projects.
+            Not sure which printer is right for you? Check out our product categories to find what you need.
           </p>
         </div>
 

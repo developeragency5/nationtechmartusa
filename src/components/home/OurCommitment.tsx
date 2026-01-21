@@ -7,15 +7,15 @@ const commitments = [
   },
   {
     title: "Transparent Pricing",
-    description: "Competitive rates with no hidden fees or surprise charges at checkout.",
+    description: "The system clearly displays all pricing, and it calculates taxes and shipping at checkout.",
   },
   {
     title: "Reliable Fulfillment",
-    description: "Secure payment options with order tracking information provided for every purchase.",
+    description: "Secure payment processing and tracking details are provided for every order.",
   },
   {
     title: "Clear Product Information",
-    description: "We provide detailed specifications and compatibility details on product pages so you can choose confidently.",
+    description: "You can find detailed specifications, compatibility information, supported features, and performance expectations on each product page. This helps you choose with confidence.",
   },
 ];
 
@@ -49,9 +49,9 @@ const OurCommitment = () => {
           </div>
 
           <p className="text-center text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-            Whether you're purchasing your first home office printer or upgrading equipment for your business,{" "}
-            <span className="font-semibold text-foreground">NationTechMart provides the selection and information</span>{" "}
-            you need for a confident purchasing experience.
+            You might be buying your first photo printer. You could be replacing ink cartridges. Or you may want to upgrade to a faster color laser printer.{" "}
+            <span className="font-semibold text-foreground">NationTechMart has the information you need</span>{" "}
+            to make a confident buying decision for your office setup.
           </p>
         </div>
       </div>

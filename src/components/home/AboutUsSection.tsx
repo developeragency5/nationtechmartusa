@@ -14,16 +14,26 @@ const AboutUsSection = () => {
             <div className="space-y-4 text-muted-foreground">
               <p>
                 NationTechMart is an independent online retailer specializing in
-                printers, scanners, and office equipment. We're not affiliated
-                with any manufacturer—we simply source quality products and
-                offer them at competitive prices.
+                printers, scanners, and office equipment for home users, professionals, and businesses.
+                We do not affiliate with any manufacturer. Instead, we source quality products
+                through lawful distribution channels and offer them at competitive prices with clear policies.
               </p>
               <p>
-                Our goal is straightforward: provide reliable technology
-                products with transparent pricing, clear policies, and a hassle-free
-                shopping experience. Shipping details are shown at checkout,
-                easy 30-day returns (eligibility applies), and products include
-                applicable manufacturer standard warranty coverage where offered.
+                Our catalog has inkjet and laser printers, all-in-one devices, and scanners.
+                We also feature popular models like the HP OfficeJet Pro. People choose these
+                for their reliability, performance, and ease of use.
+              </p>
+              <p>
+                Each listing gives clear details on the setup process. It also shows supported
+                connectivity options like embedded Wi-Fi. Additionally, it includes ongoing needs
+                such as ink cartridges or ink toner compatibility.
+              </p>
+              <p>
+                Our goal is simple: we want to offer reliable technology products. We provide
+                clear pricing, accurate product details, and an easy shopping experience.
+                During checkout, customers can review shipping details, delivery timelines,
+                and secure payment options. Eligible products offer easy 30-day returns,
+                and manufacturers include standard warranty coverage where available.
               </p>
             </div>
             <div className="mt-6">

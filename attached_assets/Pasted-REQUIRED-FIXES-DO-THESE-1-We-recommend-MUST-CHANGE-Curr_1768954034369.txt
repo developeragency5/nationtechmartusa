@@ -1,0 +1,111 @@
+REQUIRED FIXES (DO THESE)
+1️⃣ “We recommend” → MUST CHANGE
+Current
+We recommend
+HP OfficeJet 8015e Wireless All-in-One…
+
+Why this is a problem
+
+“We recommend” can be interpreted as:
+
+editorial endorsement
+
+expert advice
+
+preferential promotion of a trademarked product
+
+This wording is commonly flagged during manual ads review.
+
+✅ REQUIRED REPLACEMENT (pick ONE and use consistently)
+
+Best / safest
+
+Featured Product
+
+
+Also acceptable
+
+Popular Option
+
+
+❌ Do NOT use: “Editor’s choice”, “Best”, “Top pick”.
+
+2️⃣ Ink trial language (MUST SOFTEN)
+Current examples
+…with 3 Months of Ink Trial…
+…with Ink Trial…
+
+Why this is risky
+
+Ink trial availability can vary by region, seller, or promotion
+
+Ads reviewers may flag this as unverifiable benefit if not guaranteed
+
+✅ SAFE REPLACEMENT
+
+Remove the trial claim from titles and keep the rest intact.
+
+Example
+
+HP OfficeJet 8135e Wireless All-in-One Color Inkjet Printer for Office Use
+
+
+(Do not invent or restate trial terms elsewhere.)
+
+🟡 OPTIONAL (BUT STRONGLY RECOMMENDED) IMPROVEMENTS
+
+These are not blockers, but they reduce reviewer friction.
+
+3️⃣ “Enterprise-grade security” (optional softening)
+Current
+
+“enterprise-grade security”
+
+Safer wording
+business security features
+
+
+This avoids implying certifications or enterprise contracts.
+
+4️⃣ Delivery timing certainty (optional consistency)
+Current
+Standard delivery takes 3–7 business days
+
+Safer version
+Delivery times vary by destination and carrier and typically range from 3–7 business days.
+
+🟢 WHAT IS ALREADY EXCELLENT (DO NOT CHANGE)
+
+These parts are fully compliant:
+
+✔ Independent retailer disclaimer
+
+✔ Trademark notice
+
+✔ Shipping wording (“Shipping details are shown at checkout”)
+
+✔ Warranty wording (“applicable manufacturer standard warranty… where offered”)
+
+✔ Product titles (aside from ink-trial wording)
+
+✔ Prices, SKUs, categories
+
+✔ No “official / authorized / partner” language
+
+✔ No misuse of HP Inc. trademarks
+
+🛠️ TASKS TO GIVE REPLIT (SHORT & CLEAR)
+
+You can paste this list directly into Replit or your task tracker.
+
+TASK LIST
+
+Replace “We recommend” with “Featured Product” everywhere on the page
+
+Remove all “Ink Trial” mentions from product titles and descriptions
+
+(Optional) Replace “enterprise-grade security” → “business security features”
+
+(Optional) Soften delivery timing language
+
+Do NOT change prices, SKUs, layout, categories, or disclaimers

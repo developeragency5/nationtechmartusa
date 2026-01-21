@@ -4,22 +4,22 @@ const audiences = [
   {
     icon: Users,
     title: "Beginners",
-    description: "who need clear explanations without technical jargon",
+    description: "Clear explanations without unnecessary technical jargon",
   },
   {
     icon: Home,
     title: "Home Office Workers",
-    description: "seeking reliable, cost-effective printing solutions",
+    description: "Reliable, cost-effective printing solutions",
   },
   {
     icon: Briefcase,
     title: "Small Business Owners",
-    description: "balancing performance needs with budget constraints",
+    description: "Balanced performance for daily operations",
   },
   {
     icon: Building2,
     title: "IT Professionals",
-    description: "looking for detailed specifications and deployment information",
+    description: "Detailed specifications, deployment information, and security features",
   },
 ];
 
@@ -60,7 +60,7 @@ const WhoWeServe = () => {
           </div>
 
           <p className="text-muted-foreground text-center text-sm">
-            No matter your experience level, our product listings provide the information you need.
+            No matter your experience level, our product listings provide the clarity and detail you need.
           </p>
         </div>
       </div>

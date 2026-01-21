@@ -1,0 +1,117 @@
+REQUIRED / STRONGLY RECOMMENDED FIXES
+
+These are not structural — just wording cleanup.
+
+1️⃣ ❌ “We recommend” (MUST CHANGE)
+Current
+We recommend
+HP DeskJet 2855e Wireless All-in-One…
+
+Why this is a risk
+
+“We recommend” can imply:
+
+editorial endorsement
+
+preferential relationship
+
+expert advice
+
+Ads reviewers sometimes flag this when combined with trademarked products.
+
+✅ SAFE REPLACEMENTS (pick ONE)
+
+Best option (neutral):
+
+Featured Product
+
+
+Also safe:
+
+Popular Choice
+
+
+Very safe / conservative:
+
+Highlighted Product
+
+
+👉 Do NOT use: “Editor’s choice”, “Best”, “Top pick”.
+
+2️⃣ ⚠️ Repetitive “Wireless / Wi-Fi” phrasing (OPTIONAL TIGHTENING)
+
+Not a violation, but tightening improves credibility.
+
+Example (optional)
+
+Instead of repeating:
+
+“Wireless, Wi-Fi, and mobile printing options”
+
+Use:
+
+“Wireless and mobile printing support”
+
+✔ Cleaner
+✔ Still accurate
+✔ Less marketing-heavy
+
+3️⃣ ⚠️ Delivery timing certainty (OPTIONAL SOFTENING)
+Current
+Orders typically ship within 1–2 business days.
+Standard delivery takes 3–7 business days.
+
+
+This is allowed if accurate, but safest ads wording is:
+
+✅ SAFER VERSION (OPTIONAL)
+Orders are typically processed within 1–2 business days.
+Delivery times vary by destination and carrier and generally range from 3–7 business days.
+
+🟢 WHAT IS ALREADY PERFECT (DO NOT CHANGE)
+
+These are excellent and compliant:
+
+✅ Independent retailer + trademark disclaimers
+
+Clear and repeated properly.
+✔ Strong protection with HP Inc.
+
+✅ Product titles & pricing
+
+Exact model names
+
+No “official”, “authorized”, “HP store”
+
+Clear SKUs & prices
+✔ Fully compliant.
+
+✅ Warranty wording
+
+“applicable manufacturer standard warranty coverage where offered”
+
+✔ This is textbook-perfect.
+
+✅ Shipping wording
+
+“Shipping details are shown at checkout”
+
+✔ Correct
+✔ Non-misleading
+✔ Consistent across site
+
+🛠️ TASKS TO GIVE REPLIT (SHORT & CLEAR)
+
+You can paste this as-is into Replit tasks.
+
+TASK LIST
+
+Replace “We recommend” with “Featured Product”
+
+(Optional) Simplify repeated wireless/Wi-Fi wording
+
+(Optional) Soften delivery time wording to avoid guarantees
+
+Do NOT change product titles, prices, SKUs, or categories
+
+Keep trademark and independent retailer disclaimers unchanged

@@ -6,25 +6,25 @@ import transparentPricingIcon from "@/assets/transparent-pricing-icon.png";
 const benefits = [
   {
     title: "Fast Delivery",
-    description: "Shipping details are shown at checkout. Fast, reliable delivery to your doorstep.",
+    description: "The checkout process clearly displays shipping details, provides reliable delivery timelines, and offers order tracking.",
     icon: null,
     customIcon: fastShippingIcon,
   },
   {
     title: "Easy Returns",
-    description: "30-day return window on eligible items. Straightforward process with clear instructions (exclusions may apply).",
+    description: "You can return eligible items within 30 days of delivery. Our return process is straightforward, with clear instructions and transparent eligibility criteria.",
     icon: null,
     customIcon: easyReturnsIcon,
   },
   {
     title: "Secure Shopping",
-    description: "Browse and buy with confidence. Your transactions are protected with industry-standard SSL encryption.",
+    description: "Industry-standard SSL encryption protects your personal and payment information.",
     icon: null,
     customIcon: secureShoppingIcon,
   },
   {
     title: "Transparent Pricing",
-    description: "Competitive rates with no hidden fees or surprise charges at checkout.",
+    description: "We offer competitive pricing with no hidden charges or unexpected fees at checkout.",
     icon: null,
     customIcon: transparentPricingIcon,
   },
@@ -39,7 +39,7 @@ const WhyNationTechMart = () => {
             Why NationTechMart
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            We focus on what matters: quality products, fair prices, and a hassle-free experience.
+            We focus on what matters most: quality products, fair pricing, and a smooth shopping experience from starting to finishing.
           </p>
         </div>
 
