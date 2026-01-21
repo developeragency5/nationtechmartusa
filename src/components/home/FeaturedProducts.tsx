@@ -26,7 +26,7 @@ const featuredProducts: FeaturedProduct[] = [
     category: "Home Printers",
   },
   {
-    name: "HP OfficeJet 8135e Wireless All-in-One Color Inkjet Printer with 3 Months of Ink Trial for Office Use",
+    name: "HP OfficeJet 8135e Wireless All-in-One Color Inkjet Printer for Office Use",
     shortName: "HP OfficeJet 8135e All-in-One Printer",
     image: featuredProduct2,
     url: "/shop#!/HP-OfficeJet-8135e-Wireless-All-in-One-Color-Inkjet-Printer-with-3-Months-of-Ink-Trial-for-Office-Use/p/806466580",

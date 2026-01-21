@@ -224,7 +224,7 @@ const Shop = () => {
                   Office printers are engineered for the demands of professional environments, delivering high-speed output, robust duty cycles, and seamless network integration. Whether you're running a small business, managing a department, or equipping a busy workgroup, these printers are built to handle consistent, high-volume printing without compromising quality.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed">
-                  Modern office printers offer advanced features like automatic duplex printing, large paper capacity, and enterprise-grade security, making them essential tools for productive business operations.
+                  Modern office printers offer advanced features like automatic duplex printing, large paper capacity, and business security features, making them essential tools for productive business operations.
                 </p>
               </div>
               <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8">
