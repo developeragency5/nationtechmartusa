@@ -142,7 +142,7 @@ const faqs: FAQ[] = [
   {
     category: "product",
     question: "Can I get product recommendations?",
-    answer: "While we're not able to provide personalized technical consultations, our product descriptions include specifications and use cases to help you make informed decisions. For specific technical questions, we recommend consulting the manufacturer's website."
+    answer: "While we're not able to provide personalized technical consultations, our product descriptions include specifications and use cases to help you make informed decisions. For specific technical questions, please consult the manufacturer's website."
   },
   {
     category: "product",
