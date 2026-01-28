@@ -46,7 +46,7 @@ const TransparencySection = () => {
           {transparencyItems.map((item, index) => (
             <div
               key={index}
-              className="bg-card rounded-2xl p-6 lg:p-8 border border-border/60 hover:shadow-md transition-shadow duration-200"
+              className="group bg-card rounded-2xl p-6 lg:p-8 border border-border/60 hover:shadow-md hover:border-primary/20 transition-all duration-300 animate-fade-in-up"
             >
               <div className="flex items-start space-x-5">
                 <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">

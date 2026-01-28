@@ -43,7 +43,7 @@ const NotFound = () => {
               <Link
                 key={link.to}
                 to={link.to}
-                className="group flex flex-col items-center p-4 bg-card rounded-xl border border-border/60 hover:border-primary/30 hover:shadow-md transition-all duration-200"
+                className="group flex flex-col items-center p-4 bg-card rounded-xl border border-border/60 hover:border-primary/30 hover:shadow-md transition-all duration-300"
               >
                 <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-2 group-hover:bg-primary/15 transition-colors">
                   <link.icon className="h-5 w-5 text-primary" />

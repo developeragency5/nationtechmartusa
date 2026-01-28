@@ -80,7 +80,7 @@ const FeaturedProducts = () => {
   return (
     <section className="py-12 md:py-16 bg-muted/30">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center mb-10">
+        <div className="text-center mb-10 animate-fade-in-up">
           <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-3">
             Featured Products
           </h2>
@@ -94,26 +94,27 @@ const FeaturedProducts = () => {
             <a
               key={index}
               href={product.url}
-              className="bg-card border border-border/60 rounded-xl overflow-hidden"
+              className="group bg-card border border-border/60 rounded-xl overflow-hidden transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:border-primary/30 hover:-translate-y-2 animate-fade-in-up"
+              style={{ animationDelay: `${index * 50}ms` }}
               data-testid={`featured-product-${index}`}
             >
-              <div className="aspect-square bg-white p-4 flex items-center justify-center">
+              <div className="aspect-square bg-white p-4 flex items-center justify-center overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="max-h-full max-w-full object-contain"
+                  className="max-h-full max-w-full object-contain transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
               <div className="p-4">
-                <span className="text-xs font-medium text-primary mb-1 block px-2 py-0.5 bg-primary/10 rounded-full w-fit">
+                <span className="text-xs font-medium text-primary mb-1 block px-2 py-0.5 bg-primary/10 rounded-full w-fit transition-all duration-300 group-hover:bg-primary group-hover:text-primary-foreground">
                   {product.category}
                 </span>
-                <h3 className="font-semibold text-foreground text-sm leading-tight mb-3 mt-2 line-clamp-2">
+                <h3 className="font-semibold text-foreground text-sm leading-tight mb-3 mt-2 line-clamp-2 transition-colors duration-300 group-hover:text-primary">
                   {product.shortName}
                 </h3>
                 <div className="flex flex-wrap items-center gap-1 text-primary text-sm font-medium">
                   View Product
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
                 </div>
               </div>
             </a>

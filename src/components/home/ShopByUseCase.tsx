@@ -43,7 +43,7 @@ const ShopByUseCase = () => {
   return (
     <section className="py-20 md:py-28 bg-muted/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center mb-14">
+        <div className="text-center mb-14 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight">
             Shop by Category
           </h2>
@@ -57,7 +57,8 @@ const ShopByUseCase = () => {
             <Link
               key={index}
               to={`/shop#!/c/${category.categoryId}`}
-              className="group block"
+              className="group block animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
               data-testid={`link-category-${category.title.toLowerCase().replace(/\s+/g, '-')}`}
             >
               <div className="relative bg-card rounded-2xl border border-border/60 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2">

@@ -78,7 +78,7 @@ const About = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Left - Image */}
-            <div className="order-2 lg:order-1">
+            <div className="order-2 lg:order-1 animate-fade-in-up delay-200">
               <ImageCard
                 src="/assets/images/trust.jpg"
                 alt="Trust and security shield with checkmark"
@@ -89,7 +89,7 @@ const About = () => {
             </div>
 
             {/* Right - Text */}
-            <div className="order-1 lg:order-2 space-y-6">
+            <div className="order-1 lg:order-2 space-y-6 animate-fade-in-up">
               <h2 className="text-3xl md:text-4xl font-bold text-foreground tracking-tight">
                 Transparency & Trust
               </h2>
@@ -136,7 +136,7 @@ const About = () => {
       {/* Our Values Section */}
       <section className="py-20 md:py-28 bg-muted/20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="text-center mb-14">
+          <div className="text-center mb-14 animate-fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight">
               Our Values
             </h2>
@@ -149,7 +149,8 @@ const About = () => {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="group bg-card rounded-2xl border border-border/60 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2"
+                className="group bg-card rounded-2xl border border-border/60 overflow-hidden transition-all duration-500 hover:border-primary hover:shadow-xl hover:shadow-primary/10 hover:-translate-y-2 animate-fade-in-up"
+                style={{ animationDelay: `${index * 100}ms` }}
               >
                 <div className="relative overflow-hidden">
                   <img
@@ -176,7 +177,7 @@ const About = () => {
       {/* Story Section */}
       <section className="py-20 md:py-28 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-          <div className="max-w-3xl mx-auto text-center">
+          <div className="max-w-3xl mx-auto text-center animate-fade-in-up">
             <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-8 tracking-tight">
               Our Story
             </h2>

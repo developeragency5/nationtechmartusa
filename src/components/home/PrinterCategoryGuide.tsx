@@ -58,7 +58,7 @@ const PrinterCategoryGuide = () => {
   return (
     <section className="py-16 md:py-24 bg-muted/30" data-testid="section-printer-category-guide">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in-up">
           <h2 
             className="text-3xl md:text-4xl font-bold text-foreground tracking-tight"
             data-testid="text-category-guide-heading"
@@ -79,7 +79,8 @@ const PrinterCategoryGuide = () => {
             return (
               <Card
                 key={category.title}
-                className="hover-elevate border-border/50 bg-card"
+                className="group border-border/50 bg-card transition-all duration-300 hover:shadow-xl hover:shadow-primary/10 hover:border-primary/30 hover:-translate-y-2 animate-fade-in-up"
+                style={{ animationDelay: `${index * 100}ms` }}
                 data-testid={`card-category-${categorySlug}`}
               >
                 <CardContent className={`p-6 text-center ${(category as any).isViewAll ? 'bg-primary/5 flex flex-col justify-center h-full' : ''}`}>
@@ -88,16 +89,16 @@ const PrinterCategoryGuide = () => {
                       <img
                         src={category.customIcon}
                         alt={category.title}
-                        className="h-16 w-16 object-contain transition-transform duration-300 hover:scale-110"
+                        className="h-16 w-16 object-contain transition-transform duration-300 group-hover:scale-110"
                       />
                     ) : (
-                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                        <ArrowRight className="h-8 w-8 text-primary" />
+                      <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center transition-all duration-300 group-hover:bg-primary">
+                        <ArrowRight className="h-8 w-8 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
                       </div>
                     )}
                   </div>
                   <h3 
-                    className="text-xl font-semibold text-foreground mb-3"
+                    className="text-xl font-semibold text-foreground mb-3 transition-colors duration-300 group-hover:text-primary"
                     data-testid={`text-category-title-${categorySlug}`}
                   >
                     {category.title}

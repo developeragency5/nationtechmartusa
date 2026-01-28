@@ -85,7 +85,7 @@ const Contact = () => {
       {/* Introduction Section */}
       <section className="py-12 bg-background">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
-          <div className="text-center">
+          <div className="text-center animate-fade-in-up">
             <p className="text-lg text-muted-foreground leading-relaxed" data-testid="text-contact-intro">
               NationTechMart is an independent online retailer offering printers, scanners, and related printing equipment. This page is provided so customers can reach us for order-related questions, store policy inquiries, and general product questions based on the information shown on our website.
             </p>
@@ -101,7 +101,7 @@ const Contact = () => {
               {/* Email Card */}
               <a 
                 href="mailto:contact@nationtechmart.com" 
-                className="group block bg-card rounded-xl border border-border p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10"
+                className="group block bg-card rounded-xl border border-border p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 animate-fade-in-up"
                 data-testid="link-contact-email"
               >
                 <div className="flex items-start gap-4">
@@ -121,7 +121,7 @@ const Contact = () => {
               {/* Phone Card */}
               <a 
                 href="tel:+18005551234" 
-                className="group block bg-card rounded-xl border border-border p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10"
+                className="group block bg-card rounded-xl border border-border p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10 hover:-translate-y-1 animate-fade-in-up delay-100"
                 data-testid="link-contact-phone"
               >
                 <div className="flex items-start gap-4">
@@ -146,7 +146,7 @@ const Contact = () => {
       <section className="py-16 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
-            <div className="bg-card rounded-xl p-6 md:p-8 border border-border">
+            <div className="bg-card rounded-xl p-6 md:p-8 border border-border animate-fade-in-up">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-12 h-12 rounded-full bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
                   <CheckCircle className="h-6 w-6 text-green-600 dark:text-green-500" />
@@ -160,11 +160,14 @@ const Contact = () => {
               </p>
               <ul className="space-y-3">
                 {canContactAbout.map((item, index) => (
-                  <li key={index} className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0">
-                      <item.icon className="h-4 w-4 text-primary" />
+                  <li 
+                    key={index} 
+                    className="group flex items-start gap-3 p-2 -ml-2 rounded-lg transition-all duration-300 hover:bg-primary/5"
+                  >
+                    <div className="w-8 h-8 rounded-full bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                      <item.icon className="h-4 w-4 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
                     </div>
-                    <span className="text-muted-foreground text-sm pt-1">
+                    <span className="text-muted-foreground text-sm pt-1 transition-colors duration-300 group-hover:text-foreground">
                       {item.text}
                     </span>
                   </li>

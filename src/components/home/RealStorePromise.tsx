@@ -22,7 +22,7 @@ const OurApproach = () => {
   return (
     <section className="py-16 md:py-20 bg-muted/30" data-testid="section-our-approach">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight">
             Our Approach
           </h2>
@@ -35,13 +35,14 @@ const OurApproach = () => {
           {approaches.map((approach, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl border border-border/60 p-6 text-center"
+              className="group bg-card rounded-xl border border-border/60 p-6 text-center transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 hover:border-primary/30 hover:-translate-y-1 animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
               data-testid={`approach-${approach.title.toLowerCase().replace(/\s+/g, '-')}`}
             >
-              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4">
-                <approach.icon className="h-7 w-7 text-primary" />
+              <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center mx-auto mb-4 transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                <approach.icon className="h-7 w-7 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
               </div>
-              <h3 className="font-semibold text-foreground text-lg mb-2">
+              <h3 className="font-semibold text-foreground text-lg mb-2 transition-colors duration-300 group-hover:text-primary">
                 {approach.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">

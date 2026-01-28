@@ -183,7 +183,7 @@ const Shop = () => {
               <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Comprehensive Product Categories</h2>
               
               <div className="space-y-6 mb-10">
-                <a href={`#!/c/${CATEGORY_IDS.HOME_PRINTERS}`} className="block group bg-card border border-border/60 rounded-xl p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/5" data-testid="link-category-home">
+                <a href={`#!/c/${CATEGORY_IDS.HOME_PRINTERS}`} className="block group bg-card border border-border/60 rounded-xl p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1 animate-fade-in-up" data-testid="link-category-home">
                   <div className="flex items-start gap-4 mb-3">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-105">
                       <Home className="h-6 w-6 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
@@ -204,7 +204,7 @@ const Shop = () => {
                   </span>
                 </a>
 
-                <a href={`#!/c/${CATEGORY_IDS.OFFICE_PRINTERS}`} className="block group bg-card border border-border/60 rounded-xl p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/5" data-testid="link-category-office">
+                <a href={`#!/c/${CATEGORY_IDS.OFFICE_PRINTERS}`} className="block group bg-card border border-border/60 rounded-xl p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1 animate-fade-in-up delay-100" data-testid="link-category-office">
                   <div className="flex items-start gap-4 mb-3">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-105">
                       <Briefcase className="h-6 w-6 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
@@ -225,7 +225,7 @@ const Shop = () => {
                   </span>
                 </a>
 
-                <a href={`#!/c/${CATEGORY_IDS.INKJET_PRINTERS}`} className="block group bg-card border border-border/60 rounded-xl p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/5" data-testid="link-category-inkjet">
+                <a href={`#!/c/${CATEGORY_IDS.INKJET_PRINTERS}`} className="block group bg-card border border-border/60 rounded-xl p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1 animate-fade-in-up delay-200" data-testid="link-category-inkjet">
                   <div className="flex items-start gap-4 mb-3">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-105">
                       <Palette className="h-6 w-6 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
@@ -246,7 +246,7 @@ const Shop = () => {
                   </span>
                 </a>
 
-                <a href={`#!/c/${CATEGORY_IDS.LASER_PRINTERS}`} className="block group bg-card border border-border/60 rounded-xl p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/5" data-testid="link-category-laser">
+                <a href={`#!/c/${CATEGORY_IDS.LASER_PRINTERS}`} className="block group bg-card border border-border/60 rounded-xl p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1 animate-fade-in-up delay-300" data-testid="link-category-laser">
                   <div className="flex items-start gap-4 mb-3">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-105">
                       <Zap className="h-6 w-6 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
@@ -267,7 +267,7 @@ const Shop = () => {
                   </span>
                 </a>
 
-                <a href={`#!/c/${CATEGORY_IDS.SCANNERS}`} className="block group bg-card border border-border/60 rounded-xl p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/5" data-testid="link-category-scanners">
+                <a href={`#!/c/${CATEGORY_IDS.SCANNERS}`} className="block group bg-card border border-border/60 rounded-xl p-6 transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/5 hover:-translate-y-1 animate-fade-in-up delay-400" data-testid="link-category-scanners">
                   <div className="flex items-start gap-4 mb-3">
                     <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 transition-all duration-300 group-hover:bg-primary group-hover:scale-105">
                       <ScanLine className="h-6 w-6 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
@@ -289,7 +289,7 @@ const Shop = () => {
                 </a>
               </div>
 
-              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8 mb-10">
+              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8 mb-10 animate-fade-in-up">
                 <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">Designed for Modern Workflows & Everyday Reliability</h2>
                 <p className="text-muted-foreground mb-4">
                   All products available through Nation TechMart are selected with real-world usage in mind. We focus on devices that balance performance, durability, and ease of use—ensuring that your printing and scanning technology supports your workflow instead of slowing it down.
@@ -299,7 +299,7 @@ const Shop = () => {
                 </p>
               </div>
 
-              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8 mb-10">
+              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8 mb-10 animate-fade-in-up delay-100">
                 <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">Smart Connectivity & Device Compatibility</h2>
                 <p className="text-muted-foreground mb-4">
                   Modern printing demands flexibility. That's why most products in our catalog support:
@@ -315,7 +315,7 @@ const Shop = () => {
                 </p>
               </div>
 
-              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8">
+              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8 animate-fade-in-up delay-200">
                 <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">Optimized for Long-Term Value</h2>
                 <p className="text-muted-foreground mb-4">
                   Beyond initial purchase price, printers and scanners must deliver long-term value. Our catalog includes devices designed for efficient ink and toner usage, reduced maintenance requirements, and consistent output quality over time.

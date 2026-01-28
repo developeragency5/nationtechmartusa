@@ -97,7 +97,7 @@ const Header = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 bg-background">
+    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md shadow-sm">
       {/* Top Row - Logo and Account/Cart */}
       <div className="border-b border-border">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
@@ -192,10 +192,10 @@ const Header = () => {
           {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center justify-center gap-1 py-2 relative">
             {navLinks.map((link) => {
-              const baseClasses = `relative px-4 py-2 text-sm font-medium rounded-md transition-all duration-300 ${
+              const baseClasses = `relative px-4 py-2 text-sm font-medium rounded-lg transition-all duration-300 ${
                 isActive(link.href) 
-                  ? "bg-primary text-primary-foreground" 
-                  : "text-muted-foreground hover:text-foreground hover:bg-muted"
+                  ? "bg-primary text-primary-foreground shadow-md shadow-primary/25" 
+                  : "text-muted-foreground hover:text-primary hover:bg-primary/10"
               }`;
               
               const content = (

@@ -7,7 +7,7 @@ const AboutUsSection = () => {
     <section className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
-          <div>
+          <div className="animate-fade-in-up">
             <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
               About NationTechMart
             </h2>
@@ -38,13 +38,17 @@ const AboutUsSection = () => {
               </Button>
             </div>
           </div>
-          <div className="relative">
-            <img
-              src="/assets/images/about-team.jpg"
-              alt="Business team using modern office printer"
-              className="w-full h-auto rounded-xl"
-              loading="lazy"
-            />
+          <div className="relative animate-fade-in-up delay-200 group">
+            <div className="overflow-hidden rounded-xl shadow-lg">
+              <img
+                src="/assets/images/about-team.jpg"
+                alt="Business team using modern office printer"
+                className="w-full h-auto transition-transform duration-500 group-hover:scale-105"
+                loading="lazy"
+              />
+            </div>
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-primary/10 rounded-full blur-2xl -z-10" />
+            <div className="absolute -top-4 -left-4 w-16 h-16 bg-primary/5 rounded-full blur-xl -z-10" />
           </div>
         </div>
       </div>

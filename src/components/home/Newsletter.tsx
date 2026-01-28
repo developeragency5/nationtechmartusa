@@ -17,9 +17,9 @@ const Newsletter = () => {
 
   return (
     <section className="py-12 md:py-16 bg-primary/5" data-testid="section-newsletter">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl text-center animate-fade-in-up">
         <div className="flex justify-center mb-4">
-          <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+          <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center animate-pulse-glow">
             <Mail className="h-6 w-6 text-primary" />
           </div>
         </div>

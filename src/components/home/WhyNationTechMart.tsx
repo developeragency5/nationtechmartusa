@@ -34,7 +34,7 @@ const WhyNationTechMart = () => {
   return (
     <section className="py-16 md:py-20 bg-background" data-testid="section-why-nationtechmart">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center mb-12">
+        <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight" data-testid="text-why-heading">
             Why NationTechMart
           </h2>
@@ -47,25 +47,26 @@ const WhyNationTechMart = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="bg-card rounded-xl border border-border/60 p-6 text-center"
+              className="group bg-card rounded-xl border border-border/60 p-6 text-center transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 hover:border-primary/30 hover:-translate-y-1 animate-fade-in-up"
+              style={{ animationDelay: `${index * 100}ms` }}
               data-testid={`benefit-${benefit.title.toLowerCase().replace(/\s+/g, '-')}`}
             >
-              <div className="w-14 h-14 flex items-center justify-center mx-auto mb-4 group">
+              <div className="w-14 h-14 flex items-center justify-center mx-auto mb-4">
                 {benefit.customIcon ? (
                   <img
                     src={benefit.customIcon}
                     alt={benefit.title}
-                    className="h-12 w-12 object-contain transition-transform duration-300 hover:scale-110 hover:translate-x-1"
+                    className="h-12 w-12 object-contain transition-transform duration-300 group-hover:scale-110"
                   />
                 ) : (
                   benefit.icon && (
-                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center">
-                      <benefit.icon className="h-7 w-7 text-primary" />
+                    <div className="w-14 h-14 rounded-xl bg-primary/10 flex items-center justify-center transition-all duration-300 group-hover:bg-primary group-hover:scale-110">
+                      <benefit.icon className="h-7 w-7 text-primary transition-colors duration-300 group-hover:text-primary-foreground" />
                     </div>
                   )
                 )}
               </div>
-              <h3 className="font-semibold text-foreground text-lg mb-2">
+              <h3 className="font-semibold text-foreground text-lg mb-2 transition-colors duration-300 group-hover:text-primary">
                 {benefit.title}
               </h3>
               <p className="text-muted-foreground text-sm leading-relaxed">

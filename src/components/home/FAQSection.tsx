@@ -49,7 +49,7 @@ const FAQSection = () => {
   return (
     <section className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 tracking-tight">
             Frequently Asked Questions
           </h2>
@@ -69,7 +69,8 @@ const FAQSection = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="bg-card border border-border/60 rounded-2xl px-6 data-[state=open]:border-primary/30 data-[state=open]:shadow-md transition-all duration-200"
+                className="bg-card border border-border/60 rounded-2xl px-6 data-[state=open]:border-primary/30 data-[state=open]:shadow-lg transition-all duration-300 hover:border-primary/20 animate-fade-in-up"
+                style={{ animationDelay: `${index * 50}ms` }}
                 onMouseEnter={() => handleMouseEnter(index)}
               >
                 <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary hover:no-underline py-6">

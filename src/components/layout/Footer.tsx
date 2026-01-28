@@ -5,7 +5,7 @@ import logoImage from "@/assets/logo.png";
 
 const Footer = () => {
   return (
-    <footer className="bg-card border-t border-border/60">
+    <footer className="bg-gradient-to-b from-card to-card/80 border-t border-border/60">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
           {/* Company Info */}
