@@ -155,25 +155,123 @@ const Shop = () => {
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto">
-              <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Shop Home Printers, Office Printers & Scanners
+              <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-3">
+                All Products – Complete Printer & Scanning Solutions Catalog
               </h1>
-              <div className="prose prose-lg max-w-none text-muted-foreground mb-8">
-                <p className="text-base md:text-lg leading-relaxed mb-4">
-                  NationTechMart offers a wide selection of printers and scanners for home users, small businesses, and professional offices. Whether you need a compact inkjet for occasional home printing, a high-speed laser for demanding office workflows, or a document scanner for digital archiving, we have options to match your needs and budget.
+              <p className="text-xl text-primary font-medium mb-6">Discover Reliable Printing Technology for Home, Office & Business</p>
+              
+              <div className="prose prose-lg max-w-none text-muted-foreground mb-8 space-y-4">
+                <p className="text-base md:text-lg leading-relaxed">
+                  Welcome to Nation TechMart, your trusted online destination for professional-grade printers and document scanning solutions. Our All Products catalog is designed to give you complete visibility into our full range of printing technology—making it easy to find the right device for your specific needs, workload, and budget.
                 </p>
                 <p className="text-base md:text-lg leading-relaxed">
-                  Browse our complete catalog below to explore home printers, office printers, inkjet printers, laser printers, and document scanners from well-known manufacturers. Each product page includes detailed specifications, honest pricing, and clear information to help you make an informed decision.
+                  We understand that printing requirements vary widely. Some users need compact wireless printers for occasional home use, while others require high-speed laser printers or document scanners to support demanding workflows. That's why our catalog brings together home printers, office printers, inkjet printers, laser printers, ink tank systems, and document scanners in one centralized, easy-to-navigate experience.
                 </p>
               </div>
+
+              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8 mb-10">
+                <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">A Purpose-Built Catalog for Smarter Buying Decisions</h2>
+                <p className="text-muted-foreground mb-4">
+                  Buying a printer or scanner isn't just about price—it's about performance, efficiency, long-term cost, and reliability. Our catalog is structured to help you compare product types, understand real-world use cases, and choose technology that aligns with how you actually work.
+                </p>
+                <p className="text-muted-foreground">
+                  Instead of overwhelming you with unnecessary technical jargon, we focus on clarity, categorization, and practical value. Every product category exists for a reason and serves a specific type of user—from students and families to small businesses and professional offices.
+                </p>
+              </div>
+
+              <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Comprehensive Product Categories</h2>
+              
+              <div className="space-y-8 mb-10">
+                <div className="bg-card border border-border/60 rounded-xl p-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">Home Printers – Practical Solutions for Everyday Life</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Home printers are designed for users who want dependable performance without complexity. These printers are ideal for daily personal use such as printing school assignments, household paperwork, forms, travel documents, and occasional photos.
+                  </p>
+                  <p className="text-muted-foreground">
+                    Key characteristics include compact size, wireless connectivity, easy setup, and intuitive controls. Many models feature all-in-one functionality, allowing users to print, scan, and copy from a single device—making them perfect for modern homes and shared family spaces.
+                  </p>
+                </div>
+
+                <div className="bg-card border border-border/60 rounded-xl p-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">Office Printers – Built for Consistency & Productivity</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Office printers are engineered to handle higher print volumes and frequent usage. These devices are designed for environments where reliability, speed, and efficiency are critical. Whether used in a home office or a shared workspace, office printers are optimized for productivity-driven workflows.
+                  </p>
+                  <p className="text-muted-foreground">
+                    They typically offer faster print speeds, larger paper handling capacity, and advanced features such as automatic duplex printing, network connectivity, and enhanced security options.
+                  </p>
+                </div>
+
+                <div className="bg-card border border-border/60 rounded-xl p-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">Inkjet Printers – Flexible & High-Quality Output</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Inkjet printers are widely valued for their versatility and superior color reproduction. They are capable of producing sharp text documents as well as rich, vibrant images, making them suitable for a wide range of applications.
+                  </p>
+                  <p className="text-muted-foreground">
+                    These printers are ideal for users who need flexibility—such as students, creatives, and home offices—while maintaining an affordable upfront cost. Inkjet technology continues to evolve, offering improved ink efficiency and consistent output even with intermittent use.
+                  </p>
+                </div>
+
+                <div className="bg-card border border-border/60 rounded-xl p-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">Laser Printers – Speed, Precision & Efficiency</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Laser printers are designed for users who prioritize speed and sharp text quality. Commonly used in professional and business environments, these printers excel at producing high volumes of documents quickly and efficiently.
+                  </p>
+                  <p className="text-muted-foreground">
+                    With durable internal components, laser printers are an excellent choice for organizations that rely heavily on printed documentation. Many models include advanced features such as duplex printing, wireless networking, and secure access controls.
+                  </p>
+                </div>
+
+                <div className="bg-card border border-border/60 rounded-xl p-6">
+                  <h3 className="text-xl font-semibold text-foreground mb-3">Document Scanners – Powering Digital Transformation</h3>
+                  <p className="text-muted-foreground mb-3">
+                    Document scanners play a critical role in modern document management. These devices are built to digitize paperwork accurately and efficiently, helping organizations transition to paperless workflows.
+                  </p>
+                  <p className="text-muted-foreground">
+                    High-speed scanning, network integration, and compatibility with document management systems make scanners indispensable for offices and professionals handling sensitive or high-volume records.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8 mb-10">
+                <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">Designed for Modern Workflows & Everyday Reliability</h2>
+                <p className="text-muted-foreground mb-4">
+                  All products available through Nation TechMart are selected with real-world usage in mind. We focus on devices that balance performance, durability, and ease of use—ensuring that your printing and scanning technology supports your workflow instead of slowing it down.
+                </p>
+                <p className="text-muted-foreground">
+                  Many of our products combine multiple functions into a single device, reducing equipment clutter and lowering overall ownership costs.
+                </p>
+              </div>
+
+              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8 mb-10">
+                <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">Smart Connectivity & Device Compatibility</h2>
+                <p className="text-muted-foreground mb-4">
+                  Modern printing demands flexibility. That's why most products in our catalog support:
+                </p>
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                  <div className="flex flex-col items-center p-4 bg-muted/50 rounded-xl"><Wifi className="h-8 w-8 text-primary mb-2" /><span className="text-sm text-muted-foreground text-center">Wireless & Wi-Fi</span></div>
+                  <div className="flex flex-col items-center p-4 bg-muted/50 rounded-xl"><Smartphone className="h-8 w-8 text-primary mb-2" /><span className="text-sm text-muted-foreground text-center">Mobile Devices</span></div>
+                  <div className="flex flex-col items-center p-4 bg-muted/50 rounded-xl"><Monitor className="h-8 w-8 text-primary mb-2" /><span className="text-sm text-muted-foreground text-center">Desktop & Laptop</span></div>
+                  <div className="flex flex-col items-center p-4 bg-muted/50 rounded-xl"><Cloud className="h-8 w-8 text-primary mb-2" /><span className="text-sm text-muted-foreground text-center">Cloud Printing</span></div>
+                </div>
+                <p className="text-muted-foreground mt-4">
+                  This allows users to print and scan from virtually anywhere within their home or office network.
+                </p>
+              </div>
+
               <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8">
-                <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">Why Shop With NationTechMart</h2>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Fast Shipping — Shipping details are shown at checkout</span></li>
-                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Competitive pricing with no hidden fees</span></li>
-                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Detailed product specifications and honest descriptions</span></li>
-                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">30-day return policy for peace of mind</span></li>
-                </ul>
+                <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">Optimized for Long-Term Value</h2>
+                <p className="text-muted-foreground mb-4">
+                  Beyond initial purchase price, printers and scanners must deliver long-term value. Our catalog includes devices designed for efficient ink and toner usage, reduced maintenance requirements, and consistent output quality over time.
+                </p>
+                <p className="text-muted-foreground">
+                  These features help users control operating costs while maintaining professional results.
+                </p>
+              </div>
+
+              <div className="mt-10 text-center">
+                <p className="text-lg font-medium text-foreground">Browse Our Complete Product Selection Below</p>
+                <p className="text-muted-foreground mt-2">Scroll down to explore our full catalog, including category sections and featured product listings.</p>
               </div>
             </div>
           </div>
@@ -584,6 +682,123 @@ const Shop = () => {
                   <li className="flex items-center gap-2 text-muted-foreground"><Check className="h-4 w-4 text-primary shrink-0" />Creating digital photo archives</li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ==================== ALL PRODUCTS - BOTTOM CONTENT ==================== */}
+      {!isEcwidOverlay && !currentCategory && !isSearchView && (
+        <section className="py-12 md:py-16 bg-background">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <div className="max-w-4xl mx-auto space-y-12">
+              
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Engineered for Performance, Accuracy & Durability</h2>
+                <p className="text-muted-foreground text-base md:text-lg leading-relaxed">
+                  At Nation TechMart, performance is non-negotiable. Our printers and scanners are engineered to deliver reliable output day after day—whether you're printing a single page or processing hundreds of documents. From crisp monochrome text to detailed color graphics and accurate scans, our products are designed to meet professional standards across all usage levels.
+                </p>
+              </div>
+
+              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8">
+                <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">Ink, Toner & Resource Efficiency</h2>
+                <p className="text-muted-foreground mb-4">
+                  Efficient resource usage is a priority for both individuals and businesses. Many products in our catalog feature:
+                </p>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3"><Droplets className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">High-yield ink and toner solutions</span></li>
+                  <li className="flex items-start gap-3"><Droplets className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Ink tank systems for reduced refill frequency</span></li>
+                  <li className="flex items-start gap-3"><Droplets className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Consistent output even during extended idle periods</span></li>
+                </ul>
+                <p className="text-muted-foreground mt-4">
+                  These efficiencies help reduce waste, control expenses, and support sustainable usage practices.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Supporting Diverse Use Cases Across Industries</h2>
+                <p className="text-muted-foreground mb-6">Our catalog serves a wide range of users and industries, including:</p>
+                <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                  <div className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border/60">
+                    <Users className="h-6 w-6 text-primary shrink-0" />
+                    <span className="text-sm text-muted-foreground">Students & Educational Institutions</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border/60">
+                    <Monitor className="h-6 w-6 text-primary shrink-0" />
+                    <span className="text-sm text-muted-foreground">Remote Workers & Home Offices</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border/60">
+                    <Building2 className="h-6 w-6 text-primary shrink-0" />
+                    <span className="text-sm text-muted-foreground">Small & Medium Businesses</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border/60">
+                    <Building2 className="h-6 w-6 text-primary shrink-0" />
+                    <span className="text-sm text-muted-foreground">Corporate Environments</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border/60">
+                    <Image className="h-6 w-6 text-primary shrink-0" />
+                    <span className="text-sm text-muted-foreground">Creative Professionals</span>
+                  </div>
+                  <div className="flex items-center gap-3 p-4 bg-card rounded-xl border border-border/60">
+                    <Shield className="h-6 w-6 text-primary shrink-0" />
+                    <span className="text-sm text-muted-foreground">Security-Conscious Users</span>
+                  </div>
+                </div>
+                <p className="text-muted-foreground mt-4">No matter your industry or workflow, our product range is designed to adapt.</p>
+              </div>
+
+              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8">
+                <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">Security, Reliability & Peace of Mind</h2>
+                <p className="text-muted-foreground">
+                  Many modern printers and scanners include features designed to protect sensitive information and ensure stable operation. Network security options, controlled access, and reliable hardware design help safeguard your data while maintaining productivity.
+                </p>
+              </div>
+
+              <div>
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-6">Clear, Transparent Shopping Experience</h2>
+                <p className="text-muted-foreground mb-6">We believe informed customers make better decisions. That's why we emphasize transparency at every step of the shopping process.</p>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div className="bg-card border border-border/60 rounded-xl p-5">
+                    <h3 className="font-semibold text-foreground mb-2">Pricing & Taxes</h3>
+                    <p className="text-sm text-muted-foreground">All prices are listed in USD. Sales tax is calculated automatically at checkout based on your shipping destination.</p>
+                  </div>
+                  <div className="bg-card border border-border/60 rounded-xl p-5">
+                    <h3 className="font-semibold text-foreground mb-2">Shipping & Order Processing</h3>
+                    <p className="text-sm text-muted-foreground">Orders are typically processed within 1–2 business days. Shipping times typically range from 3–7 business days, depending on carrier and location.</p>
+                  </div>
+                  <div className="bg-card border border-border/60 rounded-xl p-5">
+                    <h3 className="font-semibold text-foreground mb-2">Returns Policy</h3>
+                    <p className="text-sm text-muted-foreground">Most unopened items may be returned within 30 days of delivery, subject to applicable terms and conditions.</p>
+                  </div>
+                  <div className="bg-card border border-border/60 rounded-xl p-5">
+                    <h3 className="font-semibold text-foreground mb-2">Warranty Coverage</h3>
+                    <p className="text-sm text-muted-foreground">Products include applicable manufacturer standard warranty coverage where offered; terms vary by product and brand.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-card border border-border/60 rounded-xl p-6 md:p-8">
+                <h2 className="text-xl md:text-2xl font-semibold text-foreground mb-4">Why Customers Choose Nation TechMart</h2>
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Extensive selection of printing and scanning technology</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Clear product categorization and descriptions</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Competitive pricing from well-known brands</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Secure checkout and reliable fulfillment</span></li>
+                  <li className="flex items-start gap-3"><Check className="h-5 w-5 text-primary mt-0.5 shrink-0" /><span className="text-muted-foreground">Customer-focused shopping experience</span></li>
+                </ul>
+                <p className="text-muted-foreground mt-4">
+                  Our mission is to simplify the process of choosing the right technology while delivering dependable solutions you can trust.
+                </p>
+              </div>
+
+              <div className="text-center bg-primary/5 rounded-xl p-8">
+                <h2 className="text-2xl md:text-3xl font-bold text-foreground mb-4">Invest in the Right Printing Solution Today</h2>
+                <p className="text-muted-foreground max-w-2xl mx-auto">
+                  Whether you're setting up a home workspace, expanding an office, or modernizing document workflows, Nation TechMart provides the tools you need to succeed. Explore our complete catalog, compare features, and invest confidently in printing and scanning solutions designed for today's demands and tomorrow's growth.
+                </p>
+              </div>
+
             </div>
           </div>
         </section>
