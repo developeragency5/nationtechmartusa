@@ -1,11 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Heart, Search, User, ShoppingCart } from "lucide-react";
 import { useState, useEffect } from "react";
 import logoImage from "@/assets/logo.png";
-import searchIcon from "@/assets/search-icon.png";
-import userIcon from "@/assets/user-icon.png";
-import cartIcon from "@/assets/cart-icon.png";
-import favouriteIcon from "@/assets/favourite-icon.png";
 
 declare global {
   interface Window {
@@ -17,6 +13,16 @@ declare global {
     };
     ecwid_script_defer?: boolean;
     ecwid_dynamic_widgets?: boolean;
+    ec?: {
+      config?: {
+        store_main_page_url?: string;
+      };
+    };
+    _xnext_initialization_scripts?: Array<{
+      widgetType: string;
+      id: string;
+      arg: string[];
+    }>;
   }
 }
 
@@ -57,11 +63,23 @@ const Header = () => {
   const isHashLink = (href: string) => href.includes('#');
 
   useEffect(() => {
+    window.ec = window.ec || {};
+    window.ec.config = window.ec.config || {};
+    window.ec.config.store_main_page_url = '/shop';
+
     const existingScript = document.querySelector('script[src*="app.ecwid.com/script.js"]');
     
     if (!existingScript) {
       window.ecwid_script_defer = true;
       window.ecwid_dynamic_widgets = true;
+
+      window._xnext_initialization_scripts = [
+        {
+          widgetType: 'SearchWidget',
+          id: 'my-search-128774264',
+          arg: ['id=my-search-128774264']
+        }
+      ];
       
       const script = document.createElement("script");
       script.src = "https://app.ecwid.com/script.js?128774264&data_platform=code";
@@ -69,9 +87,19 @@ const Header = () => {
       script.charset = "utf-8";
       script.onload = () => {
         if (window.Ecwid?.OnAPILoaded) {
-          window.Ecwid.OnAPILoaded.add(() => setEcwidLoaded(true));
+          window.Ecwid.OnAPILoaded.add(() => {
+            setEcwidLoaded(true);
+            if (window.Ecwid?.init) {
+              window.Ecwid.init();
+            }
+          });
         } else {
-          setTimeout(() => setEcwidLoaded(true), 1000);
+          setTimeout(() => {
+            setEcwidLoaded(true);
+            if (window.Ecwid?.init) {
+              window.Ecwid.init();
+            }
+          }, 1000);
         }
       };
       document.body.appendChild(script);
@@ -79,22 +107,6 @@ const Header = () => {
       setEcwidLoaded(true);
     }
   }, []);
-
-  const openCart = () => {
-    window.location.href = '/shop#!/~/cart';
-  };
-
-  const openAccount = () => {
-    window.location.href = '/shop#!/~/signin';
-  };
-
-  const openSearch = () => {
-    window.location.href = '/shop#!/~/search';
-  };
-
-  const openFavourites = () => {
-    window.location.href = '/shop#!/~/favorites';
-  };
 
   return (
     <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-md shadow-sm">
@@ -107,68 +119,48 @@ const Header = () => {
               <img src={logoImage} alt="NationTechMart" className="h-10 w-auto" />
             </Link>
 
-            {/* Desktop Account/Cart */}
+            {/* Desktop Account/Cart - Ecwid Widgets */}
             <div className="hidden md:flex items-center gap-6">
-              <button 
-                onClick={openFavourites}
-                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
+              <a 
+                href="/shop#!/~/favorites"
+                className="flex flex-col items-center gap-0.5 text-primary hover:text-primary/80 transition-all duration-300 group"
                 data-testid="button-favourites"
               >
-                <img src={favouriteIcon} alt="Favourites" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                <span className="text-xs">Favourites</span>
-              </button>
-              <button 
-                onClick={openSearch}
-                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
-                data-testid="button-search"
+                <Heart className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
+                <span className="text-xs text-muted-foreground group-hover:text-foreground">Favourites</span>
+              </a>
+              <div 
+                id="my-search-128774264"
+                className="flex flex-col items-center gap-0.5"
+                data-testid="ecwid-search"
+              />
+              <a 
+                href="/shop#!/~/signin"
+                className="flex flex-col items-center gap-0.5 text-primary hover:text-primary/80 transition-all duration-300 group"
+                data-testid="button-signin"
               >
-                <img src={searchIcon} alt="Search" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                <span className="text-xs">Search</span>
-              </button>
-              <button 
-                onClick={openAccount}
-                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
-                data-testid="button-user-account"
-              >
-                <img src={userIcon} alt="Sign In" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                <span className="text-xs">Sign In</span>
-              </button>
-              <button 
-                onClick={openCart}
-                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
-                data-testid="button-cart"
-              >
-                <img src={cartIcon} alt="Cart" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                <span className="text-xs">Cart</span>
-              </button>
+                <User className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
+                <span className="text-xs text-muted-foreground group-hover:text-foreground">Sign In</span>
+              </a>
+              <div 
+                className="ec-cart-widget"
+                data-testid="ecwid-cart"
+              />
             </div>
 
-            {/* Mobile Menu Button + Cart */}
+            {/* Mobile Menu Button + Cart - Ecwid Widgets */}
             <div className="md:hidden flex items-center gap-3">
-              <button 
-                onClick={openFavourites}
-                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
+              <a 
+                href="/shop#!/~/favorites"
+                className="flex flex-col items-center gap-0.5 text-primary hover:text-primary/80 transition-all duration-300"
                 data-testid="button-favourites-mobile"
               >
-                <img src={favouriteIcon} alt="Favourites" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                <span className="text-xs">Favourites</span>
-              </button>
-              <button 
-                onClick={openSearch}
-                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
-                data-testid="button-search-mobile"
-              >
-                <img src={searchIcon} alt="Search" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                <span className="text-xs">Search</span>
-              </button>
-              <button 
-                onClick={openCart}
-                className="flex flex-col items-center gap-0.5 text-muted-foreground hover:text-foreground transition-all duration-300 group"
-                data-testid="button-cart-mobile"
-              >
-                <img src={cartIcon} alt="Cart" className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
-                <span className="text-xs">Cart</span>
-              </button>
+                <Heart className="h-5 w-5" />
+              </a>
+              <div 
+                className="ec-cart-widget"
+                data-testid="ecwid-cart-mobile"
+              />
               
               <button
                 className="p-2 rounded hover:bg-muted transition-colors"

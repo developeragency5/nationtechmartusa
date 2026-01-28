@@ -36,6 +36,12 @@ Configured for static deployment. Build output goes to `dist/` directory.
 - **Trademark Notice**: Required in footer
 
 ## Recent Changes
+- January 28, 2026: Header updated to use Ecwid native widgets
+  - Replaced custom icon buttons with Ecwid widgets (ec-cart-widget, SearchWidget)
+  - Favourites and Sign In use Lucide icons linking to Ecwid routes
+  - Cart widget shows Ecwid shopping bag with item count
+  - Search widget shows Ecwid search input field
+  - Product view detection: added isProductView state to hide content when viewing individual products (/p/ in hash)
 - January 28, 2026: Comprehensive UI/UX enhancement initiative
   - Added animation keyframes (fadeIn, fadeInUp, scaleIn, slideUp, float, pulse-glow, shimmer)
   - All transition/entry animations use 300-500ms durations per requirement
