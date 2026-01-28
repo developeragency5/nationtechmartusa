@@ -121,6 +121,11 @@ const Header = () => {
 
             {/* Desktop Account/Cart - Ecwid Widgets */}
             <div className="hidden md:flex items-center gap-6">
+              <div 
+                id="my-search-128774264"
+                className="flex flex-col items-center gap-0.5"
+                data-testid="ecwid-search"
+              />
               <a 
                 href="/shop#!/~/favorites"
                 className="flex flex-col items-center gap-0.5 text-primary hover:text-primary/80 transition-all duration-300 group"
@@ -129,11 +134,6 @@ const Header = () => {
                 <Heart className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                 <span className="text-xs text-muted-foreground group-hover:text-foreground">Favourites</span>
               </a>
-              <div 
-                id="my-search-128774264"
-                className="flex flex-col items-center gap-0.5"
-                data-testid="ecwid-search"
-              />
               <a 
                 href="/shop#!/~/signin"
                 className="flex flex-col items-center gap-0.5 text-primary hover:text-primary/80 transition-all duration-300 group"
