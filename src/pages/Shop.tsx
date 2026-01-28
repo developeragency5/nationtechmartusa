@@ -3,7 +3,7 @@ import SEO from "@/components/shared/SEO";
 import TransparencySection from "@/components/shared/TransparencySection";
 import SiteNotice from "@/components/shared/SiteNotice";
 import { useEffect, useState } from "react";
-import { ShoppingBag, Loader2, Wifi, Smartphone, Cloud, Monitor, Check, Building2, Users, Zap, FileText, Droplets, Image, Clock, ScanLine, FolderOpen, Shield, ArrowRight, Home, Briefcase, Palette, Printer } from "lucide-react";
+import { ShoppingBag, Loader2, Wifi, Smartphone, Cloud, Monitor, Check, Building2, Users, Zap, FileText, Droplets, Image, Clock, ScanLine, FolderOpen, Shield, ArrowRight, ArrowLeft, Home, Briefcase, Palette, Printer } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 declare global {
@@ -486,6 +486,22 @@ const Shop = () => {
                 </ul>
               </div>
             </div>
+          </div>
+        </section>
+      )}
+
+      {/* ==================== BACK BUTTON FOR PRODUCT VIEW ==================== */}
+      {isProductView && (
+        <section className="py-4 bg-background border-b border-border">
+          <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
+            <button
+              onClick={() => window.history.back()}
+              className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors duration-300 group"
+              data-testid="button-back"
+            >
+              <ArrowLeft className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1" />
+              <span className="text-sm font-medium">Back to Products</span>
+            </button>
           </div>
         </section>
       )}
