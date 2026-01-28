@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -13,35 +12,35 @@ const categories = [
     title: "Home Printers",
     description: "Perfect for everyday printing needs at home and small home office setups.",
     customIcon: homePrinterIcon,
-    link: "/shop/home-printers",
+    link: "/shop#!/c/193853315",
     highlights: ["Compact design, easy setup", "Built-in Wi-Fi, wireless printing", "Handles daily print jobs smoothly"],
   },
   {
     title: "Office Printers",
     description: "Built for productivity, durability, and consistent performance in busy work environments.",
     customIcon: officePrinterIcon,
-    link: "/shop/office-printers",
+    link: "/shop#!/c/193855066",
     highlights: ["High-volume printing, fast speeds", "Duplex printing, network-ready", "Built-in security features"],
   },
   {
     title: "Inkjet Printers",
     description: "Ideal for producing vibrant images, documents, and printing photos with accurate color reproduction.",
     customIcon: inkjetPrinterIcon,
-    link: "/shop/inkjet-printers",
+    link: "/shop#!/c/193859557",
     highlights: ["Great print quality, smooth colors", "Supports photo paper", "Flexible media handling"],
   },
   {
     title: "Laser Printers",
     description: "Fast, efficient, and cost-effective printers designed for text-heavy workloads.",
     customIcon: laserPrinterIcon,
-    link: "/shop/laser-printers",
+    link: "/shop#!/c/193855067",
     highlights: ["Clear, sharp text output", "Low cost per page", "Fast print speed, strong parts"],
   },
   {
     title: "Scanners",
     description: "Digitize documents with precision and reliability for home and office use.",
     customIcon: scannerIcon,
-    link: "/shop/scanners",
+    link: "/shop#!/c/193855068",
     highlights: ["High-resolution scanning", "Fast performance", "Automatic document feeders"],
   },
   {
@@ -129,13 +128,13 @@ const PrinterCategoryGuide = () => {
                     variant={(category as any).isViewAll ? "default" : "ghost"}
                     className="mt-6 w-full justify-center gap-2"
                   >
-                    <Link 
-                      to={category.link} 
+                    <a 
+                      href={category.link} 
                       data-testid={`link-category-${categorySlug}`}
                     >
                       {(category as any).isViewAll ? "Shop Now" : `Browse ${category.title}`}
                       <ArrowRight className="h-4 w-4" />
-                    </Link>
+                    </a>
                   </Button>
                 </CardContent>
               </Card>

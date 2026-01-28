@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 
 const categories = [
@@ -54,9 +53,9 @@ const ShopByUseCase = () => {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4 lg:gap-6">
           {categories.map((category, index) => (
-            <Link
+            <a
               key={index}
-              to={`/shop#!/c/${category.categoryId}`}
+              href={`/shop#!/c/${category.categoryId}`}
               className="group block animate-fade-in-up"
               style={{ animationDelay: `${index * 100}ms` }}
               data-testid={`link-category-${category.title.toLowerCase().replace(/\s+/g, '-')}`}
@@ -89,7 +88,7 @@ const ShopByUseCase = () => {
                 {/* Border glow effect */}
                 <div className="absolute inset-0 rounded-2xl border-2 border-primary/0 group-hover:border-primary/50 transition-all duration-500 pointer-events-none" />
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </div>
