@@ -33,8 +33,8 @@ const Shop = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [isEcwidOverlay, setIsEcwidOverlay] = useState(false);
   const [currentCategory, setCurrentCategory] = useState<string | null>(null);
-
   const [isSearchView, setIsSearchView] = useState(false);
+  const [isProductView, setIsProductView] = useState(false);
 
   useEffect(() => {
     const checkHash = () => {
@@ -42,6 +42,7 @@ const Shop = () => {
       const isOverlay = hash.includes('cart') || hash.includes('signin') || hash.includes('account');
       setIsEcwidOverlay(isOverlay);
       setIsSearchView(hash.includes('/search') || hash.includes('~/search'));
+      setIsProductView(hash.includes('/p/'));
 
       if (hash.includes(CATEGORY_IDS.HOME_PRINTERS)) {
         setCurrentCategory("home-printers");
@@ -152,7 +153,7 @@ const Shop = () => {
       />
 
       {/* ==================== ALL PRODUCTS - TOP CONTENT ==================== */}
-      {!isEcwidOverlay && !currentCategory && !isSearchView && (
+      {!isEcwidOverlay && !isProductView && !currentCategory && !isSearchView && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto">
@@ -335,7 +336,7 @@ const Shop = () => {
       )}
 
       {/* ==================== HOME PRINTERS - TOP CONTENT ==================== */}
-      {!isEcwidOverlay && currentCategory === "home-printers" && (
+      {!isEcwidOverlay && !isProductView && currentCategory === "home-printers" && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto">
@@ -366,7 +367,7 @@ const Shop = () => {
       )}
 
       {/* ==================== OFFICE PRINTERS - TOP CONTENT ==================== */}
-      {!isEcwidOverlay && currentCategory === "office-printers" && (
+      {!isEcwidOverlay && !isProductView && currentCategory === "office-printers" && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto">
@@ -397,7 +398,7 @@ const Shop = () => {
       )}
 
       {/* ==================== INKJET PRINTERS - TOP CONTENT ==================== */}
-      {!isEcwidOverlay && currentCategory === "inkjet-printers" && (
+      {!isEcwidOverlay && !isProductView && currentCategory === "inkjet-printers" && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto">
@@ -428,7 +429,7 @@ const Shop = () => {
       )}
 
       {/* ==================== LASER PRINTERS - TOP CONTENT ==================== */}
-      {!isEcwidOverlay && currentCategory === "laser-printers" && (
+      {!isEcwidOverlay && !isProductView && currentCategory === "laser-printers" && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto">
@@ -459,7 +460,7 @@ const Shop = () => {
       )}
 
       {/* ==================== SCANNERS - TOP CONTENT ==================== */}
-      {!isEcwidOverlay && currentCategory === "scanners" && (
+      {!isEcwidOverlay && !isProductView && currentCategory === "scanners" && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto">
@@ -523,7 +524,7 @@ const Shop = () => {
       </section>
 
       {/* ==================== HOME PRINTERS - BOTTOM CONTENT ==================== */}
-      {!isEcwidOverlay && currentCategory === "home-printers" && (
+      {!isEcwidOverlay && !isProductView && currentCategory === "home-printers" && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto space-y-12">
@@ -596,7 +597,7 @@ const Shop = () => {
       )}
 
       {/* ==================== OFFICE PRINTERS - BOTTOM CONTENT ==================== */}
-      {!isEcwidOverlay && currentCategory === "office-printers" && (
+      {!isEcwidOverlay && !isProductView && currentCategory === "office-printers" && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto space-y-12">
@@ -668,7 +669,7 @@ const Shop = () => {
       )}
 
       {/* ==================== INKJET PRINTERS - BOTTOM CONTENT ==================== */}
-      {!isEcwidOverlay && currentCategory === "inkjet-printers" && (
+      {!isEcwidOverlay && !isProductView && currentCategory === "inkjet-printers" && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto space-y-12">
@@ -740,7 +741,7 @@ const Shop = () => {
       )}
 
       {/* ==================== LASER PRINTERS - BOTTOM CONTENT ==================== */}
-      {!isEcwidOverlay && currentCategory === "laser-printers" && (
+      {!isEcwidOverlay && !isProductView && currentCategory === "laser-printers" && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto space-y-12">
@@ -812,7 +813,7 @@ const Shop = () => {
       )}
 
       {/* ==================== SCANNERS - BOTTOM CONTENT ==================== */}
-      {!isEcwidOverlay && currentCategory === "scanners" && (
+      {!isEcwidOverlay && !isProductView && currentCategory === "scanners" && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto space-y-12">
@@ -884,7 +885,7 @@ const Shop = () => {
       )}
 
       {/* ==================== ALL PRODUCTS - BOTTOM CONTENT ==================== */}
-      {!isEcwidOverlay && !currentCategory && !isSearchView && (
+      {!isEcwidOverlay && !isProductView && !currentCategory && !isSearchView && (
         <section className="py-12 md:py-16 bg-background">
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-7xl">
             <div className="max-w-4xl mx-auto space-y-12">
@@ -1001,7 +1002,7 @@ const Shop = () => {
       )}
 
       {/* Transparency Section - hidden for cart/signin/account */}
-      {!isEcwidOverlay && <TransparencySection />}
+      {!isEcwidOverlay && !isProductView && <TransparencySection />}
 
     </Layout>
   );
