@@ -130,6 +130,7 @@ const Header = () => {
                 href="/shop#!/~/favorites"
                 className="flex flex-col items-center gap-0.5 text-primary hover:text-primary/80 transition-all duration-300 group"
                 data-testid="button-favourites"
+                title="View your saved favourites"
               >
                 <Heart className="h-5 w-5 transition-transform duration-300 group-hover:scale-110" />
                 <span className="text-xs text-muted-foreground group-hover:text-foreground">Favourites</span>
