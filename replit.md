@@ -36,6 +36,18 @@ Configured for static deployment. Build output goes to `dist/` directory.
 - **Trademark Notice**: Required in footer
 
 ## Recent Changes
+- January 28, 2026: Comprehensive UI/UX enhancement initiative
+  - Added animation keyframes (fadeIn, fadeInUp, scaleIn, slideUp, float, pulse-glow, shimmer)
+  - All transition/entry animations use 300-500ms durations per requirement
+  - Button component uses hover-elevate/active-elevate-2 for consistent interactions
+  - Card component with clean base styling (hover effects applied at component level where needed)
+  - Header updated with backdrop-blur-md and improved navigation styling
+  - Footer with gradient background effect
+  - All homepage sections have animate-fade-in-up with staggered delays
+  - Shop page category cards with hover effects and animations
+  - About, Contact, and other pages with consistent animations
+  - Added prefers-reduced-motion accessibility support
+  - Pink theme color (HSL 333, 71%, 50%) consistently applied throughout
 - January 20, 2026: Compliance overhaul for Google/Bing Ads and HP trademark safety
   - Removed ALL "Free Shipping" → "Shipping details are shown at checkout" (Ecwid compatible)
   - Trust Bar: Shipping Details Shown at Checkout | Secure Checkout – SSL encrypted | Easy Returns – 30-day policy (eligibility applies)
